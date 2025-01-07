@@ -12,7 +12,15 @@ type="user">astinita</fr:addr><fr:route>astinita.xml</fr:route><fr:title
 text="Hengyu Ai">Hengyu Ai</fr:title><fr:taxon>Person</fr:taxon><fr:authors /><fr:meta
 name="institution"><fr:link
 type="external"
-href="https://www.shanghaitech.edu.cn/eng/">ShanghaiTech University</fr:link></fr:meta></fr:frontmatter><fr:mainmatter><fr:p>Undergraduate @ ShanghaiTech University</fr:p></fr:mainmatter><fr:backmatter><fr:tree
+href="https://www.shanghaitech.edu.cn/eng/">ShanghaiTech University</fr:link></fr:meta></fr:frontmatter><fr:mainmatter><fr:p>Undergraduate @ ShanghaiTech University</fr:p><fr:p>如果这行中文 &amp; 下方的公式显示正常 &amp; 代码有高亮，说明网页加载正常。</fr:p><fr:tex
+display="block"><![CDATA[   T = \lambda  f. (\lambda  x. f (x x)) (\lambda  x. f (x x)) ]]></fr:tex>
+  <fr:pre><html:code
+xmlns:html="http://www.w3.org/1999/xhtml"
+class="&quot;language-haskell&quot;">primes = filterPrime [2..] where
+  filterPrime (p:xs) =
+    p : filterPrime [x | x &lt;- xs, x `mod` p /= 0]
+</html:code></fr:pre>
+</fr:mainmatter><fr:backmatter><fr:tree
 toc="false"
 numbered="false"
 show-heading="true"
@@ -51,7 +59,15 @@ type="user">astinita</fr:addr><fr:route>astinita.xml</fr:route><fr:title
 text="Hengyu Ai">Hengyu Ai</fr:title><fr:taxon>Person</fr:taxon><fr:authors /><fr:meta
 name="institution"><fr:link
 type="external"
-href="https://www.shanghaitech.edu.cn/eng/">ShanghaiTech University</fr:link></fr:meta></fr:frontmatter><fr:mainmatter><fr:p>Undergraduate @ ShanghaiTech University</fr:p></fr:mainmatter><fr:backmatter /></fr:tree>
+href="https://www.shanghaitech.edu.cn/eng/">ShanghaiTech University</fr:link></fr:meta></fr:frontmatter><fr:mainmatter><fr:p>Undergraduate @ ShanghaiTech University</fr:p><fr:p>如果这行中文 &amp; 下方的公式显示正常 &amp; 代码有高亮，说明网页加载正常。</fr:p><fr:tex
+display="block"><![CDATA[   T = \lambda  f. (\lambda  x. f (x x)) (\lambda  x. f (x x)) ]]></fr:tex>
+  <fr:pre><html:code
+xmlns:html="http://www.w3.org/1999/xhtml"
+class="&quot;language-haskell&quot;">primes = filterPrime [2..] where
+  filterPrime (p:xs) =
+    p : filterPrime [x | x &lt;- xs, x `mod` p /= 0]
+</html:code></fr:pre>
+</fr:mainmatter><fr:backmatter /></fr:tree>
 
   
   <fr:tree
@@ -414,12 +430,7 @@ text="Breadth-First Search">Breadth-First Search</fr:title><fr:date><fr:year>202
             set w as visited
             Q.enqueue(w)
       end while
-    end function]]></fr:pre></fr:p><fr:p><fr:pre><fr:code>#include &lt;stdio.h&gt;
-
-int main(void) {
-  printf("Hello, World!");
-  return 0;
-}</fr:code></fr:pre></fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree>
+    end function]]></fr:pre></fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree>
 </fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
 toc="false"
 numbered="false"
@@ -788,9 +799,4 @@ text="Breadth-First Search">Breadth-First Search</fr:title><fr:date><fr:year>202
             set w as visited
             Q.enqueue(w)
       end while
-    end function]]></fr:pre></fr:p><fr:p><fr:pre><fr:code>#include &lt;stdio.h&gt;
-
-int main(void) {
-  printf("Hello, World!");
-  return 0;
-}</fr:code></fr:pre></fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>
+    end function]]></fr:pre></fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>

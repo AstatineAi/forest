@@ -409,9 +409,4 @@ text="Breadth-First Search">Breadth-First Search</fr:title><fr:date><fr:year>202
             set w as visited
             Q.enqueue(w)
       end while
-    end function]]></fr:pre></fr:p><fr:p><fr:pre><fr:code>#include &lt;stdio.h&gt;
-
-int main(void) {
-  printf("Hello, World!");
-  return 0;
-}</fr:code></fr:pre></fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>
+    end function]]></fr:pre></fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>
