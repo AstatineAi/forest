@@ -2,3 +2,4 @@
 trees = ["trees"]
 assets = ["assets"]
 theme = "theme"
+host = "astinita"
