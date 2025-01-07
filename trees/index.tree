@@ -7,20 +7,25 @@
     \li{Some notes on course content/course project/books.}
     \li{Other random thoughts from my brain.}
   }
+}
 
+\p{
   This website is a [“forest”](https://www.jonmsterling.com/foreign-forester-tfmt-000V.xml) created using the [Forester](https://www.jonmsterling.com/foreign-forester-index.xml) tool. To navigate this forest, press \code{Ctrl + K}.
+}
 
+\p{
   The phrase \em{Thought Cabinet} is from the game [Disco Elysium](https://store.steampowered.com/app/632470/Disco_Elysium__The_Final_Cut/).
+}
 
-  \put\transclude/numbered{false}
-  \scope{
-    \transclude{astinita}
-  }
+\put\transclude/numbered{false}
 
-  \put\transclude/expanded{false}
+\scope{
+  \transclude{astinita}
+}
 
-  \scope{
-    \put\transclude/title{Courses}
-    \transclude{ShanghaiTech-Courses}
-  }
+\put\transclude/expanded{false}
+
+\scope{
+  \put\transclude/title{Courses}
+  \transclude{ShanghaiTech-Courses}
 }
