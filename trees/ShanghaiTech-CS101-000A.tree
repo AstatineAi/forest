@@ -1,0 +1,11 @@
+\date{2025-01-08}
+\title{Binary-relation list}
+
+\p{
+  \strong{Binary-relation list} is an implementation of a graph. It stores all the edges in a list. Each edge is a pair of vertices.
+}
+
+\ul{
+  \li{Space complexity: #{\Theta(|E|)} }
+  \li{Time complexity: #{\Theta(|E|)} }
+}

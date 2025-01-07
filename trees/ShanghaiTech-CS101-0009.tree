@@ -1,0 +1,17 @@
+\date{2025-01-08}
+\title{Path (graph theory)}
+\taxon{definitions}
+
+\p{
+  A \strong{path} in a graph is a sequence of vertices #{v_1, v_2, \ldots, v_k} such that #{(v_i, v_{i+1})} is an edge for all #{1 \leq i < k}. The length of a path is the number of edges in the path.
+}
+
+\p{
+  \strong{Derivations}:
+  \ul{
+    \li{Simple path: A path with no repeated vertices.}
+    \li{Cycle: A path with the same start and end vertices.}
+    \li{Simple Cycle: A cycle with no repeated vertices except the start and end vertices.}
+    \li{Path in a graph with weights: the length of a path is the sum of the weights of the edges in the path.}
+  }
+}

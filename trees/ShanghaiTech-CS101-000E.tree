@@ -1,0 +1,32 @@
+\date{2025-01-08}
+\title{Breadth-First Search}
+
+\import{base-macros}
+
+\p{
+  \pre{\startverb
+    function BFS(G, s)
+      let Q be a queue
+      set s as visited
+      Q.enqueue(s)
+      while Q is not empty
+        v <- Q.dequeue()
+        for all edges from v to w in G
+          if w is not visited
+            set w as visited
+            Q.enqueue(w)
+      end while
+    end function
+  \stopverb}
+}
+
+\p{
+  \pre{\code{
+#include <stdio.h>
+
+int main(void) {
+  printf("Hello, World!");
+  return 0;
+}
+}}
+}

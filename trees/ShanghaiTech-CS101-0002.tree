@@ -1,0 +1,14 @@
+\date{2025-01-08}
+\title{Disjoint Set}
+\taxon{definitions}
+
+\p{
+  Disjoint set（并查集） is a data structure that keeps track of equivalence classes of all elements in a set.
+
+  It supports two operations:
+
+  \ul{
+    \li{\code{find(x)}: return the representative of the set that element #{x} belongs to.}
+    \li{\code{union(x, y)}: merge the sets that contain #{x} and #{y}.}
+  }
+}

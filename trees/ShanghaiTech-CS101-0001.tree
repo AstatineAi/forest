@@ -1,0 +1,16 @@
+\date{2025-01-08}
+\title{No.14 : Disjoint Set}
+\taxon{lecture}
+\parent{ShanghaiTech-CS101-Lectures}
+
+\put\transclude/numbered{false}
+
+\p{
+  \transclude{concept-0001}
+
+  It's obvious that an equivalence relation can be used to \strong{partition a set into disjoint (not overlapping) subsets}.
+
+  \transclude{ShanghaiTech-CS101-0002}
+
+  \transclude{ShanghaiTech-CS101-0003}
+}

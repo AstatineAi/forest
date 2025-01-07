@@ -1,0 +1,13 @@
+\date{2025-01-08}
+\title{Equivalence Relation}
+\taxon{definitions}
+
+\p{
+  An \strong{equivalence relation（等价关系）} is a binary relation #{\equiv} on a set #{S}, such that:
+
+  \ul{
+    \li{reflexive: for all #{x : S}, #{x \equiv x}}
+    \li{symmetric: for all #{x, y : S}, if #{x \equiv y} then #{y \equiv x}}
+    \li{transitive: for all #{x, y, z : S}, if #{x \equiv y} and #{y \equiv z} then #{x \equiv z}}
+  }
+}

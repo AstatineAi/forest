@@ -1,0 +1,7 @@
+\date{2025-01-08}
+\title{Vertex-induced subgraph}
+\taxon{definitions}
+
+\p{
+  A \strong{vertex-induced subgraph} of a graph #{G = (V, E)} is a graph #{G' = (V', E')} such that #{V' \subseteq V} and #{E' = \{(u, v) \in E \mid u, v \in V'\}}.
+}

@@ -1,0 +1,26 @@
+\date{2025-01-08}
+\title{No.15 : Graphs}
+\taxon{Lecture}
+\parent{ShanghaiTech-CS101-Lectures}
+
+\put\transclude/numbered{false}
+
+\transclude{concept-0002}
+
+\transclude{concept-0003}
+
+\transclude{ShanghaiTech-CS101-0007}
+
+\transclude{ShanghaiTech-CS101-0008}
+
+\transclude{ShanghaiTech-CS101-0009}
+
+\p{
+  Here are the methods to represent the graph:
+}
+
+\transclude{ShanghaiTech-CS101-000A}
+
+\transclude{ShanghaiTech-CS101-000B}
+
+\transclude{ShanghaiTech-CS101-000C}

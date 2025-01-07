@@ -1,4 +1,4 @@
-all: preview
+all: build
 
 preview: build
 	xdg-open http://localhost:1313/index.xml

@@ -1,8 +1,8 @@
 \title{Courses}
-\parent{index}
 \author{astinita}
 
 \put\transclude/numbered{false}
 \put\transclude/metadata{true}
+\put\transclude/expanded{false}
 
 \transclude{ShanghaiTech-CS101-index}

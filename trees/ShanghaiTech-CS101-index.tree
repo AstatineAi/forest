@@ -2,7 +2,14 @@
 \title{Algorithm & DS Fall 2024}
 \taxon{course}
 \meta{external}{https://i-techx.github.io/iTechX/courses?course_code=CS101}
+\parent{ShanghaiTech-Courses}
+\import{base-macros}
 
-\p{
-  test.
-}
+\put\transclude/numbered{true}
+\put\transclude/expanded{false}
+
+\transclude{ShanghaiTech-CS101-Concepts}
+
+\hr
+
+\transclude{ShanghaiTech-CS101-Lectures}

@@ -1,0 +1,29 @@
+\date{2025-01-08}
+\title{Merge By Rank Optimization}
+
+\import{base-macros}
+
+\p{
+  To optimize the [trivial implementation](ShanghaiTech-CS101-0003) of the union operation, we can use the \strong{merge by rank} optimization.
+
+  Intuitively, we want the height of the tree to be small. Therefore, we can merge the smaller tree into the larger tree to keep the height of the tree small.
+}
+
+\p{
+  \strong{Worst Case}:
+
+  \<html:figure>{
+    \<html:img>[src]{ShanghaiTech-CS101/dsu-worst.png}{}
+    \<html:figcaption>{仅使用按秩合并的并查集，最坏情况结构}
+  }
+
+  In the worst case, a disjoint set with height #{h} will have 
+  ##{
+    \sum_{k = 0}^{h} h \binom{h}{k} = h \cdot 2^{h - 1}
+  }
+  elements, which means the depth of a tree will be logarithmic in the number of elements.
+}
+
+\p{
+  \strong{Time Complexity}: #{\Omicron (\log n)}
+}

@@ -1,0 +1,34 @@
+\date{2025-01-08}
+\title{Implementation of Disjoint Set}
+
+\import{base-macros}
+
+\p{
+  Use an array to store the representative of each element, the structure will be an directed tree where each element points to a representative.
+
+  \<html:figure>{
+    \<html:img>[src]{ShanghaiTech-CS101/dsu.png}{}
+    \<html:figcaption>{并查集实现的直观结构：一颗内向树}
+  }
+
+  Therefore, the two operations will be:
+
+  \ul{
+    \li{ \code{find :: Eq a => DisjointSet a -> a -> a} : find the representative of an element}
+    \li{ \code{union :: Eq a => DisjointSet a -> a -> a -> DisjointSet a} : merge two sets}
+  }
+
+  Trivially, \code{find} recursively finds the root of the tree, and \code{union} merges two trees by making one root the child of the other, the time complexity of both operations is #{\Omicron (n)} since the height of the tree can be as large as #{n}.
+}
+
+\put\transclude/expanded{false}
+
+\transclude{ShanghaiTech-CS101-0004}
+
+\transclude{ShanghaiTech-CS101-0005}
+
+\put\transclude/expanded{true}
+
+\p{
+  With the two optimizations above the time complexity of both operations can be reduced to #{\Omicron (\alpha (n))}, where #{\alpha (n)} is the [inverse Ackermann function](https://en.wikipedia.org/wiki/Ackermann_function), which is a very slow growing function, so the time complexity of both operations is almost #{\Theta (1)}.
+}

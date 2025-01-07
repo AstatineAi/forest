@@ -1,0 +1,12 @@
+\date{2025-01-08}
+\title{Adjacency List}
+
+\p{
+  \strong{Adjacency list} is an implementation of a graph. Each vertex has a list of its neighbors. If #{(i, j) \in E}, then #{j} is in the list of #{i}.
+}
+
+\ul{
+  \li{Space complexity: #{\Theta(|V| + |E|)}}
+  \li{Time complexity to check if two vertices are connected: #{\Theta(|V|)}}
+  \li{Time complexity to check all neighbors of a vertex: #{\Theta(\text{degree}(v))}}
+}

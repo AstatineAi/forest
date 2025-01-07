@@ -1,0 +1,12 @@
+\date{2025-01-08}
+\title{Adjacency Matrix}
+
+\p{
+  \strong{Adjacency matrix} is an implementation of a graph. It uses a matrix to represent the connections between vertices. If #{(i, j) \in E}, then #{A_{ij} = 1}, otherwise #{A_{ij} = 0}.
+}
+
+\ul{
+  \li{Space complexity: #{\Theta(|V|^2)}}
+  \li{Time complexity to check if two vertices are connected: #{\Omicron(1)}}
+  \li{Time complexity to check all neighbors of a vertex: #{\Theta(|V|)}}
+}

@@ -1,0 +1,7 @@
+\date{2025-01-08}
+\title{Degree (graph theory)}
+\taxon{definitions}
+
+\p{
+  The \strong{degree} of a vertex in a graph is the number of edges incident to the vertex.
+}

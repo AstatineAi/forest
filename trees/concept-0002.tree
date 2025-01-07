@@ -1,0 +1,11 @@
+\date{2025-01-08}
+\title{Graph}
+\taxon{definitions}
+
+\p{
+  A \strong{graph} is a collection of vertices and edges. An edge connects two vertices. We can represent a graph as #{G = (V, E)}, where #{V} is the set of vertices and #{E} is the set of edges.
+}
+
+\p{
+  A graph can be directed or undirected, edge #{(u, v)} in a directed graph has a direction from #{u} to #{v}, while in an undirected graph, the edge has no direction (can be denoted as #{\{u, v\}}).
+}

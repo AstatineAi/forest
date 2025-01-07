@@ -1,0 +1,10 @@
+\date{2025-01-08}
+\title{Path Compression Optimization}
+
+\p{
+  To optimize the [trivial implementation](ShanghaiTech-CS101-0003) of the union operation, we can use the \strong{path compression optimization}.
+}
+
+\p{
+  By the definition of the [equivalence relation](concept-0001), we know that the elements in the same equivalence class can \strong{choose the same element as the representative}. Thus, we can set all the elements in the same equivalence class to point to the same, final representative when we find the representative of an element.
+}

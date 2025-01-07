@@ -1,0 +1,10 @@
+\date{2025-01-08}
+\title{Lectures}
+\parent{ShanghaiTech-CS101-index}
+
+\put\transclude/expanded{false}
+\put\transclude/numbered{false}
+
+\transclude{ShanghaiTech-CS101-0001}
+\transclude{ShanghaiTech-CS101-0006}
+\transclude{ShanghaiTech-CS101-000D}
