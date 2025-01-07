@@ -7,111 +7,71 @@ show-heading="true"
 show-metadata="true"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>329</fr:anchor><fr:addr
-type="user">index</fr:addr><fr:route>index.xml</fr:route><fr:title
-text="Thought Cabinet">Thought Cabinet</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>This is a simple collection of
-  <fr:ul><fr:li>Interesting things I heard about (collect them to deal with "citation needed")</fr:li>
-    <fr:li>Some notes on course content/course project/books.</fr:li>
-    <fr:li>Other random thoughts from my brain.</fr:li></fr:ul></fr:p><fr:p>This website is a <fr:link
-type="external"
-href="https://www.jonmsterling.com/foreign-forester-tfmt-000V.xml">“forest”</fr:link> created using the <fr:link
-type="external"
-href="https://www.jonmsterling.com/foreign-forester-index.xml">Forester</fr:link> tool. To navigate this forest, press <fr:code>Ctrl + K</fr:code>.</fr:p><fr:p>The phrase <fr:em>Thought Cabinet</fr:em> is from the game <fr:link
-type="external"
-href="https://store.steampowered.com/app/632470/Disco_Elysium__The_Final_Cut/">Disco Elysium</fr:link>.</fr:p>
-  <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>302</fr:anchor><fr:addr
+type="user">ShanghaiTech-CS101-000D</fr:addr><fr:route>ShanghaiTech-CS101-000D.xml</fr:route><fr:title
+text="Courses › Algorithm &amp; DS Fall 2024 › Lectures › No.16 : Graph Traversal"><fr:link
+type="local"
+href="ShanghaiTech-CS101-Lectures.xml"
+addr="ShanghaiTech-CS101-Lectures"
+title="Courses › Algorithm &amp; DS Fall 2024 › Lectures"><fr:link
+type="local"
+href="ShanghaiTech-CS101-index.xml"
+addr="ShanghaiTech-CS101-index"
+title="Courses › Algorithm &amp; DS Fall 2024"><fr:link
+type="local"
+href="ShanghaiTech-Courses.xml"
+addr="ShanghaiTech-Courses"
+title="Courses">Courses</fr:link> › Algorithm &amp; DS Fall 2024</fr:link> › Lectures</fr:link> › No.16 : Graph Traversal</fr:title><fr:taxon>Lecture</fr:taxon><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>8</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
 toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>263</fr:anchor><fr:addr
+type="user">ShanghaiTech-CS101-000E</fr:addr><fr:route>ShanghaiTech-CS101-000E.xml</fr:route><fr:title
+text="Breadth-First Search">Breadth-First Search</fr:title><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>8</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p><fr:pre><![CDATA[    function BFS(G, s)
+      let Q be a queue
+      set s as visited
+      Q.enqueue(s)
+      while Q is not empty
+        v <- Q.dequeue()
+        for all edges from v to w in G
+          if w is not visited
+            set w as visited
+            Q.enqueue(w)
+      end while
+    end function]]></fr:pre></fr:p><fr:p><fr:pre><fr:code>#include &lt;stdio.h&gt;
+
+int main(void) {
+  printf("Hello, World!");
+  return 0;
+}</fr:code></fr:pre></fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter><fr:tree
+toc="false"
 numbered="false"
 show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>322</fr:anchor><fr:addr
-type="user">astinita</fr:addr><fr:route>astinita.xml</fr:route><fr:title
-text="Hengyu Ai">Hengyu Ai</fr:title><fr:taxon>Person</fr:taxon><fr:authors /><fr:meta
-name="institution"><fr:link
-type="external"
-href="https://www.shanghaitech.edu.cn/eng/">ShanghaiTech University</fr:link></fr:meta></fr:frontmatter><fr:mainmatter><fr:p>Undergraduate @ ShanghaiTech University</fr:p></fr:mainmatter><fr:backmatter /></fr:tree>
-
-  
-  <fr:tree
-toc="true"
-numbered="false"
-show-heading="true"
-show-metadata="false"
-expanded="false"
-root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>323</fr:anchor><fr:addr
-type="user">ShanghaiTech-Courses</fr:addr><fr:route>ShanghaiTech-Courses.xml</fr:route><fr:title
-text="Courses">Courses</fr:title><fr:authors><fr:author><fr:link
-type="local"
-href="astinita.xml"
-addr="astinita"
-title="Hengyu Ai">Hengyu Ai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:title
+text="Context">Context</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>317</fr:anchor><fr:addr
-type="user">ShanghaiTech-CS101-index</fr:addr><fr:route>ShanghaiTech-CS101-index.xml</fr:route><fr:title
-text="Algorithm &amp; DS Fall 2024">Algorithm &amp; DS Fall 2024</fr:title><fr:taxon>Course</fr:taxon><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>7</fr:day></fr:date><fr:authors /><fr:meta
-name="external">https://i-techx.github.io/iTechX/courses?course_code=CS101</fr:meta></fr:frontmatter><fr:mainmatter><fr:tree
-toc="true"
-numbered="true"
-show-heading="true"
-show-metadata="false"
-expanded="false"
-root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>268</fr:anchor><fr:addr
-type="user">ShanghaiTech-CS101-Concepts</fr:addr><fr:route>ShanghaiTech-CS101-Concepts.xml</fr:route><fr:title
-text="Concepts and definitions">Concepts and definitions</fr:title><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>8</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
-toc="true"
-numbered="true"
-show-heading="true"
-show-metadata="false"
-expanded="true"
-root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>265</fr:anchor><fr:addr
-type="user">ShanghaiTech-CS101-0002</fr:addr><fr:route>ShanghaiTech-CS101-0002.xml</fr:route><fr:title
-text="Disjoint Set">Disjoint Set</fr:title><fr:taxon>Definitions</fr:taxon><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>8</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Disjoint set（并查集） is a data structure that keeps track of equivalence classes of all elements in a set.
-
-  It supports two operations:
-
-  <fr:ul><fr:li><fr:code>find(x)</fr:code>: return the representative of the set that element <fr:tex
-display="inline"><![CDATA[x]]></fr:tex> belongs to.</fr:li>
-    <fr:li><fr:code>union(x, y)</fr:code>: merge the sets that contain <fr:tex
-display="inline"><![CDATA[x]]></fr:tex> and <fr:tex
-display="inline"><![CDATA[y]]></fr:tex>.</fr:li></fr:ul></fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
-toc="true"
-numbered="true"
-show-heading="true"
-show-metadata="false"
-expanded="true"
-root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>266</fr:anchor><fr:addr
-type="user">concept-0002</fr:addr><fr:route>concept-0002.xml</fr:route><fr:title
-text="Graph">Graph</fr:title><fr:taxon>Definitions</fr:taxon><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>8</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>A <fr:strong>graph</fr:strong> is a collection of vertices and edges. An edge connects two vertices. We can represent a graph as <fr:tex
-display="inline"><![CDATA[G = (V, E)]]></fr:tex>, where <fr:tex
-display="inline"><![CDATA[V]]></fr:tex> is the set of vertices and <fr:tex
-display="inline"><![CDATA[E]]></fr:tex> is the set of edges.</fr:p><fr:p>A graph can be directed or undirected, edge <fr:tex
-display="inline"><![CDATA[(u, v)]]></fr:tex> in a directed graph has a direction from <fr:tex
-display="inline"><![CDATA[u]]></fr:tex> to <fr:tex
-display="inline"><![CDATA[v]]></fr:tex>, while in an undirected graph, the edge has no direction (can be denoted as <fr:tex
-display="inline"><![CDATA[\{u, v\}]]></fr:tex>).</fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree>
-  <html:hr
-xmlns:html="http://www.w3.org/1999/xhtml" />
-<fr:tree
-toc="true"
-numbered="true"
-show-heading="true"
-show-metadata="false"
-expanded="false"
-root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>269</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>303</fr:anchor><fr:addr
 type="user">ShanghaiTech-CS101-Lectures</fr:addr><fr:route>ShanghaiTech-CS101-Lectures.xml</fr:route><fr:title
-text="Lectures">Lectures</fr:title><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>8</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
+text="Courses › Algorithm &amp; DS Fall 2024 › Lectures"><fr:link
+type="local"
+href="ShanghaiTech-CS101-index.xml"
+addr="ShanghaiTech-CS101-index"
+title="Courses › Algorithm &amp; DS Fall 2024"><fr:link
+type="local"
+href="ShanghaiTech-Courses.xml"
+addr="ShanghaiTech-Courses"
+title="Courses">Courses</fr:link> › Algorithm &amp; DS Fall 2024</fr:link> › Lectures</fr:title><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>8</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
 toc="true"
 numbered="false"
 show-heading="true"
@@ -399,5 +359,4 @@ text="Breadth-First Search">Breadth-First Search</fr:title><fr:date><fr:year>202
 int main(void) {
   printf("Hello, World!");
   return 0;
-}</fr:code></fr:pre></fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree>
-</fr:mainmatter><fr:backmatter /></fr:tree>
+}</fr:code></fr:pre></fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>

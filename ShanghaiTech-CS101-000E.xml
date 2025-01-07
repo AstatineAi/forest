@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="default.xsl"?>
+<fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="true"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>261</fr:anchor><fr:addr
+type="user">ShanghaiTech-CS101-000E</fr:addr><fr:route>ShanghaiTech-CS101-000E.xml</fr:route><fr:title
+text="Breadth-First Search">Breadth-First Search</fr:title><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>8</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p><fr:pre><![CDATA[    function BFS(G, s)
+      let Q be a queue
+      set s as visited
+      Q.enqueue(s)
+      while Q is not empty
+        v <- Q.dequeue()
+        for all edges from v to w in G
+          if w is not visited
+            set w as visited
+            Q.enqueue(w)
+      end while
+    end function]]></fr:pre></fr:p><fr:p><fr:pre><fr:code>#include &lt;stdio.h&gt;
+
+int main(void) {
+  printf("Hello, World!");
+  return 0;
+}</fr:code></fr:pre></fr:p></fr:mainmatter><fr:backmatter><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:title
+text="Context">Context</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>262</fr:anchor><fr:addr
+type="user">ShanghaiTech-CS101-000D</fr:addr><fr:route>ShanghaiTech-CS101-000D.xml</fr:route><fr:title
+text="Courses › Algorithm &amp; DS Fall 2024 › Lectures › No.16 : Graph Traversal"><fr:link
+type="local"
+href="ShanghaiTech-CS101-Lectures.xml"
+addr="ShanghaiTech-CS101-Lectures"
+title="Courses › Algorithm &amp; DS Fall 2024 › Lectures"><fr:link
+type="local"
+href="ShanghaiTech-CS101-index.xml"
+addr="ShanghaiTech-CS101-index"
+title="Courses › Algorithm &amp; DS Fall 2024"><fr:link
+type="local"
+href="ShanghaiTech-Courses.xml"
+addr="ShanghaiTech-Courses"
+title="Courses">Courses</fr:link> › Algorithm &amp; DS Fall 2024</fr:link> › Lectures</fr:link> › No.16 : Graph Traversal</fr:title><fr:taxon>Lecture</fr:taxon><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>8</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>263</fr:anchor><fr:addr
+type="user">ShanghaiTech-CS101-000E</fr:addr><fr:route>ShanghaiTech-CS101-000E.xml</fr:route><fr:title
+text="Breadth-First Search">Breadth-First Search</fr:title><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>8</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p><fr:pre><![CDATA[    function BFS(G, s)
+      let Q be a queue
+      set s as visited
+      Q.enqueue(s)
+      while Q is not empty
+        v <- Q.dequeue()
+        for all edges from v to w in G
+          if w is not visited
+            set w as visited
+            Q.enqueue(w)
+      end while
+    end function]]></fr:pre></fr:p><fr:p><fr:pre><fr:code>#include &lt;stdio.h&gt;
+
+int main(void) {
+  printf("Hello, World!");
+  return 0;
+}</fr:code></fr:pre></fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>

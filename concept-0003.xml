@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="default.xsl"?>
+<fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="true"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>278</fr:anchor><fr:addr
+type="user">concept-0003</fr:addr><fr:route>concept-0003.xml</fr:route><fr:title
+text="Degree (graph theory)">Degree (graph theory)</fr:title><fr:taxon>Definitions</fr:taxon><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>8</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>The <fr:strong>degree</fr:strong> of a vertex in a graph is the number of edges incident to the vertex.</fr:p></fr:mainmatter><fr:backmatter><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:title
+text="Context">Context</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>279</fr:anchor><fr:addr
+type="user">ShanghaiTech-CS101-0006</fr:addr><fr:route>ShanghaiTech-CS101-0006.xml</fr:route><fr:title
+text="Courses › Algorithm &amp; DS Fall 2024 › Lectures › No.15 : Graphs"><fr:link
+type="local"
+href="ShanghaiTech-CS101-Lectures.xml"
+addr="ShanghaiTech-CS101-Lectures"
+title="Courses › Algorithm &amp; DS Fall 2024 › Lectures"><fr:link
+type="local"
+href="ShanghaiTech-CS101-index.xml"
+addr="ShanghaiTech-CS101-index"
+title="Courses › Algorithm &amp; DS Fall 2024"><fr:link
+type="local"
+href="ShanghaiTech-Courses.xml"
+addr="ShanghaiTech-Courses"
+title="Courses">Courses</fr:link> › Algorithm &amp; DS Fall 2024</fr:link> › Lectures</fr:link> › No.15 : Graphs</fr:title><fr:taxon>Lecture</fr:taxon><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>8</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>249</fr:anchor><fr:addr
+type="user">concept-0002</fr:addr><fr:route>concept-0002.xml</fr:route><fr:title
+text="Graph">Graph</fr:title><fr:taxon>Definitions</fr:taxon><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>8</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>A <fr:strong>graph</fr:strong> is a collection of vertices and edges. An edge connects two vertices. We can represent a graph as <fr:tex
+display="inline"><![CDATA[G = (V, E)]]></fr:tex>, where <fr:tex
+display="inline"><![CDATA[V]]></fr:tex> is the set of vertices and <fr:tex
+display="inline"><![CDATA[E]]></fr:tex> is the set of edges.</fr:p><fr:p>A graph can be directed or undirected, edge <fr:tex
+display="inline"><![CDATA[(u, v)]]></fr:tex> in a directed graph has a direction from <fr:tex
+display="inline"><![CDATA[u]]></fr:tex> to <fr:tex
+display="inline"><![CDATA[v]]></fr:tex>, while in an undirected graph, the edge has no direction (can be denoted as <fr:tex
+display="inline"><![CDATA[\{u, v\}]]></fr:tex>).</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>250</fr:anchor><fr:addr
+type="user">concept-0003</fr:addr><fr:route>concept-0003.xml</fr:route><fr:title
+text="Degree (graph theory)">Degree (graph theory)</fr:title><fr:taxon>Definitions</fr:taxon><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>8</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>The <fr:strong>degree</fr:strong> of a vertex in a graph is the number of edges incident to the vertex.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>251</fr:anchor><fr:addr
+type="user">ShanghaiTech-CS101-0007</fr:addr><fr:route>ShanghaiTech-CS101-0007.xml</fr:route><fr:title
+text="Subgraph">Subgraph</fr:title><fr:taxon>Definitions</fr:taxon><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>8</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>A <fr:strong>subgraph</fr:strong> of a graph <fr:tex
+display="inline"><![CDATA[G = (V, E)]]></fr:tex> is a graph <fr:tex
+display="inline"><![CDATA[G' = (V', E')]]></fr:tex> such that <fr:tex
+display="inline"><![CDATA[V' \subseteq  V]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[E' \subseteq  E, \forall  (u, v) \in  E', u, v \in  V']]></fr:tex>.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>252</fr:anchor><fr:addr
+type="user">ShanghaiTech-CS101-0008</fr:addr><fr:route>ShanghaiTech-CS101-0008.xml</fr:route><fr:title
+text="Vertex-induced subgraph">Vertex-induced subgraph</fr:title><fr:taxon>Definitions</fr:taxon><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>8</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>A <fr:strong>vertex-induced subgraph</fr:strong> of a graph <fr:tex
+display="inline"><![CDATA[G = (V, E)]]></fr:tex> is a graph <fr:tex
+display="inline"><![CDATA[G' = (V', E')]]></fr:tex> such that <fr:tex
+display="inline"><![CDATA[V' \subseteq  V]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[E' = \{(u, v) \in  E \mid  u, v \in  V'\}]]></fr:tex>.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>253</fr:anchor><fr:addr
+type="user">ShanghaiTech-CS101-0009</fr:addr><fr:route>ShanghaiTech-CS101-0009.xml</fr:route><fr:title
+text="Path (graph theory)">Path (graph theory)</fr:title><fr:taxon>Definitions</fr:taxon><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>8</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>A <fr:strong>path</fr:strong> in a graph is a sequence of vertices <fr:tex
+display="inline"><![CDATA[v_1, v_2, \ldots , v_k]]></fr:tex> such that <fr:tex
+display="inline"><![CDATA[(v_i, v_{i+1})]]></fr:tex> is an edge for all <fr:tex
+display="inline"><![CDATA[1 \leq  i < k]]></fr:tex>. The length of a path is the number of edges in the path.</fr:p><fr:p><fr:strong>Derivations</fr:strong>:
+  <fr:ul><fr:li>Simple path: A path with no repeated vertices.</fr:li>
+    <fr:li>Cycle: A path with the same start and end vertices.</fr:li>
+    <fr:li>Simple Cycle: A cycle with no repeated vertices except the start and end vertices.</fr:li>
+    <fr:li>Path in a graph with weights: the length of a path is the sum of the weights of the edges in the path.</fr:li></fr:ul></fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:p>Here are the methods to represent the graph:</fr:p><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>254</fr:anchor><fr:addr
+type="user">ShanghaiTech-CS101-000A</fr:addr><fr:route>ShanghaiTech-CS101-000A.xml</fr:route><fr:title
+text="Binary-relation list">Binary-relation list</fr:title><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>8</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p><fr:strong>Binary-relation list</fr:strong> is an implementation of a graph. It stores all the edges in a list. Each edge is a pair of vertices.</fr:p><fr:ul><fr:li>Space complexity: <fr:tex
+display="inline"><![CDATA[\Theta (|E|)]]></fr:tex></fr:li>
+  <fr:li>Time complexity: <fr:tex
+display="inline"><![CDATA[\Theta (|E|)]]></fr:tex></fr:li></fr:ul></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>255</fr:anchor><fr:addr
+type="user">ShanghaiTech-CS101-000B</fr:addr><fr:route>ShanghaiTech-CS101-000B.xml</fr:route><fr:title
+text="Adjacency Matrix">Adjacency Matrix</fr:title><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>8</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p><fr:strong>Adjacency matrix</fr:strong> is an implementation of a graph. It uses a matrix to represent the connections between vertices. If <fr:tex
+display="inline"><![CDATA[(i, j) \in  E]]></fr:tex>, then <fr:tex
+display="inline"><![CDATA[A_{ij} = 1]]></fr:tex>, otherwise <fr:tex
+display="inline"><![CDATA[A_{ij} = 0]]></fr:tex>.</fr:p><fr:ul><fr:li>Space complexity: <fr:tex
+display="inline"><![CDATA[\Theta (|V|^2)]]></fr:tex></fr:li>
+  <fr:li>Time complexity to check if two vertices are connected: <fr:tex
+display="inline"><![CDATA[\Omicron (1)]]></fr:tex></fr:li>
+  <fr:li>Time complexity to check all neighbors of a vertex: <fr:tex
+display="inline"><![CDATA[\Theta (|V|)]]></fr:tex></fr:li></fr:ul></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>256</fr:anchor><fr:addr
+type="user">ShanghaiTech-CS101-000C</fr:addr><fr:route>ShanghaiTech-CS101-000C.xml</fr:route><fr:title
+text="Adjacency List">Adjacency List</fr:title><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>8</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p><fr:strong>Adjacency list</fr:strong> is an implementation of a graph. Each vertex has a list of its neighbors. If <fr:tex
+display="inline"><![CDATA[(i, j) \in  E]]></fr:tex>, then <fr:tex
+display="inline"><![CDATA[j]]></fr:tex> is in the list of <fr:tex
+display="inline"><![CDATA[i]]></fr:tex>.</fr:p><fr:ul><fr:li>Space complexity: <fr:tex
+display="inline"><![CDATA[\Theta (|V| + |E|)]]></fr:tex></fr:li>
+  <fr:li>Time complexity to check if two vertices are connected: <fr:tex
+display="inline"><![CDATA[\Theta (|V|)]]></fr:tex></fr:li>
+  <fr:li>Time complexity to check all neighbors of a vertex: <fr:tex
+display="inline"><![CDATA[\Theta (\text {degree}(v))]]></fr:tex></fr:li></fr:ul></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>
