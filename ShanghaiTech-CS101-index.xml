@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="default.xsl"?>
+<fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="true"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>247</fr:anchor><fr:addr
+type="user">ShanghaiTech-CS101-index</fr:addr><fr:route>ShanghaiTech-CS101-index.xml</fr:route><fr:title
+text="Algorithm &amp; DS Fall 2024">Algorithm &amp; DS Fall 2024</fr:title><fr:taxon>Course</fr:taxon><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>7</fr:day></fr:date><fr:authors /><fr:meta
+name="external">https://i-techx.github.io/iTechX/courses?course_code=CS101</fr:meta></fr:frontmatter><fr:mainmatter><fr:p>test.</fr:p></fr:mainmatter><fr:backmatter><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:title
+text="Context">Context</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>248</fr:anchor><fr:addr
+type="user">ShanghaiTech-Courses</fr:addr><fr:route>ShanghaiTech-Courses.xml</fr:route><fr:title
+text="Thought Cabinet › Courses"><fr:link
+type="local"
+href="index.xml"
+addr="index"
+title="Thought Cabinet">Thought Cabinet</fr:link> › Courses</fr:title><fr:authors><fr:author><fr:link
+type="local"
+href="astinita.xml"
+addr="astinita"
+title="Hengyu Ai">Hengyu Ai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>250</fr:anchor><fr:addr
+type="user">ShanghaiTech-CS101-index</fr:addr><fr:route>ShanghaiTech-CS101-index.xml</fr:route><fr:title
+text="Algorithm &amp; DS Fall 2024">Algorithm &amp; DS Fall 2024</fr:title><fr:taxon>Course</fr:taxon><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>7</fr:day></fr:date><fr:authors /><fr:meta
+name="external">https://i-techx.github.io/iTechX/courses?course_code=CS101</fr:meta></fr:frontmatter><fr:mainmatter><fr:p>test.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>
