@@ -1,11 +1,26 @@
 
-\title{Hello, World!}
+\title{Thought Cabinet}
 \p{
-  Welcome to your first tree! This tree is the root of your forest.
+  This is a simple collection of
   \ul{
-    \li{[Build and view your forest for the first time](http://www.jonmsterling.com/jms-007D.xml)}
-    \li{[Overview of the Forester markup language](http://www.jonmsterling.com/jms-007N.xml)}
-    \li{[Creating new trees](http://www.jonmsterling.com/jms-007H.xml)}
-    \li{[Creating your personal biographical tree](http://www.jonmsterling.com/jms-007K.xml)}
+    \li{Interesting things I heard about (collect them to deal with "citation needed")}
+    \li{Some notes on course content/course project/books.}
+    \li{Other random thoughts from my brain.}
+  }
+
+  This website is a [“forest”](https://www.jonmsterling.com/foreign-forester-tfmt-000V.xml) created using the [Forester](https://www.jonmsterling.com/foreign-forester-index.xml) tool. To navigate this forest, press \code{Ctrl + K}.
+
+  The phrase \em{Thought Cabinet} is from the game [Disco Elysium](https://store.steampowered.com/app/632470/Disco_Elysium__The_Final_Cut/).
+
+  \put\transclude/numbered{false}
+  \scope{
+    \transclude{astinita}
+  }
+
+  \put\transclude/expanded{false}
+
+  \scope{
+    \put\transclude/title{Courses}
+    \transclude{ShanghaiTech-Courses}
   }
 }

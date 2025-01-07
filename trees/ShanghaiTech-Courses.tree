@@ -1,0 +1,8 @@
+\title{teaching}
+\parent{index}
+\author{astinita}
+
+\put\transclude/numbered{false}
+\put\transclude/metadata{true}
+
+\transclude{ShanghaiTech-CS101-index}
