@@ -27,6 +27,14 @@
   \<html:hr>{}
 }
 
+\def\codem[body]{
+  \pre{\code{\body}}
+}
+
+\def\codehsk[body]{
+  \pre{\<html:code>[class]{"language-haskell"}{\body}}
+}
+
 \alloc\base/tex-preamble
 
 \def\texfig[~body]{
