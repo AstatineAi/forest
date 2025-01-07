@@ -59,6 +59,10 @@ jobs:
       - name: Build with Forester
         run: opam exec -- forester build forest.toml
 
+      - name: Setup upterm session
+        if: failure()
+        uses: lhotari/action-upterm@v1
+      
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         if: github.ref == 'refs/heads/main'
