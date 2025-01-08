@@ -1,0 +1,40 @@
+\date{2025-01-08}
+\title{Essence, Reductionism and Abstraction Leak}
+\author{astinita}
+\tag{ideas}
+
+\p{
+  Consider this question: To what extent can we say that the essence of one thing #{x} is almost another thing #{y}?
+}
+
+\p{
+  In algebra, we have:
+}
+
+\transclude{concept-0001}
+
+\p{
+  Maybe we can say that #{x} and #{y} share the same essence if and only if there exists an equivalence relation #{\operatorname{R}}, such that #{x \operatorname{R} y}.
+}
+
+\p{
+  Under this definition, we can find some interesting examples. For instance, Dijkstra's algorithm and Prim's algorithm both find a \em{minimum} among the un-visited stuff, and Dijkstra's algorithm is an A* graph search with heuristic function #{h(v) = 0}.
+}
+
+\p{
+  However, it's not always to break concepts down to \em{essence}, especially we can't definitely say that everything has an essence.
+}
+
+\p{
+  From the perspective of computability, Dijkstra's algorithm is a turing machine that always halts, or some extremely complex lambda calculus terms that always reduces to a normal form. From the perspective of implementation and hardware, it's a collection of instructions that can be executed.
+}
+
+\p{
+  这种“回归本质”，或者说，还原主义的思维方式在理工科同学中并不少见，但是人心不足蛇吞象，尝试用本质描述一切就像是把大一统理论放在目标列表的第一项，总想着一口吃下整个思维过程。
+}
+
+\p{
+  It's unreasonable to conclude everything by assigning an essence to it. The context matters.
+}
+
+\transclude{concept-0004}

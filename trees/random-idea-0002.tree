@@ -1,0 +1,37 @@
+\date{2025-01-08}
+\title{A "Not Very Deep" Insight}
+\author{astinita}
+\tag{ideas}
+
+\p{
+  在线性代数里面我们已经理解了为什么 Gauss 消元/ Gauss-Jordan 消元就是：
+  \ul{
+    \li{LU 分解}
+    \li{解线性方程组}
+    \li{求逆矩阵}
+    \li{求行列式}
+  }
+}
+
+\p{
+  在算法课上我们了解了 Floyd-Warshall 算法就是传递闭包（的一个实现），而邻接矩阵的 #{k} 次幂代表了节点之间长度恰好为 #{k} 的路径的数量。
+}
+
+\p{
+  如果定义一些新的 "product"，Folyd-Warshall 也是一种矩阵乘法。
+}
+
+\p{
+  如果考虑其他“输入”和结果的集合，是否可以使用同一种描述来表示：
+  \ul{
+    \li{LU 分解}
+    \li{解线性方程组}
+    \li{求逆矩阵}
+    \li{求行列式}
+    \li{Floyd-Warshall 算法}
+    \li{传递闭包}
+    \li{DFA & NFA}
+    \li{Markov 链}
+    \li{齐次线性递推}
+  }
+}

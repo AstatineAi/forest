@@ -1,0 +1,14 @@
+\date{2025-01-09}
+\title{Abstraction Leak}
+
+\p{
+  \strong{Abstraction} is crucial for understanding complex systems. It is another layer above the concrete details. Ideally, we can order knowledge in a top-down approach, starting from the most abstract concepts and then diving into the details.
+}
+
+\p{
+  The not-so-ideal reality is that \strong{asbtractions do not always have "proper generality"}. This means that in some cases we must deal with the details which the abstraction was supposed to hide. This is what we call an \strong{abstraction leak}.
+}
+
+\p{
+  Abstraction leaks are not necessarily related to the implementation or hardware details. If an abstraction exagerates the generality of a concept, other things based on it may not work as expected.
+}

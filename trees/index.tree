@@ -1,5 +1,7 @@
-
 \title{Thought Cabinet}
+
+\import{base-macros}
+
 \p{
   This is a simple collection of
   \ul{
@@ -17,13 +19,30 @@
   The phrase \em{Thought Cabinet} is from the game [Disco Elysium](https://store.steampowered.com/app/632470/Disco_Elysium__The_Final_Cut/).
 }
 
+\p{
+  这个网站是一个由 [Forester](https://www.jonmsterling.com/foreign-forester-index.xml) 工具构建的 [“森林”](https://www.jonmsterling.com/foreign-forester-tfmt-000V.xml)。按 \code{Ctrl + K} 浏览全部内容的目录 & 进行搜索。
+}
+
+\p{
+  网站的名字 \em{Thought Cabinet} 来自游戏 [Disco Elysium](https://store.steampowered.com/app/632470/Disco_Elysium__The_Final_Cut/) 中的角色成长系统（之一）\em{思维阁}。
+}
+
 \put\transclude/numbered{false}
 
 \scope{
   \transclude{astinita}
 }
 
+\hr
+
 \put\transclude/expanded{false}
+
+\subtree{
+ \title{Random Ideas}
+ \query{
+  \open\query\tag{ideas}
+ }
+}
 
 \scope{
   \put\transclude/title{Courses}
