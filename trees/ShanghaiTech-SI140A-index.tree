@@ -1,0 +1,15 @@
+\date{2025-01-08}
+\title{Probability & Statistics for EECS Fall 2024}
+\taxon{course}
+\meta{external}{https://i-techx.github.io/iTechX/courses?course_code=SI140A}
+\parent{ShanghaiTech-Courses}
+\import{base-macros}
+
+\put\transclude/numbered{true}
+\put\transclude/expanded{false}
+
+\transclude{ShanghaiTech-SI140A-Concepts}
+
+\hr
+
+\transclude{ShanghaiTech-SI140A-Lectures}

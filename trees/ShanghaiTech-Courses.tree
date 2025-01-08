@@ -5,4 +5,10 @@
 \put\transclude/metadata{true}
 \put\transclude/expanded{false}
 
-[Algorithm & Data Structures Fall 2024](ShanghaiTech-CS101-index)
+\ul{
+
+\li{ [Algorithm & Data Structures Fall 2024](ShanghaiTech-CS101-index) }
+
+\li{ [Probability & Statistics for EECS Fall 2024](ShanghaiTech-SI140A-index) }
+
+}
