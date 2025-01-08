@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="default.xsl"?>
+<fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="true"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>302</fr:anchor><fr:addr
+type="user">random-idea-0001</fr:addr><fr:route>random-idea-0001.xml</fr:route><fr:title
+text="Essence, Reductionism and Abstraction Leak">Essence, Reductionism and Abstraction Leak</fr:title><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>8</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="astinita.xml"
+addr="astinita"
+title="Hengyu Ai">Hengyu Ai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>Consider this question: To what extent can we say that the essence of one thing <fr:tex
+display="inline"><![CDATA[x]]></fr:tex> is almost another thing <fr:tex
+display="inline"><![CDATA[y]]></fr:tex>?</fr:p><fr:p>In algebra, we have:</fr:p><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>251</fr:anchor><fr:addr
+type="user">concept-0001</fr:addr><fr:route>concept-0001.xml</fr:route><fr:title
+text="Equivalence Relation">Equivalence Relation</fr:title><fr:taxon>Definitions</fr:taxon><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>8</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>An <fr:strong>equivalence relation（等价关系）</fr:strong> is a binary relation <fr:tex
+display="inline"><![CDATA[\equiv ]]></fr:tex> on a set <fr:tex
+display="inline"><![CDATA[S]]></fr:tex>, such that:
+
+  <fr:ul><fr:li>reflexive: for all <fr:tex
+display="inline"><![CDATA[x : S]]></fr:tex>, <fr:tex
+display="inline"><![CDATA[x \equiv  x]]></fr:tex></fr:li>
+    <fr:li>symmetric: for all <fr:tex
+display="inline"><![CDATA[x, y : S]]></fr:tex>, if <fr:tex
+display="inline"><![CDATA[x \equiv  y]]></fr:tex> then <fr:tex
+display="inline"><![CDATA[y \equiv  x]]></fr:tex></fr:li>
+    <fr:li>transitive: for all <fr:tex
+display="inline"><![CDATA[x, y, z : S]]></fr:tex>, if <fr:tex
+display="inline"><![CDATA[x \equiv  y]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[y \equiv  z]]></fr:tex> then <fr:tex
+display="inline"><![CDATA[x \equiv  z]]></fr:tex></fr:li></fr:ul></fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:p>Maybe we can say that <fr:tex
+display="inline"><![CDATA[x]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[y]]></fr:tex> share the same essence if and only if there exists an equivalence relation <fr:tex
+display="inline"><![CDATA[\operatorname {R}]]></fr:tex>, such that <fr:tex
+display="inline"><![CDATA[x \operatorname {R} y]]></fr:tex>.</fr:p><fr:p>Under this definition, we can find some interesting examples. For instance, Dijkstra's algorithm and Prim's algorithm both find a <fr:em>minimum</fr:em> among the un-visited stuff, and Dijkstra's algorithm is an A* graph search with heuristic function <fr:tex
+display="inline"><![CDATA[h(v) = 0]]></fr:tex>.</fr:p><fr:p>However, it's not always to break concepts down to <fr:em>essence</fr:em>, especially we can't definitely say that everything has an essence.</fr:p><fr:p>From the perspective of computability, Dijkstra's algorithm is a turing machine that always halts, or some extremely complex lambda calculus terms that always reduces to a normal form. From the perspective of implementation and hardware, it's a collection of instructions that can be executed.</fr:p><fr:p>这种“回归本质”，或者说，还原主义的思维方式在理工科同学中并不少见，但是人心不足蛇吞象，尝试用本质描述一切就像是把大一统理论放在目标列表的第一项，总想着一口吃下整个思维过程。</fr:p><fr:p>It's unreasonable to conclude everything by assigning an essence to it. The context matters.</fr:p><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>252</fr:anchor><fr:addr
+type="user">concept-0004</fr:addr><fr:route>concept-0004.xml</fr:route><fr:title
+text="Abstraction Leak">Abstraction Leak</fr:title><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>9</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p><fr:strong>Abstraction</fr:strong> is crucial for understanding complex systems. It is another layer above the concrete details. Ideally, we can order knowledge in a top-down approach, starting from the most abstract concepts and then diving into the details.</fr:p><fr:p>The not-so-ideal reality is that <fr:strong>asbtractions do not always have "proper generality"</fr:strong>. This means that in some cases we must deal with the details which the abstraction was supposed to hide. This is what we call an <fr:strong>abstraction leak</fr:strong>.</fr:p><fr:p>Abstraction leaks are not necessarily related to the implementation or hardware details. If an abstraction exagerates the generality of a concept, other things based on it may not work as expected.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree>

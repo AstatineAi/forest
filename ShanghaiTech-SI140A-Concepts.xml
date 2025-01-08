@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="default.xsl"?>
+<fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="true"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>288</fr:anchor><fr:addr
+type="user">ShanghaiTech-SI140A-Concepts</fr:addr><fr:route>ShanghaiTech-SI140A-Concepts.xml</fr:route><fr:title
+text="Courses › Probability &amp; Statistics for EECS Fall 2024 › Concepts and definitions"><fr:link
+type="local"
+href="ShanghaiTech-SI140A-index.xml"
+addr="ShanghaiTech-SI140A-index"
+title="Courses › Probability &amp; Statistics for EECS Fall 2024"><fr:link
+type="local"
+href="ShanghaiTech-Courses.xml"
+addr="ShanghaiTech-Courses"
+title="Courses">Courses</fr:link> › Probability &amp; Statistics for EECS Fall 2024</fr:link> › Concepts and definitions</fr:title><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>8</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter /><fr:backmatter><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:title
+text="Context">Context</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>289</fr:anchor><fr:addr
+type="user">ShanghaiTech-SI140A-index</fr:addr><fr:route>ShanghaiTech-SI140A-index.xml</fr:route><fr:title
+text="Courses › Probability &amp; Statistics for EECS Fall 2024"><fr:link
+type="local"
+href="ShanghaiTech-Courses.xml"
+addr="ShanghaiTech-Courses"
+title="Courses">Courses</fr:link> › Probability &amp; Statistics for EECS Fall 2024</fr:title><fr:taxon>Course</fr:taxon><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>8</fr:day></fr:date><fr:authors /><fr:meta
+name="external">https://i-techx.github.io/iTechX/courses?course_code=SI140A</fr:meta></fr:frontmatter><fr:mainmatter><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>290</fr:anchor><fr:addr
+type="user">ShanghaiTech-SI140A-Concepts</fr:addr><fr:route>ShanghaiTech-SI140A-Concepts.xml</fr:route><fr:title
+text="Concepts and definitions">Concepts and definitions</fr:title><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>8</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter /><fr:backmatter /></fr:tree>
+  <html:hr
+xmlns:html="http://www.w3.org/1999/xhtml" />
+<fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>291</fr:anchor><fr:addr
+type="user">ShanghaiTech-SI140A-Lectures</fr:addr><fr:route>ShanghaiTech-SI140A-Lectures.xml</fr:route><fr:title
+text="Lectures">Lectures</fr:title><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>8</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter /><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>
