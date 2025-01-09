@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="default.xsl"?>
+<fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="true"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>448</fr:anchor><fr:addr
+type="user">ShanghaiTech-SI140A-000R</fr:addr><fr:route>ShanghaiTech-SI140A-000R.xml</fr:route><fr:title
+text="Properties of Covariance">Properties of Covariance</fr:title><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>10</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p><fr:link
+type="local"
+href="ShanghaiTech-SI140A-000Q.xml"
+addr="ShanghaiTech-SI140A-000Q"
+title="Covariance">Definotion of covariance</fr:link></fr:p><fr:ul><fr:li><fr:tex
+display="inline"><![CDATA[\operatorname {Cov}(X, X) = \operatorname {Var}(X)]]></fr:tex></fr:li>
+  <fr:li><fr:tex
+display="inline"><![CDATA[\operatorname {Cov}(X, Y) = \operatorname {Cov}(Y, X)]]></fr:tex></fr:li>
+  <fr:li><fr:tex
+display="inline"><![CDATA[\operatorname {Cov}(X, c) = 0]]></fr:tex> for any constant <fr:tex
+display="inline"><![CDATA[c]]></fr:tex></fr:li>
+  <fr:li><fr:tex
+display="inline"><![CDATA[\operatorname {Cov}(c X, Y) = c \operatorname {Cov}(X, Y)]]></fr:tex> for any constant <fr:tex
+display="inline"><![CDATA[c]]></fr:tex></fr:li>
+  <fr:li><fr:tex
+display="inline"><![CDATA[\operatorname {Cov}(X + Y, Z) = \operatorname {Cov}(X, Z) + \operatorname {Cov}(Y, Z)]]></fr:tex></fr:li>
+  <fr:li><fr:tex
+display="inline"><![CDATA[\operatorname {Var}(X + Y) = \operatorname {Var}(X) + \operatorname {Var}(Y) + 2 \operatorname {Cov}(X, Y)]]></fr:tex></fr:li></fr:ul></fr:mainmatter><fr:backmatter><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:title
+text="Context">Context</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>449</fr:anchor><fr:addr
+type="user">ShanghaiTech-SI140A-000E</fr:addr><fr:route>ShanghaiTech-SI140A-000E.xml</fr:route><fr:title
+text="Courses › Probability &amp; Statistics for EECS Fall 2024 › Lectures › No. 6: Joint Distribution"><fr:link
+type="local"
+href="ShanghaiTech-SI140A-Lectures.xml"
+addr="ShanghaiTech-SI140A-Lectures"
+title="Courses › Probability &amp; Statistics for EECS Fall 2024 › Lectures"><fr:link
+type="local"
+href="ShanghaiTech-SI140A-index.xml"
+addr="ShanghaiTech-SI140A-index"
+title="Courses › Probability &amp; Statistics for EECS Fall 2024"><fr:link
+type="local"
+href="ShanghaiTech-Courses.xml"
+addr="ShanghaiTech-Courses"
+title="Courses">Courses</fr:link> › Probability &amp; Statistics for EECS Fall 2024</fr:link> › Lectures</fr:link> › No. 6: Joint Distribution</fr:title><fr:taxon>Lecture</fr:taxon><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>10</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>250</fr:anchor><fr:addr
+type="user">ShanghaiTech-SI140A-000F</fr:addr><fr:route>ShanghaiTech-SI140A-000F.xml</fr:route><fr:title
+text="Joint CDF">Joint CDF</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>10</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>The <fr:strong>joint cumulative distribution function</fr:strong> (CDF) of two random variables <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[Y]]></fr:tex> is defined as
+
+  <fr:tex
+display="block"><![CDATA[     F_{X, Y}(x, y) = P(X \leq  x, Y \leq  y)   ]]></fr:tex>
+
+  This can be extended to multiple random variables.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>251</fr:anchor><fr:addr
+type="user">ShanghaiTech-SI140A-000G</fr:addr><fr:route>ShanghaiTech-SI140A-000G.xml</fr:route><fr:title
+text="Joint PMF">Joint PMF</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>10</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>The <fr:strong>Joint PMF</fr:strong> of two discrete random variables <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> is defined as
+
+  <fr:tex
+display="block"><![CDATA[     p_{X,Y}(x,y) = \Pr (X = x, Y = y)   ]]></fr:tex>
+
+  Joint PMF of multiple random variables can be defined similarly.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>252</fr:anchor><fr:addr
+type="user">ShanghaiTech-SI140A-000H</fr:addr><fr:route>ShanghaiTech-SI140A-000H.xml</fr:route><fr:title
+text="Marginal PMF">Marginal PMF</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>10</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>For discrete r.v. <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[Y]]></fr:tex>, the marginal PMF of <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> is
+
+  <fr:tex
+display="block"><![CDATA[     P(X = x) = \sum _y P(X = x, Y = y)   ]]></fr:tex></fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>253</fr:anchor><fr:addr
+type="user">ShanghaiTech-SI140A-000I</fr:addr><fr:route>ShanghaiTech-SI140A-000I.xml</fr:route><fr:title
+text="Conditional PMF">Conditional PMF</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>10</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>For discrete r.v. <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[Y]]></fr:tex>, the conditional PMF of <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> given <fr:tex
+display="inline"><![CDATA[Y = y]]></fr:tex> is
+
+  <fr:tex
+display="block"><![CDATA[     P_{X \mid  Y}(x \mid  y) = P(X = x \mid  Y = y) = \frac {P(X = x, Y = y)}{P(Y = y)}   ]]></fr:tex></fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>254</fr:anchor><fr:addr
+type="user">ShanghaiTech-SI140A-000J</fr:addr><fr:route>ShanghaiTech-SI140A-000J.xml</fr:route><fr:title
+text="Independence of Discrete R.V.s">Independence of Discrete R.V.s</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>10</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Discrete r.v. <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[Y]]></fr:tex> are <fr:strong>independent</fr:strong> if
+  <fr:tex
+display="block"><![CDATA[     F_{X, Y}(x, y) = F_X(x) F_Y(y)   ]]></fr:tex>
+  and it is also equivalent to the condition:
+  <fr:tex
+display="block"><![CDATA[     P(Y = y \mid  X = x) = P(Y = y)   ]]></fr:tex>
+  for all <fr:tex
+display="inline"><![CDATA[y]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[x]]></fr:tex> s.t. <fr:tex
+display="inline"><![CDATA[P(X = x) > 0]]></fr:tex>.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>255</fr:anchor><fr:addr
+type="user">ShanghaiTech-SI140A-000K</fr:addr><fr:route>ShanghaiTech-SI140A-000K.xml</fr:route><fr:title
+text="Related Theorem">Related Theorem</fr:title><fr:taxon>Theorem</fr:taxon><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>10</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>If <fr:tex
+display="inline"><![CDATA[X \sim  \operatorname {Pois}(\lambda  p)]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[Y \sim  \operatorname {Pois}(\lambda  (1 - p))]]></fr:tex> are independent, then <fr:tex
+display="inline"><![CDATA[X + Y \sim  \operatorname {Pois}(\lambda )]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[X \mid  (X + Y = n) \sim  \operatorname {Bin}(n, p)]]></fr:tex>.</fr:p><fr:p>If <fr:tex
+display="inline"><![CDATA[N \sim  \operatorname {Pois}(\lambda )]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[X \mid  N = n \sim  \operatorname {Bin}(n, p)]]></fr:tex>, then <fr:tex
+display="inline"><![CDATA[X \sim  \operatorname {Pois}(\lambda  p)]]></fr:tex>, <fr:tex
+display="inline"><![CDATA[Y = N - X \sim  \operatorname {Pois}(\lambda  (1 - p))]]></fr:tex>, and <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[Y]]></fr:tex> are independent.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>256</fr:anchor><fr:addr
+type="user">ShanghaiTech-SI140A-000L</fr:addr><fr:route>ShanghaiTech-SI140A-000L.xml</fr:route><fr:title
+text="Joint PDF">Joint PDF</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>10</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>If <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[Y]]></fr:tex> are continuous with joint CDF <fr:tex
+display="inline"><![CDATA[F_{X, Y}]]></fr:tex>, then the joint PDF of <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[Y]]></fr:tex> is
+  
+  <fr:tex
+display="block"><![CDATA[     f_{X, Y}(x, y) = \frac {\partial ^2 F_{X, Y}}{\partial  x \partial  y}   ]]></fr:tex></fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>257</fr:anchor><fr:addr
+type="user">ShanghaiTech-SI140A-000M</fr:addr><fr:route>ShanghaiTech-SI140A-000M.xml</fr:route><fr:title
+text="Marginal PDF">Marginal PDF</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>10</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>For continuous random variables <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[Y]]></fr:tex>, the <fr:strong>marginal probability density function</fr:strong> of <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> is
+
+  <fr:tex
+display="block"><![CDATA[     f_X(x) = \int _{-\infty }^\infty  f_{X, Y}(x, y) \; \mathrm {d}y   ]]></fr:tex></fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>258</fr:anchor><fr:addr
+type="user">ShanghaiTech-SI140A-000N</fr:addr><fr:route>ShanghaiTech-SI140A-000N.xml</fr:route><fr:title
+text="Conditional PDF">Conditional PDF</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>10</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>For continuous random variables <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[Y]]></fr:tex>, the <fr:strong>conditional probability density function</fr:strong> of <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> given <fr:tex
+display="inline"><![CDATA[Y = y]]></fr:tex> is
+
+  <fr:tex
+display="block"><![CDATA[     f_{X \mid  Y}(x \mid  y) = \frac {f_{X, Y}(x, y)}{f_Y(y)}   ]]></fr:tex></fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>259</fr:anchor><fr:addr
+type="user">ShanghaiTech-SI140A-000O</fr:addr><fr:route>ShanghaiTech-SI140A-000O.xml</fr:route><fr:title
+text="Independence of Continuous R.V.s">Independence of Continuous R.V.s</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>10</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Continuous random variables <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[Y]]></fr:tex> are <fr:strong>independent</fr:strong> if:
+  
+  <fr:tex
+display="block"><![CDATA[     f_{X, Y}(x, y) = f_X(x) f_Y(y)   ]]></fr:tex>
+
+  It is also equivalent to:
+
+  <fr:tex
+display="block"><![CDATA[     f_{X \mid  Y}(x \mid  y) = f_X(x) \quad  \text {and} \quad  f_{Y \mid  X}(y \mid  x) = f_Y(y)   ]]></fr:tex></fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>260</fr:anchor><fr:addr
+type="user">ShanghaiTech-SI140A-000P</fr:addr><fr:route>ShanghaiTech-SI140A-000P.xml</fr:route><fr:title
+text="2D LOTUS">2D LOTUS</fr:title><fr:taxon>Theorem</fr:taxon><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>10</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[Y]]></fr:tex> be two random variables, <fr:tex
+display="inline"><![CDATA[g: \mathbb {R}^2 \mapsto  \mathbb {R}]]></fr:tex>, then:
+
+  <fr:tex
+display="block"><![CDATA[     E[g(X, Y)] = \int _{-\infty }^{+\infty } \int _{-\infty }^{+\infty } g(x, y) f_{X, Y}(x, y) \, \mathrm {d}x \, \mathrm {d}y   ]]></fr:tex></fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>261</fr:anchor><fr:addr
+type="user">ShanghaiTech-SI140A-000Q</fr:addr><fr:route>ShanghaiTech-SI140A-000Q.xml</fr:route><fr:title
+text="Covariance">Covariance</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>10</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>The <fr:strong>covariance</fr:strong> of two random variables <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[Y]]></fr:tex> is defined as
+
+  <fr:tex
+display="block"><![CDATA[     \operatorname {Cov} (X, Y) = E ((X - E(X)) (Y - E(Y))) = E(XY) - E(X) E(Y)   ]]></fr:tex></fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>262</fr:anchor><fr:addr
+type="user">ShanghaiTech-SI140A-000R</fr:addr><fr:route>ShanghaiTech-SI140A-000R.xml</fr:route><fr:title
+text="Properties of Covariance">Properties of Covariance</fr:title><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>10</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p><fr:link
+type="local"
+href="ShanghaiTech-SI140A-000Q.xml"
+addr="ShanghaiTech-SI140A-000Q"
+title="Covariance">Definotion of covariance</fr:link></fr:p><fr:ul><fr:li><fr:tex
+display="inline"><![CDATA[\operatorname {Cov}(X, X) = \operatorname {Var}(X)]]></fr:tex></fr:li>
+  <fr:li><fr:tex
+display="inline"><![CDATA[\operatorname {Cov}(X, Y) = \operatorname {Cov}(Y, X)]]></fr:tex></fr:li>
+  <fr:li><fr:tex
+display="inline"><![CDATA[\operatorname {Cov}(X, c) = 0]]></fr:tex> for any constant <fr:tex
+display="inline"><![CDATA[c]]></fr:tex></fr:li>
+  <fr:li><fr:tex
+display="inline"><![CDATA[\operatorname {Cov}(c X, Y) = c \operatorname {Cov}(X, Y)]]></fr:tex> for any constant <fr:tex
+display="inline"><![CDATA[c]]></fr:tex></fr:li>
+  <fr:li><fr:tex
+display="inline"><![CDATA[\operatorname {Cov}(X + Y, Z) = \operatorname {Cov}(X, Z) + \operatorname {Cov}(Y, Z)]]></fr:tex></fr:li>
+  <fr:li><fr:tex
+display="inline"><![CDATA[\operatorname {Var}(X + Y) = \operatorname {Var}(X) + \operatorname {Var}(Y) + 2 \operatorname {Cov}(X, Y)]]></fr:tex></fr:li></fr:ul></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>263</fr:anchor><fr:addr
+type="user">ShanghaiTech-SI140A-000S</fr:addr><fr:route>ShanghaiTech-SI140A-000S.xml</fr:route><fr:title
+text="Correlation">Correlation</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>10</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>The <fr:strong>correlation</fr:strong> between two random variables <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[Y]]></fr:tex> is
+
+  <fr:tex
+display="block"><![CDATA[     \operatorname {Corr} (X, Y) = \frac {\operatorname {Cov} (X, Y)}{\sqrt {\operatorname {Var} (X) \operatorname {Var} (Y)}}   ]]></fr:tex></fr:p><fr:p>For any two random variables <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[Y]]></fr:tex>:
+
+  <fr:tex
+display="block"><![CDATA[     -1 \leq  \operatorname {Corr} (X, Y) \leq  1   ]]></fr:tex>
+
+  If <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[Y]]></fr:tex> are independent, then <fr:tex
+display="inline"><![CDATA[\operatorname {Corr} (X, Y) = 0]]></fr:tex>.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>264</fr:anchor><fr:addr
+type="user">ShanghaiTech-SI140A-000T</fr:addr><fr:route>ShanghaiTech-SI140A-000T.xml</fr:route><fr:title
+text="Change of Variables">Change of Variables</fr:title><fr:taxon>Theorem</fr:taxon><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>10</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p><fr:strong>Case of one demension</fr:strong>: Let <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> be a continuous random variable with PDF <fr:tex
+display="inline"><![CDATA[f_X(x)]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[Y = g(X)]]></fr:tex> be a function of <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> with inverse <fr:tex
+display="inline"><![CDATA[X = g^{-1}(Y)]]></fr:tex>. Then the PDF of <fr:tex
+display="inline"><![CDATA[Y]]></fr:tex> is
+
+  <fr:tex
+display="block"><![CDATA[     f_Y(y) = f_X(g^{-1}(y)) \left | \frac {\mathrm {d}}{\mathrm {d}y} g^{-1}(y) \right |   ]]></fr:tex></fr:p><fr:p><fr:strong>Case of multiple dimensions</fr:strong>: 
+  
+  <fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>265</fr:anchor><fr:addr
+type="user">concept-0009</fr:addr><fr:route>concept-0009.xml</fr:route><fr:title
+text="Jacobian Matrix">Jacobian Matrix</fr:title><fr:taxon>Theorem</fr:taxon><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>10</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>If a function <fr:tex
+display="inline"><![CDATA[\boldsymbol {f}: \mathbb {R}^n \mapsto  \mathbb {R}^m]]></fr:tex> is differentiable at <fr:tex
+display="inline"><![CDATA[\boldsymbol {x} \in  \mathbb {R}^n]]></fr:tex>, then the Jacobian matrix of <fr:tex
+display="inline"><![CDATA[\boldsymbol {f}]]></fr:tex> at <fr:tex
+display="inline"><![CDATA[\boldsymbol {x}]]></fr:tex> is the best linear approximation of <fr:tex
+display="inline"><![CDATA[\boldsymbol {f}]]></fr:tex> at <fr:tex
+display="inline"><![CDATA[\boldsymbol {x}]]></fr:tex>. It is defined as
+
+  <fr:tex
+display="block"><![CDATA[     \frac {\partial  \boldsymbol {f}}{\partial  \boldsymbol {x}} =     \begin {bmatrix}       \frac {\partial  f_1}{\partial  x_1} & \cdots  & \frac {\partial  f_1}{\partial  x_n} \\       \vdots  & \ddots  & \vdots  \\       \frac {\partial  f_m}{\partial  x_1} & \cdots  & \frac {\partial  f_m}{\partial  x_n}     \end {bmatrix}   ]]></fr:tex></fr:p></fr:mainmatter><fr:backmatter /></fr:tree>
+
+  Let <fr:tex
+display="inline"><![CDATA[\boldsymbol {X}]]></fr:tex> be a continuous random vector with PDF <fr:tex
+display="inline"><![CDATA[f_{\boldsymbol {X}}(\boldsymbol {x})]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[\boldsymbol {Y} = \boldsymbol {g}(\boldsymbol {X})]]></fr:tex> be a function of <fr:tex
+display="inline"><![CDATA[\boldsymbol {X}]]></fr:tex> with inverse <fr:tex
+display="inline"><![CDATA[\boldsymbol {X} = \boldsymbol {g}^{-1}(\boldsymbol {Y})]]></fr:tex>. Then the PDF of <fr:tex
+display="inline"><![CDATA[\boldsymbol {Y}]]></fr:tex> is
+
+  <fr:tex
+display="block"><![CDATA[     f_{\boldsymbol {Y}}(\boldsymbol {y}) = f_{\boldsymbol {X}}(\boldsymbol {g}^{-1}(\boldsymbol {y})) \left | \det  \left ( \frac {\partial  \boldsymbol {g}^{-1}(\boldsymbol {y})}{\partial  \boldsymbol {y}} \right ) \right |   ]]></fr:tex></fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:title
+text="Related">Related</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>450</fr:anchor><fr:addr
+type="user">ShanghaiTech-SI140A-000Q</fr:addr><fr:route>ShanghaiTech-SI140A-000Q.xml</fr:route><fr:title
+text="Covariance">Covariance</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>10</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>The <fr:strong>covariance</fr:strong> of two random variables <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[Y]]></fr:tex> is defined as
+
+  <fr:tex
+display="block"><![CDATA[     \operatorname {Cov} (X, Y) = E ((X - E(X)) (Y - E(Y))) = E(XY) - E(X) E(Y)   ]]></fr:tex></fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>

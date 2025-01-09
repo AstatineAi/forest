@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="default.xsl"?>
+<fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="true"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>507</fr:anchor><fr:addr
+type="user">concept-0007</fr:addr><fr:route>concept-0007.xml</fr:route><fr:title
+text="Stirling Numbers of the Second Kind">Stirling Numbers of the Second Kind</fr:title><fr:taxon>Theorem</fr:taxon><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>9</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>The <fr:strong>Stirling number of the second kind</fr:strong> is the number of ways to partition a set of <fr:tex
+display="inline"><![CDATA[n]]></fr:tex> distinct elements into <fr:tex
+display="inline"><![CDATA[m]]></fr:tex> non-empty, non-overlapping, indistinguishable subsets. Denote it as <fr:tex
+display="inline"><![CDATA[S(n, m)]]></fr:tex> or <fr:tex
+display="inline"><![CDATA[\left \{ n \atop  m \right \}]]></fr:tex>.</fr:p><fr:p><fr:strong>Recurrence Relation</fr:strong>:
+
+  <fr:tex
+display="block"><![CDATA[     S(n, m) = mS(n - 1, m) + S(n - 1, m - 1)   ]]></fr:tex>
+
+  <fr:tex
+display="block"><![CDATA[     S(n, 0) = [n = 0]   ]]></fr:tex></fr:p><fr:p><fr:strong>General Formula</fr:strong>:
+
+  <fr:tex
+display="block"><![CDATA[     S(n, m) = \frac {1}{m!} \sum _{i = 0}^{m} (-1)^{m - i} \binom {m}{i} i^n   ]]></fr:tex></fr:p><fr:p><fr:strong>Mathematica Code</fr:strong>:
+
+  
+  <fr:pre><fr:code>StirlingS2[n, m]</fr:code></fr:pre></fr:p></fr:mainmatter><fr:backmatter><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:title
+text="Context">Context</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>508</fr:anchor><fr:addr
+type="user">concept-0006</fr:addr><fr:route>concept-0006.xml</fr:route><fr:title
+text="Twelvefold Way">Twelvefold Way</fr:title><fr:taxon>Theorem</fr:taxon><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>9</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[n]]></fr:tex> be the number of balls, and <fr:tex
+display="inline"><![CDATA[m]]></fr:tex> be the number of boxes. We are finding the number of ways to distribute the balls into the boxes.</fr:p><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>481</fr:anchor><fr:addr
+type="user">concept-0007</fr:addr><fr:route>concept-0007.xml</fr:route><fr:title
+text="Stirling Numbers of the Second Kind">Stirling Numbers of the Second Kind</fr:title><fr:taxon>Theorem</fr:taxon><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>9</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>The <fr:strong>Stirling number of the second kind</fr:strong> is the number of ways to partition a set of <fr:tex
+display="inline"><![CDATA[n]]></fr:tex> distinct elements into <fr:tex
+display="inline"><![CDATA[m]]></fr:tex> non-empty, non-overlapping, indistinguishable subsets. Denote it as <fr:tex
+display="inline"><![CDATA[S(n, m)]]></fr:tex> or <fr:tex
+display="inline"><![CDATA[\left \{ n \atop  m \right \}]]></fr:tex>.</fr:p><fr:p><fr:strong>Recurrence Relation</fr:strong>:
+
+  <fr:tex
+display="block"><![CDATA[     S(n, m) = mS(n - 1, m) + S(n - 1, m - 1)   ]]></fr:tex>
+
+  <fr:tex
+display="block"><![CDATA[     S(n, 0) = [n = 0]   ]]></fr:tex></fr:p><fr:p><fr:strong>General Formula</fr:strong>:
+
+  <fr:tex
+display="block"><![CDATA[     S(n, m) = \frac {1}{m!} \sum _{i = 0}^{m} (-1)^{m - i} \binom {m}{i} i^n   ]]></fr:tex></fr:p><fr:p><fr:strong>Mathematica Code</fr:strong>:
+
+  
+  <fr:pre><fr:code>StirlingS2[n, m]</fr:code></fr:pre></fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>482</fr:anchor><fr:addr
+type="user">concept-0008</fr:addr><fr:route>concept-0008.xml</fr:route><fr:title
+text="Integer Partition">Integer Partition</fr:title><fr:taxon>Theorem</fr:taxon><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>9</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Denote <fr:strong>number of partition</fr:strong> of <fr:tex
+display="inline"><![CDATA[n]]></fr:tex> into <fr:tex
+display="inline"><![CDATA[k]]></fr:tex> parts by <fr:tex
+display="inline"><![CDATA[p_k(n)]]></fr:tex>.</fr:p><fr:p>There is no convenient formula for the number <fr:tex
+display="inline"><![CDATA[p_k(n)]]></fr:tex>, but we have the following recursive formula:
+  <fr:tex
+display="block"><![CDATA[     p_k(n) = p_{k - 1}(n - 1) + p_k(n - k)   ]]></fr:tex>
+  <fr:tex
+display="block"><![CDATA[     p_k(n) = 0 \quad  \text {if} \quad  k > n   ]]></fr:tex></fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:p><fr:strong>Labelled Balls, Labelled Boxes</fr:strong>
+  <fr:ul><fr:li>unrestricted: <fr:tex
+display="inline"><![CDATA[m^n]]></fr:tex></fr:li>
+    <fr:li>as least 1 ball in each box: <fr:tex
+display="inline"><![CDATA[m!S(n, m)]]></fr:tex>, where <fr:tex
+display="inline"><![CDATA[S(n, m)]]></fr:tex> is the Stirling number of the second kind</fr:li>
+    <fr:li>at most 1 ball in each box: <fr:tex
+display="inline"><![CDATA[m^{\underline {n}} = m(m - 1) \cdots  (m - n + 1)]]></fr:tex></fr:li></fr:ul></fr:p><fr:p><fr:strong>Unlabelled Balls, Labelled Boxes</fr:strong>
+  <fr:ul><fr:li>unrestricted: <fr:tex
+display="inline"><![CDATA[\binom {n + m - 1}{n}]]></fr:tex></fr:li>
+    <fr:li>at least 1 ball in each box: <fr:tex
+display="inline"><![CDATA[\binom {n - 1}{m - 1}]]></fr:tex></fr:li>
+    <fr:li>at most 1 ball in each box: <fr:tex
+display="inline"><![CDATA[\binom {m}{n}]]></fr:tex></fr:li></fr:ul></fr:p><fr:p><fr:strong>Labelled Balls, Unlabelled Boxes</fr:strong>
+  <fr:ul><fr:li>unrestricted: <fr:tex
+display="inline"><![CDATA[\sum _{i = 1}^{m} S(n, i)]]></fr:tex></fr:li>
+    <fr:li>at least 1 ball in each box: <fr:tex
+display="inline"><![CDATA[S(n, m)]]></fr:tex></fr:li>
+    <fr:li>at most 1 ball in each box: <fr:tex
+display="inline"><![CDATA[[n \leq  m]]]></fr:tex></fr:li></fr:ul></fr:p><fr:p><fr:strong>Unlabelled Balls, Unlabelled Boxes</fr:strong>
+  <fr:ul><fr:li>unrestricted: <fr:tex
+display="inline"><![CDATA[\sum _{i = 1}^{m} p_i(n)]]></fr:tex></fr:li>
+    <fr:li>at least 1 ball in each box: <fr:tex
+display="inline"><![CDATA[p_m(n)]]></fr:tex></fr:li>
+    <fr:li>at most 1 ball in each box: <fr:tex
+display="inline"><![CDATA[[n \leq  m]]]></fr:tex></fr:li></fr:ul></fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>

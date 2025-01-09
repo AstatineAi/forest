@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="default.xsl"?>
+<fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="true"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>328</fr:anchor><fr:addr
+type="user">concept-000A</fr:addr><fr:route>concept-000A.xml</fr:route><fr:title
+text="Cauchy-Schwarz Inequality">Cauchy-Schwarz Inequality</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>10</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>The <fr:strong>Cauchy-Schwarz inequality</fr:strong> states that for all vectors <fr:tex
+display="inline"><![CDATA[\boldsymbol {a}]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[\boldsymbol {b}]]></fr:tex> in a inner product space, the following inequality holds:
+
+  <fr:tex
+display="block"><![CDATA[     \left | \langle  \boldsymbol {a}, \boldsymbol {b} \rangle  \right |^2 \leq  \langle  \boldsymbol {a}, \boldsymbol {a} \rangle  \cdot  \langle  \boldsymbol {b}, \boldsymbol {b} \rangle    ]]></fr:tex>
+
+  where <fr:tex
+display="inline"><![CDATA[\langle  \cdot , \cdot  \rangle ]]></fr:tex> is the inner product.</fr:p></fr:mainmatter><fr:backmatter><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:title
+text="Context">Context</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>329</fr:anchor><fr:addr
+type="user">ShanghaiTech-SI140A-000V</fr:addr><fr:route>ShanghaiTech-SI140A-000V.xml</fr:route><fr:title
+text="Cauchy-Schwarz Inequality (Probability Theory)">Cauchy-Schwarz Inequality (Probability Theory)</fr:title><fr:taxon>Theorem</fr:taxon><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>10</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>290</fr:anchor><fr:addr
+type="user">concept-000A</fr:addr><fr:route>concept-000A.xml</fr:route><fr:title
+text="Cauchy-Schwarz Inequality">Cauchy-Schwarz Inequality</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>10</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>The <fr:strong>Cauchy-Schwarz inequality</fr:strong> states that for all vectors <fr:tex
+display="inline"><![CDATA[\boldsymbol {a}]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[\boldsymbol {b}]]></fr:tex> in a inner product space, the following inequality holds:
+
+  <fr:tex
+display="block"><![CDATA[     \left | \langle  \boldsymbol {a}, \boldsymbol {b} \rangle  \right |^2 \leq  \langle  \boldsymbol {a}, \boldsymbol {a} \rangle  \cdot  \langle  \boldsymbol {b}, \boldsymbol {b} \rangle    ]]></fr:tex>
+
+  where <fr:tex
+display="inline"><![CDATA[\langle  \cdot , \cdot  \rangle ]]></fr:tex> is the inner product.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:p>In probability theory, we define an inner product between two random variables <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[Y]]></fr:tex> as
+
+  <fr:tex
+display="block"><![CDATA[     \langle  X, Y \rangle  = E (X Y)   ]]></fr:tex>
+
+  the Cauchy-Schwarz inequality states that
+
+  <fr:tex
+display="block"><![CDATA[     |E(XY)| \leq  \sqrt {E(X^2) E(Y^2)}   ]]></fr:tex></fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>

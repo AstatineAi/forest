@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="default.xsl"?>
+<fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="true"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>489</fr:anchor><fr:addr
+type="user">ShanghaiTech-SI140A-000B</fr:addr><fr:route>ShanghaiTech-SI140A-000B.xml</fr:route><fr:title
+text="Moments via Derivatives of the MGF">Moments via Derivatives of the MGF</fr:title><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>9</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Given MGF <fr:tex
+display="inline"><![CDATA[M(t)]]></fr:tex> of a random variable <fr:tex
+display="inline"><![CDATA[X]]></fr:tex>, the <fr:tex
+display="inline"><![CDATA[n]]></fr:tex>-th moment of <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> is given by
+
+  <fr:tex
+display="block"><![CDATA[     E(X^n) = M^{(n)}(0)   ]]></fr:tex></fr:p></fr:mainmatter><fr:backmatter><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:title
+text="Context">Context</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>490</fr:anchor><fr:addr
+type="user">ShanghaiTech-SI140A-0001</fr:addr><fr:route>ShanghaiTech-SI140A-0001.xml</fr:route><fr:title
+text="Courses › Probability &amp; Statistics for EECS Fall 2024 › Lectures › No. 5: Continuous Random Variables"><fr:link
+type="local"
+href="ShanghaiTech-SI140A-Lectures.xml"
+addr="ShanghaiTech-SI140A-Lectures"
+title="Courses › Probability &amp; Statistics for EECS Fall 2024 › Lectures"><fr:link
+type="local"
+href="ShanghaiTech-SI140A-index.xml"
+addr="ShanghaiTech-SI140A-index"
+title="Courses › Probability &amp; Statistics for EECS Fall 2024"><fr:link
+type="local"
+href="ShanghaiTech-Courses.xml"
+addr="ShanghaiTech-Courses"
+title="Courses">Courses</fr:link> › Probability &amp; Statistics for EECS Fall 2024</fr:link> › Lectures</fr:link> › No. 5: Continuous Random Variables</fr:title><fr:taxon>Lecture</fr:taxon><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>9</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>402</fr:anchor><fr:addr
+type="user">ShanghaiTech-SI140A-0003</fr:addr><fr:route>ShanghaiTech-SI140A-0003.xml</fr:route><fr:title
+text="Continuous Random Variables">Continuous Random Variables</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>9</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>An r.v. has a <fr:strong>continuous distribution</fr:strong> if its CDF is differentiable. We also allow there to be endpoints (or finitely many points) where the CDF is continuous but not differentiable, as long as the CDF is differentiable everywhere else. A <fr:strong>continuous random variable</fr:strong> is a random variable with a continuous distribution.</fr:p><fr:p>Unlike PMF of a discrete r.v., the PDF of a continuous r.v. does not give the probability of a particular value.
+
+  <fr:tex
+display="block"><![CDATA[     P(X = x) = 0 \text { for all } x   ]]></fr:tex></fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>403</fr:anchor><fr:addr
+type="user">ShanghaiTech-SI140A-0004</fr:addr><fr:route>ShanghaiTech-SI140A-0004.xml</fr:route><fr:title
+text="Probability Density Functions">Probability Density Functions</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>9</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>For a continuous r.v. <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> with CDF <fr:tex
+display="inline"><![CDATA[F_X(x)]]></fr:tex>, the <fr:strong>probability density function</fr:strong> (PDF, 概率密度函数) of <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> is defined as
+
+  <fr:tex
+display="block"><![CDATA[     f_X(x) = \frac {\mathrm {d}}{\mathrm {d}x} F_X(x)   ]]></fr:tex></fr:p><fr:p>Similarly, the <fr:strong>cumulative distribution function</fr:strong> (CDF, 累积分布函数) of <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> can be obtained by integrating the PDF:
+
+  <fr:tex
+display="block"><![CDATA[     F_X(x) = \int _{-\infty }^x f_X(t) \; \mathrm {d}t   ]]></fr:tex></fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>404</fr:anchor><fr:addr
+type="user">ShanghaiTech-SI140A-0005</fr:addr><fr:route>ShanghaiTech-SI140A-0005.xml</fr:route><fr:title
+text="Validity of Probability Density Functions">Validity of Probability Density Functions</fr:title><fr:taxon>Theorem</fr:taxon><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>9</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>The <fr:link
+type="local"
+href="ShanghaiTech-SI140A-0004.xml"
+addr="ShanghaiTech-SI140A-0004"
+title="Probability Density Functions">PDF</fr:link> of a continuous r.v. <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> must satisfy the following conditions:
+  <fr:ul><fr:li><fr:strong>Non-negativity</fr:strong>: <fr:tex
+display="inline"><![CDATA[f_X(x) \geq  0]]></fr:tex> for all <fr:tex
+display="inline"><![CDATA[x]]></fr:tex>.</fr:li>
+    <fr:li><fr:strong>Normalization</fr:strong>: <fr:tex
+display="inline"><![CDATA[\int _{-\infty }^\infty  f_X(x) \; \mathrm {d}x = 1]]></fr:tex>.</fr:li></fr:ul></fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>405</fr:anchor><fr:addr
+type="user">ShanghaiTech-SI140A-0006</fr:addr><fr:route>ShanghaiTech-SI140A-0006.xml</fr:route><fr:title
+text="Law of the Unconscious Statisticians">Law of the Unconscious Statisticians</fr:title><fr:taxon>Theorem</fr:taxon><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>9</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p><fr:strong>Discrete Case</fr:strong>:
+  <fr:tex
+display="block"><![CDATA[     E(g(X)) = \sum _{x} g(x) P(X = x)   ]]></fr:tex></fr:p><fr:p><fr:strong>Continuous Case</fr:strong>:
+  <fr:tex
+display="block"><![CDATA[     E(g(X)) = \int _{-\infty }^\infty  g(x) f_X(x) \; \mathrm {d}x   ]]></fr:tex></fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>406</fr:anchor><fr:addr
+type="user">ShanghaiTech-SI140A-0007</fr:addr><fr:route>ShanghaiTech-SI140A-0007.xml</fr:route><fr:title
+text="Standard Normal Distribution">Standard Normal Distribution</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>9</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>A continuous r.v. <fr:tex
+display="inline"><![CDATA[Z]]></fr:tex> is said to have a <fr:strong>standard normal distribution</fr:strong> if its PDF <fr:tex
+display="inline"><![CDATA[\varphi ]]></fr:tex> is given by:
+
+  <fr:tex
+display="block"><![CDATA[     \varphi (z) = \frac {1}{\sqrt {2\pi }} e^{-z^2/2}   ]]></fr:tex></fr:p><fr:p>The <fr:strong>standard normal CDF</fr:strong> <fr:tex
+display="inline"><![CDATA[\Phi ]]></fr:tex> is given by:
+  
+  <fr:tex
+display="block"><![CDATA[     \Phi (z) = \int _{-\infty }^z \varphi (t) dt   ]]></fr:tex></fr:p><fr:p>Standard normal distribution is denoted by <fr:tex
+display="inline"><![CDATA[Z \sim  N(0, 1)]]></fr:tex>. The expectation and variance of a standard normal r.v. are <fr:tex
+display="inline"><![CDATA[0]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[1]]></fr:tex> respectively.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>407</fr:anchor><fr:addr
+type="user">ShanghaiTech-SI140A-0008</fr:addr><fr:route>ShanghaiTech-SI140A-0008.xml</fr:route><fr:title
+text="Normal Distribution">Normal Distribution</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>9</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>If <fr:tex
+display="inline"><![CDATA[Z]]></fr:tex> is a r.v with <fr:link
+type="local"
+href="ShanghaiTech-SI140A-0007.xml"
+addr="ShanghaiTech-SI140A-0007"
+title="Standard Normal Distribution">standard normal distribution</fr:link>, then
+  <fr:tex
+display="block"><![CDATA[     X = \mu  + \sigma  Z   ]]></fr:tex>
+  is said to have the <fr:strong>normal distribution</fr:strong> with mean <fr:tex
+display="inline"><![CDATA[\mu ]]></fr:tex> and variance <fr:tex
+display="inline"><![CDATA[\sigma ^2]]></fr:tex>.</fr:p><fr:p>Let <fr:tex
+display="inline"><![CDATA[X \sim  N(\mu , \sigma ^2)]]></fr:tex>, the CDF of <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> is
+  <fr:tex
+display="block"><![CDATA[     F(x) = \Phi \left (\frac {x - \mu }{\sigma }\right )   ]]></fr:tex>
+  where <fr:tex
+display="inline"><![CDATA[\Phi ]]></fr:tex> is the CDF of the standard normal distribution.</fr:p><fr:p>The PDF of <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> is
+  <fr:tex
+display="block"><![CDATA[     f(x) = \frac {1}{\sigma } \varphi \left (\frac {x - \mu }{\sigma }\right )   ]]></fr:tex>
+  where <fr:tex
+display="inline"><![CDATA[\phi ]]></fr:tex> is the PDF of the standard normal distribution.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>408</fr:anchor><fr:addr
+type="user">ShanghaiTech-SI140A-0009</fr:addr><fr:route>ShanghaiTech-SI140A-0009.xml</fr:route><fr:title
+text="Central Limit Theorem">Central Limit Theorem</fr:title><fr:taxon>Theorem</fr:taxon><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>9</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[X_1, X_2, \ldots , X_n]]></fr:tex> be a sequence of i.i.d r.v with finite mean <fr:tex
+display="inline"><![CDATA[\mu ]]></fr:tex> and variance <fr:tex
+display="inline"><![CDATA[\sigma ^2]]></fr:tex>, the sample mean is defined as
+  <fr:tex
+display="block"><![CDATA[     \bar {X} = \frac {1}{n} \sum _{i=1}^n X_i   ]]></fr:tex>
+  Then, as <fr:tex
+display="inline"><![CDATA[n \to  \infty ]]></fr:tex>,
+
+  <fr:tex
+display="block"><![CDATA[     \sqrt {n} \left ( \frac {\bar {X} - \mu }{\sigma ^2} \right ) \to  N(0, 1)   ]]></fr:tex></fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>409</fr:anchor><fr:addr
+type="user">ShanghaiTech-SI140A-000A</fr:addr><fr:route>ShanghaiTech-SI140A-000A.xml</fr:route><fr:title
+text="Moment Generating Functions">Moment Generating Functions</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>9</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>The <fr:strong>Moment Generating Function</fr:strong> (MGF) of a random variable <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> is defined as
+
+  <fr:tex
+display="block"><![CDATA[     M(t) = E(e^{tX})   ]]></fr:tex></fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>410</fr:anchor><fr:addr
+type="user">ShanghaiTech-SI140A-000B</fr:addr><fr:route>ShanghaiTech-SI140A-000B.xml</fr:route><fr:title
+text="Moments via Derivatives of the MGF">Moments via Derivatives of the MGF</fr:title><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>9</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Given MGF <fr:tex
+display="inline"><![CDATA[M(t)]]></fr:tex> of a random variable <fr:tex
+display="inline"><![CDATA[X]]></fr:tex>, the <fr:tex
+display="inline"><![CDATA[n]]></fr:tex>-th moment of <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> is given by
+
+  <fr:tex
+display="block"><![CDATA[     E(X^n) = M^{(n)}(0)   ]]></fr:tex></fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>411</fr:anchor><fr:addr
+type="user">ShanghaiTech-SI140A-000C</fr:addr><fr:route>ShanghaiTech-SI140A-000C.xml</fr:route><fr:title
+text="MGF of A Sum of Independent R.V.s">MGF of A Sum of Independent R.V.s</fr:title><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>10</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>If r.v. <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[Y]]></fr:tex> are independent, then the MGF of their sum is the product of their MGFs.
+
+  <fr:tex
+display="block"><![CDATA[     M_{X+Y}(t) = M_X(t) \cdot  M_Y(t)   ]]></fr:tex></fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>412</fr:anchor><fr:addr
+type="user">ShanghaiTech-SI140A-000D</fr:addr><fr:route>ShanghaiTech-SI140A-000D.xml</fr:route><fr:title
+text="MGF of Location-scale Transformation">MGF of Location-scale Transformation</fr:title><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>10</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> be a random variable with MGF <fr:tex
+display="inline"><![CDATA[M_X(t)]]></fr:tex>, then the MGF of <fr:tex
+display="inline"><![CDATA[a X + b]]></fr:tex> is
+
+  <fr:tex
+display="block"><![CDATA[     E(e^{t(a X + b)}) = e^{b t} M_X(a t)   ]]></fr:tex></fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>

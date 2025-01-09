@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="default.xsl"?>
+<fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="true"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>442</fr:anchor><fr:addr
+type="user">ShanghaiTech-SI140A-001E</fr:addr><fr:route>ShanghaiTech-SI140A-001E.xml</fr:route><fr:title
+text="Period of a State in Markov Chain">Period of a State in Markov Chain</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>10</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>For a Markov chain with transition matrix <fr:tex
+display="inline"><![CDATA[Q]]></fr:tex>, the <fr:strong>period</fr:strong> of a state <fr:tex
+display="inline"><![CDATA[i]]></fr:tex> is the greatest common divisor of all integers <fr:tex
+display="inline"><![CDATA[n]]></fr:tex> such that the <fr:tex
+display="inline"><![CDATA[(i, i)]]></fr:tex> entry of <fr:tex
+display="inline"><![CDATA[Q^n]]></fr:tex> is positive.
+
+  <fr:tex
+display="block"><![CDATA[     d(i) = \gcd  \{ n \in  \mathbb {N} \mid  (Q^n)_{i, i} > 0 \}   ]]></fr:tex></fr:p><fr:p>If <fr:tex
+display="inline"><![CDATA[d(i) = 1]]></fr:tex>, then the state <fr:tex
+display="inline"><![CDATA[i]]></fr:tex> is <fr:strong>aperiodic</fr:strong>, otherwise it is <fr:strong>periodic</fr:strong>.</fr:p></fr:mainmatter><fr:backmatter><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:title
+text="Context">Context</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>443</fr:anchor><fr:addr
+type="user">ShanghaiTech-SI140A-001F</fr:addr><fr:route>ShanghaiTech-SI140A-001F.xml</fr:route><fr:title
+text="Period of a Markov Chain">Period of a Markov Chain</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>10</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>305</fr:anchor><fr:addr
+type="user">ShanghaiTech-SI140A-001E</fr:addr><fr:route>ShanghaiTech-SI140A-001E.xml</fr:route><fr:title
+text="Period of a State in Markov Chain">Period of a State in Markov Chain</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>10</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>For a Markov chain with transition matrix <fr:tex
+display="inline"><![CDATA[Q]]></fr:tex>, the <fr:strong>period</fr:strong> of a state <fr:tex
+display="inline"><![CDATA[i]]></fr:tex> is the greatest common divisor of all integers <fr:tex
+display="inline"><![CDATA[n]]></fr:tex> such that the <fr:tex
+display="inline"><![CDATA[(i, i)]]></fr:tex> entry of <fr:tex
+display="inline"><![CDATA[Q^n]]></fr:tex> is positive.
+
+  <fr:tex
+display="block"><![CDATA[     d(i) = \gcd  \{ n \in  \mathbb {N} \mid  (Q^n)_{i, i} > 0 \}   ]]></fr:tex></fr:p><fr:p>If <fr:tex
+display="inline"><![CDATA[d(i) = 1]]></fr:tex>, then the state <fr:tex
+display="inline"><![CDATA[i]]></fr:tex> is <fr:strong>aperiodic</fr:strong>, otherwise it is <fr:strong>periodic</fr:strong>.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:p>A Markov chain is <fr:strong>periodic</fr:strong> if it is <fr:link
+type="local"
+href="ShanghaiTech-SI140A-001D.xml"
+addr="ShanghaiTech-SI140A-001D"
+title="Irreducible and Reducible Markov Chain">irreducible</fr:link> and all states have period greater than 1.</fr:p><fr:p>A Markov chain is <fr:strong>aperiodic</fr:strong> if it is <fr:link
+type="local"
+href="ShanghaiTech-SI140A-001D.xml"
+addr="ShanghaiTech-SI140A-001D"
+title="Irreducible and Reducible Markov Chain">irreducible</fr:link> and all states have period 1.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>
