@@ -827,7 +827,7 @@ display="inline"><![CDATA[E(Y \mid  X)]]></fr:tex>, defined as:
 display="block"><![CDATA[     E(Y \mid  X) = \sum _y y P(Y = y \mid  X)   ]]></fr:tex>
 
   <fr:tex
-display="block"><![CDATA[     E(Y \mid  X) = \int _{-\infty }^{+\infty } y f_{Y \mid  X}(y \mid  x) \, dy   ]]></fr:tex></fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+display="block"><![CDATA[     E(Y \mid  X) = \int _{-\infty }^{+\infty } y f_{Y \mid  X}(y \mid  x) \, \mathrm {d} y   ]]></fr:tex></fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
 toc="true"
 numbered="false"
 show-heading="true"
