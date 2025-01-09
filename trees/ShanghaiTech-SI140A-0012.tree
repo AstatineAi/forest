@@ -10,7 +10,7 @@
   }
 
   ##{
-    E(Y \mid X) = \int_{-\infty}^{+\infty} y f_{Y \mid X}(y \mid x) \, dy
+    E(Y \mid X) = \int_{-\infty}^{+\infty} y f_{Y \mid X}(y \mid x) \, \mathrm{d} y
   }
 
 }
