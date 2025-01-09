@@ -1,0 +1,15 @@
+\date{2025-01-10}
+\title{Irreducible and Reducible Markov Chain}
+\taxon{definition}
+
+\p{
+  A Markov chain with transition matrix #{Q} is \strong{irreducible} if for any two states #{i} and #{j}, it is possible to go from #{i} to #{j} in a finite number of steps (with positive probability).
+}
+
+\p{
+  That is, for any states #{i}, #{j} there is some positive integer n such that the #{(i, j)} entry of #{Q^n} is positive.
+}
+
+\p{
+  A Markov chain that is not irreducible is called \strong{reducible}.
+}

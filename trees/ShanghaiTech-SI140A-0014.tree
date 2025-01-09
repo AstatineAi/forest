@@ -1,0 +1,17 @@
+\date{2025-01-10}
+\title{Conditional Variance}
+\taxon{definition}
+
+\p{
+  The \strong{conditional variance} of a r.v. #{Y} given #{X} is defined as
+
+  ##{
+    \operatorname{Var} (Y \mid X) = E \left( (Y - E(Y \mid X))^2 \mid X \right)
+  }
+
+  this is equivalent to:
+
+  ##{
+    \operatorname{Var} (Y \mid X) = E(Y^2 \mid X) - E^2(Y \mid X)
+  }
+}

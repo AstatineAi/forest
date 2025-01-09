@@ -1,0 +1,16 @@
+\date{2025-01-10}
+\title{Jacobian Matrix}
+\taxon{theorem}
+
+\p{
+  If a function #{\boldsymbol{f}: \mathbb{R}^n \mapsto \mathbb{R}^m} is differentiable at #{\boldsymbol{x} \in \mathbb{R}^n}, then the Jacobian matrix of #{\boldsymbol{f}} at #{\boldsymbol{x}} is the best linear approximation of #{\boldsymbol{f}} at #{\boldsymbol{x}}. It is defined as
+
+  ##{
+    \frac{\partial \boldsymbol{f}}{\partial \boldsymbol{x}} =
+    \begin{bmatrix}
+      \frac{\partial f_1}{\partial x_1} & \cdots & \frac{\partial f_1}{\partial x_n} \\
+      \vdots & \ddots & \vdots \\
+      \frac{\partial f_m}{\partial x_1} & \cdots & \frac{\partial f_m}{\partial x_n}
+    \end{bmatrix}
+  }
+}

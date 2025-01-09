@@ -5,4 +5,9 @@
 \put\transclude/expanded{false}
 \put\transclude/numbered{false}
 
-
+\transclude{ShanghaiTech-SI140A-0001}
+\transclude{ShanghaiTech-SI140A-000E}
+\transclude{ShanghaiTech-SI140A-000U}
+\transclude{ShanghaiTech-SI140A-0010}
+\transclude{ShanghaiTech-SI140A-001A}
+\transclude{ShanghaiTech-SI140A-001I}

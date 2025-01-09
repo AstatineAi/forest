@@ -1,0 +1,19 @@
+\date{2025-01-10}
+\title{Cauchy-Schwarz Inequality (Probability Theory)}
+\taxon{theorem}
+
+\transclude{concept-000A}
+
+\p{
+  In probability theory, we define an inner product between two random variables #{X} and #{Y} as
+
+  ##{
+    \langle X, Y \rangle = E (X Y)
+  }
+
+  the Cauchy-Schwarz inequality states that
+
+  ##{
+    |E(XY)| \leq \sqrt{E(X^2) E(Y^2)}
+  }
+}

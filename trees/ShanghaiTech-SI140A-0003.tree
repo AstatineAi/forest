@@ -1,0 +1,15 @@
+\date{2025-01-09}
+\title{Continuous Random Variables}
+\taxon{definition}
+
+\p{
+  An r.v. has a \strong{continuous distribution} if its CDF is differentiable. We also allow there to be endpoints (or finitely many points) where the CDF is continuous but not differentiable, as long as the CDF is differentiable everywhere else. A \strong{continuous random variable} is a random variable with a continuous distribution.
+}
+
+\p{
+  Unlike PMF of a discrete r.v., the PDF of a continuous r.v. does not give the probability of a particular value.
+
+  ##{
+    P(X = x) = 0 \text{ for all } x
+  }
+}

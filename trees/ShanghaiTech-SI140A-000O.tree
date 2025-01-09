@@ -1,0 +1,17 @@
+\date{2025-01-10}
+\title{Independence of Continuous R.V.s}
+\taxon{definition}
+
+\p{
+  Continuous random variables #{X} and #{Y} are \strong{independent} if:
+  
+  ##{
+    f_{X, Y}(x, y) = f_X(x) f_Y(y)
+  }
+
+  It is also equivalent to:
+
+  ##{
+    f_{X \mid Y}(x \mid y) = f_X(x) \quad \text{and} \quad f_{Y \mid X}(y \mid x) = f_Y(y)
+  }
+}

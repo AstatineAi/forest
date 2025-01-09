@@ -1,0 +1,14 @@
+\date{2025-01-10}
+\title{No. 10: Statistical Inference}
+\taxon{lecture}
+\parent{ShanghaiTech-SI140A-Lectures}
+
+\put\transclude/numbered{false}
+
+\p{
+  Not very reasonable beacuse of the chaotic conventions in the slides.
+}
+
+\p{
+  This is a weird way to think of it (爸爸像儿子), but you can think of this part as being the same as machine learning algorithms.
+}

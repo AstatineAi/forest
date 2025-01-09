@@ -1,0 +1,13 @@
+\date{2025-01-10}
+\title{Least Square Estimation}
+\taxon{definition}
+
+\p{
+  Given a random variable #{X} and a sample #{ X_1, X_2, \dots, X_n}, let the cost function be the square of the difference between #{X} and #{\hat{X}}:
+
+  ##{
+    c(X, \hat{X}) = |X - \hat{X}|^2
+  }
+
+  The best guess is called the \strong{Least Square Estimator}:
+}

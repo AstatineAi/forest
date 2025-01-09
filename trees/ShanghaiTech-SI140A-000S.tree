@@ -1,0 +1,21 @@
+\date{2025-01-10}
+\title{Correlation}
+\taxon{definition}
+
+\p{
+  The \strong{correlation} between two random variables #{X} and #{Y} is
+
+  ##{
+    \operatorname{Corr} (X, Y) = \frac{\operatorname{Cov} (X, Y)}{\sqrt{\operatorname{Var} (X) \operatorname{Var} (Y)}}
+  }
+}
+
+\p{
+  For any two random variables #{X} and #{Y}:
+
+  ##{
+    -1 \leq \operatorname{Corr} (X, Y) \leq 1
+  }
+
+  If #{X} and #{Y} are independent, then #{\operatorname{Corr} (X, Y) = 0}.
+}

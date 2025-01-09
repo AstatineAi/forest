@@ -1,0 +1,16 @@
+\date{2025-01-10}
+\title{Conditional Expectation Given an R.V.}
+\taxon{definition}
+
+\p{
+  Let #{X, Y} be two random variables. Then the \strong{conditional expectation of #{Y} given #{X}} is a function of #{X}, denoted by #{E(Y \mid X)}, defined as:
+
+  ##{
+    E(Y \mid X) = \sum_y y P(Y = y \mid X)
+  }
+
+  ##{
+    E(Y \mid X) = \int_{-\infty}^{+\infty} y f_{Y \mid X}(y \mid x) \, dy
+  }
+
+}

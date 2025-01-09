@@ -1,6 +1,6 @@
 \date{2025-01-08}
 \title{Subgraph}
-\taxon{definitions}
+\taxon{definition}
 
 \p{
   A \strong{subgraph} of a graph #{G = (V, E)} is a graph #{G' = (V', E')} such that #{V' \subseteq V} and #{E' \subseteq E, \forall (u, v) \in E', u, v \in V'}.

@@ -1,6 +1,6 @@
 \date{2025-01-08}
 \title{Disjoint Set}
-\taxon{definitions}
+\taxon{definition}
 
 \p{
   Disjoint set（并查集） is a data structure that keeps track of equivalence classes of all elements in a set.

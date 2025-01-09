@@ -1,0 +1,16 @@
+\date{2025-01-10}
+\title{Estimation (Basic Problem)}
+
+\p{
+  Given a random variable #{X} and a sample #{ X_1, X_2, \dots, X_n} we want to estimate the distribution of #{X}.
+}
+
+\p{
+  The \strong{Estimator} is a function #{\hat{X} = g(X_1, X_2, \dots, X_n)}. The \strong{cost function} is a function #{c(X, \hat{X})} that measures the quality of the estimator. We want to minimize the expected cost #{E(c(X, \hat{X}))}.
+}
+
+\transclude{ShanghaiTech-SI140A-0017}
+
+\transclude{ShanghaiTech-SI140A-0018}
+
+\transclude{ShanghaiTech-SI140A-0019}

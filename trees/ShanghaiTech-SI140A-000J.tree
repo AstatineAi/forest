@@ -1,0 +1,15 @@
+\date{2025-01-10}
+\title{Independence of Discrete R.V.s}
+\taxon{definition}
+
+\p{
+  Discrete r.v. #{X} and #{Y} are \strong{independent} if
+  ##{
+    F_{X, Y}(x, y) = F_X(x) F_Y(y)
+  }
+  and it is also equivalent to the condition:
+  ##{
+    P(Y = y \mid X = x) = P(Y = y)
+  }
+  for all #{y} and #{x} s.t. #{P(X = x) > 0}.
+}

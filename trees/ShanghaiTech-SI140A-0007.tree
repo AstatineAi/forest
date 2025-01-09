@@ -1,0 +1,23 @@
+\date{2025-01-09}
+\title{Standard Normal Distribution}
+\taxon{definition}
+
+\p{
+  A continuous r.v. #{Z} is said to have a \strong{standard normal distribution} if its PDF #{\varphi} is given by:
+
+  ##{
+    \varphi(z) = \frac{1}{\sqrt{2\pi}} e^{-z^2/2}
+  }
+}
+
+\p{
+  The \strong{standard normal CDF} #{\Phi} is given by:
+  
+  ##{
+    \Phi(z) = \int_{-\infty}^z \varphi(t) dt
+  }
+}
+
+\p{
+  Standard normal distribution is denoted by #{Z \sim N(0, 1)}. The expectation and variance of a standard normal r.v. are #{0} and #{1} respectively.
+}

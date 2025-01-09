@@ -1,0 +1,11 @@
+\date{2025-01-10}
+\title{2D LOTUS}
+\taxon{theorem}
+
+\p{
+  Let #{X} and #{Y} be two random variables, #{g: \mathbb{R}^2 \mapsto \mathbb{R}}, then:
+
+  ##{
+    E[g(X, Y)] = \int_{-\infty}^{+\infty} \int_{-\infty}^{+\infty} g(x, y) f_{X, Y}(x, y) \, \mathrm{d}x \, \mathrm{d}y
+  }
+}

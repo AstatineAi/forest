@@ -1,0 +1,19 @@
+\date{2025-01-10}
+\title{Stationary Distribution of a Markov Chain}
+\taxon{definition}
+
+\p{
+  A \strong{stationary distribution} of a Markov chain is a probability distribution #{\boldsymbol{s} = (s_1, s_2, \dots, s_n)} such that
+
+  ##{
+    \sum_{i} s_i q_{i, j} = s_j
+  }
+
+  or equivalently
+
+  ##{
+    \boldsymbol{s} Q = \boldsymbol{s}
+  }
+
+  where #{Q} is the transition matrix of the Markov chain.
+}

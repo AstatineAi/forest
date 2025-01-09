@@ -1,0 +1,11 @@
+\date{2025-01-10}
+\title{Conditional PMF}
+\taxon{definition}
+
+\p{
+  For discrete r.v. #{X} and #{Y}, the conditional PMF of #{X} given #{Y = y} is
+
+  ##{
+    P_{X \mid Y}(x \mid y) = P(X = x \mid Y = y) = \frac{P(X = x, Y = y)}{P(Y = y)}
+  }
+}

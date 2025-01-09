@@ -1,0 +1,11 @@
+\date{2025-01-10}
+\title{Related Theorem}
+\taxon{theorem}
+
+\p{
+  If #{X \sim \operatorname{Pois}(\lambda p)} and #{Y \sim \operatorname{Pois}(\lambda (1 - p))} are independent, then #{X + Y \sim \operatorname{Pois}(\lambda)} and #{X \mid (X + Y = n) \sim \operatorname{Bin}(n, p)}.
+}
+
+\p{
+  If #{N \sim \operatorname{Pois}(\lambda)} and #{X \mid N = n \sim \operatorname{Bin}(n, p)}, then #{X \sim \operatorname{Pois}(\lambda p)}, #{Y = N - X \sim \operatorname{Pois}(\lambda (1 - p))}, and #{X} and #{Y} are independent.
+}

@@ -1,0 +1,11 @@
+\date{2025-01-10}
+\title{Marginal PDF}
+\taxon{definition}
+
+\p{
+  For continuous random variables #{X} and #{Y}, the \strong{marginal probability density function} of #{X} is
+
+  ##{
+    f_X(x) = \int_{-\infty}^\infty f_{X, Y}(x, y) \; \mathrm{d}y
+  }
+}

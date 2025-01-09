@@ -1,0 +1,50 @@
+\date{2025-01-09}
+\title{Twelvefold Way}
+\taxon{theorem}
+
+\p{
+  Let #{n} be the number of balls, and #{m} be the number of boxes. We are finding the number of ways to distribute the balls into the boxes.
+}
+
+\put\transclude/expanded{false}
+
+\transclude{concept-0007}
+\transclude{concept-0008}
+
+\put\transclude/expanded{true}
+
+\p{
+  \strong{Labelled Balls, Labelled Boxes}
+  \ul{
+    \li{unrestricted: #{m^n}}
+    \li{as least 1 ball in each box: #{m!S(n, m)}, where #{S(n, m)} is the Stirling number of the second kind}
+    \li{at most 1 ball in each box: #{m^{\underline{n}} = m(m - 1) \cdots (m - n + 1)}}
+  }
+}
+
+\p{
+  \strong{Unlabelled Balls, Labelled Boxes}
+  \ul{
+    \li{unrestricted: #{\binom{n + m - 1}{n}}}
+    \li{at least 1 ball in each box: #{\binom{n - 1}{m - 1}}}
+    \li{at most 1 ball in each box: #{\binom{m}{n}}}
+  }
+}
+
+\p{
+  \strong{Labelled Balls, Unlabelled Boxes}
+  \ul{
+    \li{unrestricted: #{\sum_{i = 1}^{m} S(n, i)}}
+    \li{at least 1 ball in each box: #{S(n, m)}}
+    \li{at most 1 ball in each box: #{[n \leq m]}}
+  }
+}
+
+\p{
+  \strong{Unlabelled Balls, Unlabelled Boxes}
+  \ul{
+    \li{unrestricted: #{\sum_{i = 1}^{m} p_i(n)}}
+    \li{at least 1 ball in each box: #{p_m(n)}}
+    \li{at most 1 ball in each box: #{[n \leq m]}}
+  }
+}

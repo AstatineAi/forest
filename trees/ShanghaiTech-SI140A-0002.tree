@@ -1,0 +1,11 @@
+\date{2025-01-09}
+\title{Properties of Variance}
+\taxon{lemma}
+
+\ul{
+  \li{For any r.v. #{X}, #{\operatorname{Var}(X) = E(X^2) - E(X)^2}}
+  \li{#{\operatorname{Var}(X + c) = \operatorname{Var}(X)}}
+  \li{#{\operatorname{Var}(cX) = c^2 \operatorname{Var}(X)}}
+  \li{If #{X} and #{Y} are independent, then #{\operatorname{Var}(X + Y) = \operatorname{Var}(X) + \operatorname{Var}(Y)}}
+  \li{#{\operatorname{Var}(X) \leq 0} with equality if and only if #{P(X = a) = 1} for some constant #{a}}
+}

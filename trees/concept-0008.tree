@@ -1,0 +1,17 @@
+\date{2025-01-09}
+\title{Integer Partition}
+\taxon{theorem}
+
+\p{
+  Denote \strong{number of partition} of #{n} into #{k} parts by #{p_k(n)}.
+}
+
+\p{
+  There is no convenient formula for the number #{p_k(n)}, but we have the following recursive formula:
+  ##{
+    p_k(n) = p_{k - 1}(n - 1) + p_k(n - k)
+  }
+  ##{
+    p_k(n) = 0 \quad \text{if} \quad k > n
+  }
+}

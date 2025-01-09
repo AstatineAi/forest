@@ -1,0 +1,15 @@
+\date{2025-01-10}
+\title{Period of a State in Markov Chain}
+\taxon{definition}
+
+\p{
+  For a Markov chain with transition matrix #{Q}, the \strong{period} of a state #{i} is the greatest common divisor of all integers #{n} such that the #{(i, i)} entry of #{Q^n} is positive.
+
+  ##{
+    d(i) = \gcd \{ n \in \mathbb{N} \mid (Q^n)_{i, i} > 0 \}
+  }
+}
+
+\p{
+  If #{d(i) = 1}, then the state #{i} is \strong{aperiodic}, otherwise it is \strong{periodic}.
+}

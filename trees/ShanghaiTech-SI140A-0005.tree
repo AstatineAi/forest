@@ -1,0 +1,11 @@
+\date{2025-01-09}
+\title{Validity of Probability Density Functions}
+\taxon{theorem}
+
+\p{
+  The [PDF](ShanghaiTech-SI140A-0004) of a continuous r.v. #{X} must satisfy the following conditions:
+  \ul{
+    \li{\strong{Non-negativity}: #{f_X(x) \geq 0} for all #{x}.}
+    \li{\strong{Normalization}: #{\int_{-\infty}^\infty f_X(x) \; \mathrm{d}x = 1}.}
+  }
+}

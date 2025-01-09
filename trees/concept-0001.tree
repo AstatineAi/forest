@@ -1,6 +1,6 @@
 \date{2025-01-08}
 \title{Equivalence Relation}
-\taxon{definitions}
+\taxon{definition}
 
 \p{
   An \strong{equivalence relation（等价关系）} is a binary relation #{\equiv} on a set #{S}, such that:

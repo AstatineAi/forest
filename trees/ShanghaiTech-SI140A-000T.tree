@@ -1,0 +1,23 @@
+\date{2025-01-10}
+\title{Change of Variables}
+\taxon{theorem}
+
+\p{
+  \strong{Case of one demension}: Let #{X} be a continuous random variable with PDF #{f_X(x)} and #{Y = g(X)} be a function of #{X} with inverse #{X = g^{-1}(Y)}. Then the PDF of #{Y} is
+
+  ##{
+    f_Y(y) = f_X(g^{-1}(y)) \left| \frac{\mathrm{d}}{\mathrm{d}y} g^{-1}(y) \right|
+  }
+}
+
+\p{
+  \strong{Case of multiple dimensions}: 
+  
+  \transclude{concept-0009}
+
+  Let #{\boldsymbol{X}} be a continuous random vector with PDF #{f_{\boldsymbol{X}}(\boldsymbol{x})} and #{\boldsymbol{Y} = \boldsymbol{g}(\boldsymbol{X})} be a function of #{\boldsymbol{X}} with inverse #{\boldsymbol{X} = \boldsymbol{g}^{-1}(\boldsymbol{Y})}. Then the PDF of #{\boldsymbol{Y}} is
+
+  ##{
+    f_{\boldsymbol{Y}}(\boldsymbol{y}) = f_{\boldsymbol{X}}(\boldsymbol{g}^{-1}(\boldsymbol{y})) \left| \det \left( \frac{\partial \boldsymbol{g}^{-1}(\boldsymbol{y})}{\partial \boldsymbol{y}} \right) \right|
+  }
+}

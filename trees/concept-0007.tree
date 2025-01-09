@@ -1,0 +1,37 @@
+\date{2025-01-09}
+\title{Stirling Numbers of the Second Kind}
+\taxon{theorem}
+
+\import{base-macros}
+
+\p{
+  The \strong{Stirling number of the second kind} is the number of ways to partition a set of #{n} distinct elements into #{m} non-empty, non-overlapping, indistinguishable subsets. Denote it as #{S(n, m)} or #{\left\{ n \atop m \right\}}.
+}
+
+\p{
+  \strong{Recurrence Relation}:
+
+  ##{
+    S(n, m) = mS(n - 1, m) + S(n - 1, m - 1)
+  }
+
+  ##{
+    S(n, 0) = [n = 0]
+  }
+}
+
+\p{
+  \strong{General Formula}:
+
+  ##{
+    S(n, m) = \frac{1}{m!} \sum_{i = 0}^{m} (-1)^{m - i} \binom{m}{i} i^n
+  }
+}
+
+\p{
+  \strong{Mathematica Code}:
+
+  \codem{
+StirlingS2[n, m]
+  }
+}

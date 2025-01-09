@@ -1,0 +1,15 @@
+\date{2025-01-10}
+\title{Properties of Covariance}
+
+\p{
+  [Definotion of covariance](ShanghaiTech-SI140A-000Q)
+}
+
+\ul{
+  \li{ #{\operatorname{Cov}(X, X) = \operatorname{Var}(X)} }
+  \li{ #{\operatorname{Cov}(X, Y) = \operatorname{Cov}(Y, X)} }
+  \li{ #{\operatorname{Cov}(X, c) = 0} for any constant #{c} }
+  \li{ #{\operatorname{Cov}(c X, Y) = c \operatorname{Cov}(X, Y)} for any constant #{c} }
+  \li{ #{\operatorname{Cov}(X + Y, Z) = \operatorname{Cov}(X, Z) + \operatorname{Cov}(Y, Z)} }
+  \li{ #{\operatorname{Var}(X + Y) = \operatorname{Var}(X) + \operatorname{Var}(Y) + 2 \operatorname{Cov}(X, Y)}}
+}

@@ -1,0 +1,17 @@
+\date{2025-01-10}
+\title{No. 9: Markov Chain}
+\taxon{lecture}
+\parent{ShanghaiTech-SI140A-Lectures}
+
+\put\transclude/numbered{false}
+
+\p{
+  Refer to [my post on zhihu](https://zhuanlan.zhihu.com/p/14070878026).
+}
+
+\transclude{ShanghaiTech-SI140A-001B}
+\transclude{ShanghaiTech-SI140A-001C}
+\transclude{ShanghaiTech-SI140A-001D}
+\transclude{ShanghaiTech-SI140A-001F}
+\transclude{ShanghaiTech-SI140A-001G}
+\transclude{ShanghaiTech-SI140A-001H}

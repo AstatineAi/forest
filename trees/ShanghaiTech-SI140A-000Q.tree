@@ -1,0 +1,11 @@
+\date{2025-01-10}
+\title{Covariance}
+\taxon{definition}
+
+\p{
+  The \strong{covariance} of two random variables #{X} and #{Y} is defined as
+
+  ##{
+    \operatorname{Cov} (X, Y) = E ((X - E(X)) (Y - E(Y))) = E(XY) - E(X) E(Y)
+  }
+}

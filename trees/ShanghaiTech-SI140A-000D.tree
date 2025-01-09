@@ -1,0 +1,10 @@
+\date{2025-01-10}
+\title{MGF of Location-scale Transformation}
+
+\p{
+  Let #{X} be a random variable with MGF #{M_X(t)}, then the MGF of #{a X + b} is
+
+  ##{
+    E(e^{t(a X + b)}) = e^{b t} M_X(a t)
+  }
+}

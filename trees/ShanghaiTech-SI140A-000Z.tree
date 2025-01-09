@@ -1,0 +1,11 @@
+\date{2025-01-10}
+\title{Hoeffding Bound}
+\taxon{theorem}
+
+\p{
+  Let the r.v. s #{X_1, X_2, \dots, X_n} be i.i.d. with #{\E(X_i) = \mu} and #{a \leq X_i \leq b}. Then, for any #{\epsilon > 0},
+
+  ##{
+    P \left( \left| \frac{1}{n} \sum_{i=1}^n X_i - \mu \right| \geq \epsilon \right) \leq 2 \exp \left( - \frac{2n \epsilon^2}{(b-a)^2} \right)
+  }
+}

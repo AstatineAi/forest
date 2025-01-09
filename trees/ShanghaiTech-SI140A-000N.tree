@@ -1,0 +1,11 @@
+\date{2025-01-10}
+\title{Conditional PDF}
+\taxon{definition}
+
+\p{
+  For continuous random variables #{X} and #{Y}, the \strong{conditional probability density function} of #{X} given #{Y = y} is
+
+  ##{
+    f_{X \mid Y}(x \mid y) = \frac{f_{X, Y}(x, y)}{f_Y(y)}
+  }
+}

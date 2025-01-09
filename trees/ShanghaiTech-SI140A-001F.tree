@@ -1,0 +1,13 @@
+\date{2025-01-10}
+\title{Period of a Markov Chain}
+\taxon{definition}
+
+\transclude{ShanghaiTech-SI140A-001E}
+
+\p{
+  A Markov chain is \strong{periodic} if it is [irreducible](ShanghaiTech-SI140A-001D) and all states have period greater than 1.
+}
+
+\p{
+  A Markov chain is \strong{aperiodic} if it is [irreducible](ShanghaiTech-SI140A-001D) and all states have period 1.
+}

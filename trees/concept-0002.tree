@@ -1,6 +1,6 @@
 \date{2025-01-08}
 \title{Graph}
-\taxon{definitions}
+\taxon{definition}
 
 \p{
   A \strong{graph} is a collection of vertices and edges. An edge connects two vertices. We can represent a graph as #{G = (V, E)}, where #{V} is the set of vertices and #{E} is the set of edges.

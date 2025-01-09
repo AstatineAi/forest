@@ -1,0 +1,11 @@
+\date{2025-01-10}
+\title{Markov's Inequality}
+\taxon{theorem}
+
+\p{
+  For any r.v. #{X} and constant #{a > 0}, we have
+
+  ##{
+    P(|X| \geq a) \leq \frac{E|X|}{a}
+  }
+}

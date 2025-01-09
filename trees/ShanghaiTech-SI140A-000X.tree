@@ -1,0 +1,11 @@
+\date{2025-01-10}
+\title{Chebyshev's Inequality}
+\taxon{theorem}
+
+\p{
+  Let #{X} be a r.v. with finite mean #{\mu} and finite variance #{\sigma^2}. Then for any constant #{a > 0}, we have
+
+  ##{
+    P(|X - \mu| \geq a) \leq \frac{\sigma^2}{a^2}
+  }
+}

@@ -1,0 +1,10 @@
+\date{2025-01-10}
+\title{MGF of A Sum of Independent R.V.s}
+
+\p{
+  If r.v. #{X} and #{Y} are independent, then the MGF of their sum is the product of their MGFs.
+
+  ##{
+    M_{X+Y}(t) = M_X(t) \cdot M_Y(t)
+  }
+}

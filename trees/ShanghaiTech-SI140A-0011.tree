@@ -1,0 +1,11 @@
+\date{2025-01-10}
+\title{Law of Total Expectation}
+\taxon{theorem}
+
+\p{
+  Let #{X_1, X_2, \dots, X_n} be a partition of the sample space, s.t. #{P(X_i) > 0} for all #{i}. Then for any random variable #{Y} on this sample space:
+
+  ##{
+    E(Y) = \sum_{i=1}^n E(Y \mid X_i)P(X_i)
+  }
+}

@@ -8,6 +8,12 @@
 \put\transclude/numbered{true}
 \put\transclude/expanded{false}
 
+\p{
+  [Homework solutions](ShanghaiTech-SI140A/Fall2024-HW-solutions.pdf)
+}
+
+\hr
+
 \transclude{ShanghaiTech-SI140A-Concepts}
 
 \hr

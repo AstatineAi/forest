@@ -1,0 +1,11 @@
+\date{2025-01-10}
+\title{Eve's Law}
+\taxon{theorem}
+
+\p{
+  For any two r.v. #{X} and #{Y}, we have
+
+  ##{
+    \operatorname{Var}(Y) = E(\operatorname{Var}(Y \mid X)) + \operatorname{Var}(E(Y \mid X))
+  }
+}

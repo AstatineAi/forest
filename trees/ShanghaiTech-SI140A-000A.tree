@@ -1,0 +1,11 @@
+\date{2025-01-09}
+\title{Moment Generating Functions}
+\taxon{definition}
+
+\p{
+  The \strong{Moment Generating Function} (MGF) of a random variable #{X} is defined as
+
+  ##{
+    M(t) = E(e^{tX})
+  }
+}

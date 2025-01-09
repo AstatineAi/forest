@@ -1,0 +1,11 @@
+\date{2025-01-10}
+\title{Marginal PMF}
+\taxon{definition}
+
+\p{
+  For discrete r.v. #{X} and #{Y}, the marginal PMF of #{X} is
+
+  ##{
+    P(X = x) = \sum_y P(X = x, Y = y)
+  }
+}

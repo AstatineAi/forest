@@ -1,0 +1,7 @@
+\date{2025-01-10}
+\title{Transient State}
+\taxon{definition}
+
+\p{
+  State #{s} of a Markov chain is \strong{transient} if this state is not a [recurrent state](ShanghaiTech-SI140A-001B).
+}

@@ -1,0 +1,19 @@
+\date{2025-01-10}
+\title{Reversibility of a Markov Chain}
+\taxon{definition}
+
+\p{
+  A Markov chain is \strong{reversible} if there exists a probability distribution #{\boldsymbol{\s} = (s_1, s_2, \dots, s_n)} such that
+
+  ##{
+    s_i > 0, \sum_{i} s_i = 1
+  }
+
+  and
+
+  ##{
+    s_i q_{i, j} = s_j q_{j, i}
+  }
+
+  for all #{i, j}, where #{Q} is the transition matrix of the Markov chain.
+}

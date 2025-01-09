@@ -1,0 +1,11 @@
+\date{2025-01-10}
+\title{Adam's Law}
+\taxon{theorem}
+
+\p{
+  For any random variables #{X, Y}:
+
+  ##{
+    E ( E(Y \mid X) ) = E(Y)
+  }
+}

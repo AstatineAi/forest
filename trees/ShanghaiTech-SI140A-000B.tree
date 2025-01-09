@@ -1,0 +1,10 @@
+\date{2025-01-09}
+\title{Moments via Derivatives of the MGF}
+
+\p{
+  Given MGF #{M(t)} of a random variable #{X}, the #{n}-th moment of #{X} is given by
+
+  ##{
+    E(X^n) = M^{(n)}(0)
+  }
+}

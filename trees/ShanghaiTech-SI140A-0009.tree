@@ -1,0 +1,15 @@
+\date{2025-01-09}
+\title{Central Limit Theorem}
+\taxon{theorem}
+
+\p{
+  Let #{X_1, X_2, \ldots, X_n} be a sequence of i.i.d r.v with finite mean #{\mu} and variance #{\sigma^2}, the sample mean is defined as
+  ##{
+    \bar{X} = \frac{1}{n} \sum_{i=1}^n X_i
+  }
+  Then, as #{n \to \infty},
+
+  ##{
+    \sqrt{n} \left( \frac{\bar{X} - \mu}{\sigma^2} \right) \to N(0, 1)
+  }
+}

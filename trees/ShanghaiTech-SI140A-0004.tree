@@ -1,0 +1,19 @@
+\date{2025-01-09}
+\title{Probability Density Functions}
+\taxon{definition}
+
+\p{
+  For a continuous r.v. #{X} with CDF #{F_X(x)}, the \strong{probability density function} (PDF, 概率密度函数) of #{X} is defined as
+
+  ##{
+    f_X(x) = \frac{\mathrm{d}}{\mathrm{d}x} F_X(x)
+  }
+}
+
+\p{
+  Similarly, the \strong{cumulative distribution function} (CDF, 累积分布函数) of #{X} can be obtained by integrating the PDF:
+
+  ##{
+    F_X(x) = \int_{-\infty}^x f_X(t) \; \mathrm{d}t
+  }
+}

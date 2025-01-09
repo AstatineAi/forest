@@ -1,0 +1,17 @@
+\date{2025-01-09}
+\title{Law of the Unconscious Statisticians}
+\taxon{theorem}
+
+\p{
+  \strong{Discrete Case}:
+  ##{
+    E(g(X)) = \sum_{x} g(x) P(X = x)
+  }
+}
+
+\p{
+  \strong{Continuous Case}:
+  ##{
+    E(g(X)) = \int_{-\infty}^\infty g(x) f_X(x) \; \mathrm{d}x
+  }
+}

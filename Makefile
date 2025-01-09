@@ -11,6 +11,7 @@ clean:
 	rm -rf output
 
 new:
-	forester new forest.toml --dest=trees --prefix=$(name)
+	@OUTPUT=$$(forester new forest.toml --dest=trees --prefix=$(name)); \
+	code $$OUTPUT
 
 .PHONY: all build clean preview new

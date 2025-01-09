@@ -1,0 +1,13 @@
+\date{2025-01-10}
+\title{Joint PMF}
+\taxon{definition}
+
+\p{
+  The \strong{Joint PMF} of two discrete random variables #{X} and #{X} is defined as
+
+  ##{
+    p_{X,Y}(x,y) = \Pr(X = x, Y = y)
+  }
+
+  Joint PMF of multiple random variables can be defined similarly.
+}

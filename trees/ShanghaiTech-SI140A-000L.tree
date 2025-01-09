@@ -1,0 +1,11 @@
+\date{2025-01-10}
+\title{Joint PDF}
+\taxon{definition}
+
+\p{
+  If #{X} and #{Y} are continuous with joint CDF #{F_{X, Y}}, then the joint PDF of #{X} and #{Y} is
+  
+  ##{
+    f_{X, Y}(x, y) = \frac{\partial^2 F_{X, Y}}{\partial x \partial y}
+  }
+}

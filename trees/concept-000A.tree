@@ -1,0 +1,13 @@
+\date{2025-01-10}
+\title{Cauchy-Schwarz Inequality}
+\taxon{definition}
+
+\p{
+  The \strong{Cauchy-Schwarz inequality} states that for all vectors #{\boldsymbol{a}} and #{\boldsymbol{b}} in a inner product space, the following inequality holds:
+
+  ##{
+    \left| \langle \boldsymbol{a}, \boldsymbol{b} \rangle \right|^2 \leq \langle \boldsymbol{a}, \boldsymbol{a} \rangle \cdot \langle \boldsymbol{b}, \boldsymbol{b} \rangle
+  }
+
+  where #{\langle \cdot, \cdot \rangle} is the inner product.
+}

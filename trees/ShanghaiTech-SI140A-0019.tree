@@ -1,0 +1,15 @@
+\date{2025-01-10}
+\title{Minimum Mean Square Estimation}
+\taxon{definition}
+
+\p{
+  If the estimator is an arbitrary function, and the cost function is the mean square error, then the estimator is called a \strong{Minimum Mean Square Estimator (MMSE)}.
+}
+
+\p{
+  The MMSE of #{Y} given #{X} is given by the conditional expectation:
+
+  ##{
+    E[Y \mid X]
+  }
+}

@@ -1,0 +1,7 @@
+\date{2025-01-10}
+\title{Recurrent State}
+\taxon{definition}
+
+\p{
+  State #{s} of a Markov chain is \strong{recurrent} if starting from #{s}, the chain will return to #{s} with probability 1.
+}

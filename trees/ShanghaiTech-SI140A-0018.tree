@@ -1,0 +1,15 @@
+\date{2025-01-10}
+\title{Linear Least Square Estimation}
+\taxon{definition}
+
+\p{
+  If the estimator in a LSE estimation is \strong{linear}, then it is called a \strong{Linear Least Square Estimator (LLSE)}.
+}
+
+\p{
+  The LLSE of #{Y} given #{X}, denoted by #{L [Y \mid X] } is the linear function #{a + b X} that minimizes the mean square error #{E[(Y - a - b X)^2]}.
+
+  ##{
+    L [Y \mid X] = E[Y] + \frac{\operatorname{Cov}(X, Y)}{\operatorname{Var}(X)} (X - E[X])
+  }
+}
