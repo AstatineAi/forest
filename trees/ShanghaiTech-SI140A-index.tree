@@ -8,8 +8,9 @@
 \put\transclude/numbered{true}
 \put\transclude/expanded{false}
 
-\p{
-  [Homework solutions](ShanghaiTech-SI140A/Fall2024-HW-solutions.pdf)
+\ul{
+  \li{[Homework solutions](ShanghaiTech-SI140A/Fall2024-HW-solutions.pdf)}
+  \li{[Final (Unofficial)](ShanghaiTech-SI140A/Fall2024-Final-Unofficial.pdf)}
 }
 
 \hr
