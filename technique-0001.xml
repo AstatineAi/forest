@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="default.xsl"?>
+<fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="true"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>249</fr:anchor><fr:addr
+type="user">technique-0001</fr:addr><fr:route>technique-0001.xml</fr:route><fr:title
+text="Memory Overcommitment">Memory Overcommitment</fr:title><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>12</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Virtual memory provides an illusion of <fr:em>infinite memory</fr:em>. This is commonly achieved by paging and swapping. However, consider the following scenario:</fr:p><fr:p>You have an x86 machine with linux, 1 GB of RAM and sufficient swap space. You start a process that allocates 2 GB of memory. Since the virtual memory abstraction provides an illusion that this process can own the whole 3 GB user space, the OS must have a certain strategy to handle this situation.</fr:p><fr:p>The following (allocated more memory than available) is called <fr:strong>memory overcommitment</fr:strong>.</fr:p><fr:p>Operating systems have different strategies to handle memory overcommitment, you can refer to <fr:link
+type="external"
+href="https://docs.kernel.org/6.12/mm/overcommit-accounting.html">linux kernel documentation</fr:link> for the overcommitment policy in linux.
+
+  <fr:ul><fr:li><fr:strong>Mode 0</fr:strong>: Heuristic overcommit handling. Obvious overcommits of address space are refused. Used for a typical system.</fr:li>
+    <fr:li><fr:strong>Mode 1</fr:strong>: Always overcommit. Appropriate for some scientific applications.</fr:li>
+    <fr:li><fr:strong>Mode 2</fr:strong>: Don't overcommit.</fr:li></fr:ul>
+
+  See also <fr:link
+type="external"
+href="https://unix.stackexchange.com/questions/441364/what-is-the-purpose-of-memory-overcommitment-on-linux">this post on stackexchange</fr:link>.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree>
