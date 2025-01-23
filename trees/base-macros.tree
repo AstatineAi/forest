@@ -35,6 +35,10 @@
   \pre{\<html:code>[class]{"language-haskell"}{\body}}
 }
 
+\def\strike[body]{
+  \<html:strike>{\body}
+}
+
 \alloc\base/tex-preamble
 
 \def\texfig[~body]{
