@@ -7,7 +7,7 @@ show-heading="true"
 show-metadata="true"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>630</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>635</fr:anchor><fr:addr
 type="machine">#245</fr:addr><fr:route>unstable-245.xml</fr:route><fr:title
 text="Thought Cabinet › Techniques"><fr:link
 type="local"
@@ -20,7 +20,7 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>615</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>620</fr:anchor><fr:addr
 type="user">technique-0001</fr:addr><fr:route>technique-0001.xml</fr:route><fr:title
 text="Memory Overcommitment">Memory Overcommitment</fr:title><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>12</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Virtual memory provides an illusion of <fr:em>infinite memory</fr:em>. This is commonly achieved by paging and swapping. However, consider the following scenario:</fr:p><fr:p>You have an x86 machine with linux, 1 GB of RAM and sufficient swap space. You start a process that allocates 2 GB of memory. Since the virtual memory abstraction provides an illusion that this process can own the whole 3 GB user space, the OS must have a certain strategy to handle this situation.</fr:p><fr:p>The following (allocated more memory than available) is called <fr:strong>memory overcommitment</fr:strong>.</fr:p><fr:p>Operating systems have different strategies to handle memory overcommitment, you can refer to <fr:link
 type="external"
@@ -47,7 +47,7 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>631</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>636</fr:anchor><fr:addr
 type="user">index</fr:addr><fr:route>index.xml</fr:route><fr:title
 text="Thought Cabinet">Thought Cabinet</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>This is a simple collection of
   <fr:ul><fr:li>Interesting things I heard about (collect them to deal with "citation needed")</fr:li>
@@ -72,7 +72,7 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>607</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>611</fr:anchor><fr:addr
 type="user">astinita</fr:addr><fr:route>astinita.xml</fr:route><fr:title
 text="Hengyu Ai">Hengyu Ai</fr:title><fr:taxon>Person</fr:taxon><fr:authors /><fr:meta
 name="institution"><fr:link
@@ -96,7 +96,7 @@ show-heading="true"
 show-metadata="false"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>608</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>612</fr:anchor><fr:addr
 type="machine">#244</fr:addr><fr:route>unstable-244.xml</fr:route><fr:title
 text="Random Ideas">Random Ideas</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
 toc="false"
@@ -105,7 +105,49 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>609</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>613</fr:anchor><fr:addr
+type="user">random-idea-0004</fr:addr><fr:route>random-idea-0004.xml</fr:route><fr:title
+text="关于只狼中“纸人漂流”的随想">关于只狼中“纸人漂流”的随想</fr:title><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>23</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>250</fr:anchor><fr:addr
+type="user">random-idea-0005</fr:addr><fr:route>random-idea-0005.xml</fr:route><fr:title
+text="纸人漂流（只狼）">纸人漂流（只狼）</fr:title><fr:taxon>Reference</fr:taxon><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>23</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>游戏内道具描述如下：</fr:p><fr:blockquote><fr:p>刀刃和刀柄皆为白色的短刀
+    可将 HP 转换为纸人
+    通过休息便能再次使用</fr:p>
+
+  <fr:p>此短刀原本用于纸人漂流
+    将白色刀刃所削出的代表自身的纸人
+    放入源之水随波逐流，以供奉神龙的仪式</fr:p>
+
+  <fr:p>刀身上铭刻着“奉魂”的字样
+    便是此短刀的真名</fr:p></fr:blockquote></fr:mainmatter><fr:backmatter /></fr:tree><fr:p>游戏中的“纸人”的现实原型是日本的大祓/雏祭（雛祭り）中，将“人形代”放入河中，随水流汇入大海的仪式。这种仪式被称为“形代（かたしろ）流し”（纸人漂流）。</fr:p><fr:p>人们在做成人形的纸片上写上名字，对人偶吹气或者用人偶抚过身体，然后将其放入河水中，代表转移走自己的不幸。在平安时代的《源氏物语》中，有这样的描写：</fr:p><fr:blockquote><fr:p>三月初一适逢巳日。随从中略有见识的人劝道：“今天是上巳，身逢忧患的人，不妨前往修禊。”源氏公子听了他们的话，到海边去修禊了。在海边张起极简单的帐幕，请几个路过的阴阳师来，叫他们举行祓禊。阴阳师把一个大型的刍灵放在一只纸船里，送入海中，让它飘浮而去。源氏公子看了，觉得自身正像这个飘海的刍灵，便吟诗道：</fr:p>
+
+  <fr:p>“我似刍灵浮大海，随波飘泊命堪悲。”</fr:p></fr:blockquote><fr:p>这里的上巳即王羲之《兰亭集序》所提及的“暮春之初”（汉代以前定为三月上旬的巳日，后来固定在农历三月初三，日本雏祭在明治维新后定为公历三月三日），于流觞曲水边的“修稧（禊）事”。屈原的《九歌·云中君》写道：“浴兰汤兮沐芳，华采衣兮若英”，而上巳节也有源于此类祭神前的驱邪斋戒活动之说，人们寄托祓除厄运的愿望于澄澈清明，流动变化不息的水，祈求未来的顺利。</fr:p><fr:p>只狼中，苇名人信仰源之水，而纸人则是世间万物的思念幻化而成的实体。寄托于纸人的，不是厄运，而是伤悲。游戏中所见到的的纸人不会随水而下，或附身于生灵（击败敌怪掉落），或飘浮于空中，无尽的悲伤留在时间，而水的源头——高天之上的神殿，源之宫，大半成为了水下的废墟。</fr:p><fr:p>樱龙带来的不死的龙胤的不死力量，在概念上就与“流水不腐”的更新式的永存不符，依托龙胤得到不死之人，会不断吸收身边人的生命力，如同与树化为一体的樱龙，代表一种停滞的，负面的不朽。</fr:p><fr:p>除了纸人漂流“形代流し”，日本还有一种类似的活动，同样在三月三的雏祭（女儿节、人偶节）举行。人们制作和上文提到的“人形代”类似的工艺品<fr:link
+type="external"
+href="https://ja.wikipedia.org/wiki/%E6%B5%81%E3%81%97%E9%9B%9B">流し雛</fr:link>，同样将其置于流水中祈求洗去灾祸。<fr:link
+type="external"
+href="https://thwiki.cc/%E9%94%AE%E5%B1%B1%E9%9B%8F">
+  <html:strike
+xmlns:html="http://www.w3.org/1999/xhtml">此事在东方 Project 中亦有记载</html:strike>
+</fr:link></fr:p><fr:p>关于精致的雏人偶（转转 fumo 算是一种雏人偶吗）是否和流し雛有关，可以参考下面的博客：
+  <fr:ul><fr:li><fr:link
+type="external"
+href="https://blog.goo.ne.jp/shizechemg/e/9a63bbb1d6e22dd37e16f088a78e122e">淡島信仰と流し雛～流し雛は雛人形の源流か？～ 上：石沢誠司</fr:link></fr:li>
+    <fr:li><fr:link
+type="external"
+href="https://blog.goo.ne.jp/shizechemg/e/3b5b33a568af3f0114ccaebe4f93f72f">淡島信仰と流し雛 ～流し雛は雛人形の源流か？～ 下：石沢誠司</fr:link></fr:li></fr:ul></fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>614</fr:anchor><fr:addr
 type="user">random-idea-0003</fr:addr><fr:route>random-idea-0003.xml</fr:route><fr:title
 text="有什么可担心的？">有什么可担心的？</fr:title><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>9</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>你就想：</fr:p><fr:p>对面的那个人也是活人，</fr:p><fr:p>也会手冲。</fr:p><fr:p>差不多就行了，但是不要太详细的想他手冲。</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
 toc="false"
@@ -114,7 +156,7 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>610</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>615</fr:anchor><fr:addr
 type="user">random-idea-0002</fr:addr><fr:route>random-idea-0002.xml</fr:route><fr:title
 text="A &quot;Not Very Deep&quot; Insight">A "Not Very Deep" Insight</fr:title><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>8</fr:day></fr:date><fr:authors><fr:author><fr:link
 type="local"
@@ -142,7 +184,7 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>612</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>617</fr:anchor><fr:addr
 type="user">random-idea-0001</fr:addr><fr:route>random-idea-0001.xml</fr:route><fr:title
 text="Essence, Reductionism and Abstraction Leak">Essence, Reductionism and Abstraction Leak</fr:title><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>8</fr:day></fr:date><fr:authors><fr:author><fr:link
 type="local"
@@ -157,7 +199,7 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>473</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>477</fr:anchor><fr:addr
 type="user">concept-0001</fr:addr><fr:route>concept-0001.xml</fr:route><fr:title
 text="Equivalence Relation">Equivalence Relation</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>8</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>An <fr:strong>equivalence relation（等价关系）</fr:strong> is a binary relation <fr:tex
 display="inline"><![CDATA[\equiv ]]></fr:tex> on a set <fr:tex
@@ -186,7 +228,7 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>474</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>478</fr:anchor><fr:addr
 type="user">concept-0004</fr:addr><fr:route>concept-0004.xml</fr:route><fr:title
 text="Abstraction Leak">Abstraction Leak</fr:title><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>9</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p><fr:strong>Abstraction</fr:strong> is crucial for understanding complex systems. It is another layer above the concrete details. Ideally, we can order knowledge in a top-down approach, starting from the most abstract concepts and then diving into the details.</fr:p><fr:p>The not-so-ideal reality is that <fr:strong>asbtractions do not always have "proper generality"</fr:strong>. This means that in some cases we must deal with the details which the abstraction was supposed to hide. This is what we call an <fr:strong>abstraction leak</fr:strong>.</fr:p><fr:p>Abstraction leaks are not necessarily related to the implementation or hardware details. If an abstraction exagerates the generality of a concept, other things based on it may not work as expected.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
 toc="true"
@@ -195,7 +237,7 @@ show-heading="true"
 show-metadata="false"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>614</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>619</fr:anchor><fr:addr
 type="machine">#245</fr:addr><fr:route>unstable-245.xml</fr:route><fr:title
 text="Techniques">Techniques</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
 toc="false"
@@ -204,7 +246,7 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>615</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>620</fr:anchor><fr:addr
 type="user">technique-0001</fr:addr><fr:route>technique-0001.xml</fr:route><fr:title
 text="Memory Overcommitment">Memory Overcommitment</fr:title><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>12</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Virtual memory provides an illusion of <fr:em>infinite memory</fr:em>. This is commonly achieved by paging and swapping. However, consider the following scenario:</fr:p><fr:p>You have an x86 machine with linux, 1 GB of RAM and sufficient swap space. You start a process that allocates 2 GB of memory. Since the virtual memory abstraction provides an illusion that this process can own the whole 3 GB user space, the OS must have a certain strategy to handle this situation.</fr:p><fr:p>The following (allocated more memory than available) is called <fr:strong>memory overcommitment</fr:strong>.</fr:p><fr:p>Operating systems have different strategies to handle memory overcommitment, you can refer to <fr:link
 type="external"
@@ -225,7 +267,7 @@ show-heading="true"
 show-metadata="false"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>616</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>621</fr:anchor><fr:addr
 type="user">ShanghaiTech-Courses</fr:addr><fr:route>ShanghaiTech-Courses.xml</fr:route><fr:title
 text="Courses">Courses</fr:title><fr:authors><fr:author><fr:link
 type="local"
