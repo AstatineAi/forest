@@ -27,8 +27,8 @@
   \<html:hr>{}
 }
 
-\def\codem[body]{
-  \pre{\code{\body}}
+\def\codeblk[lang][body]{
+  \pre{\<html:code>[class]{"language-\lang"}{\body}}
 }
 
 \def\codehsk[body]{

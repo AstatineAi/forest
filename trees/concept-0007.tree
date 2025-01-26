@@ -31,7 +31,7 @@
 \p{
   \strong{Mathematica Code}:
 
-  \codem{
+  \codeblk{Mathematica}{
 StirlingS2[n, m]
   }
 }
