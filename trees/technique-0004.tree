@@ -1,0 +1,18 @@
+\date{2025-01-28}
+\title{Inline assembly in GNU C}
+
+\p{
+  In GNU C, \strong{inline assembly} is a feature that allows you to embed assembly code in C code.
+}
+
+\p{
+  The syntax for inline assembly in GNU C is: \code{asm ("assembly code")}, but in ISO C, keyword \code{__asm__} is used instead. AT & T syntax (opcode src, dest) is used in GNU C inline assembly. Example: \code{asm ("movl \%eax, \%ebx")} means moving the value in register \code{\%eax} to register \code{\%ebx}.
+}
+
+\p{
+  To interact with C code, inline assembly can use \em{input operands}, \em{output operands}, and \em{clobbered registers}. The syntax for these is: \code{asm ("assembly code" : output : input : clobbered)}.
+}
+
+\p{
+  [A collection of information about inline assembly - Stackoverflow tag](https://stackoverflow.com/tags/inline-assembly/info)
+}

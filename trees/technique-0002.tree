@@ -1,0 +1,88 @@
+\date{2025-01-26}
+\title{Two auxiliary functions in Pintos}
+\tag{technique}
+
+\import{base-macros}
+
+\codeblk{c}{/* Reads a byte at user virtual address UADDR.
+   UADDR must be below PHYS_BASE.
+   Returns the byte value if successful, -1 if a segfault
+   occurred. */
+static int
+get_user (const uint8_t *uaddr)
+{
+  int result;
+  asm ("movl $1f, \%0; movzbl \%1, \%0; 1:"
+       : "=&a" (result) : "m" (*uaddr));
+  return result;
+}
+ 
+/* Writes BYTE to user address UDST.
+   UDST must be below PHYS_BASE.
+   Returns true if successful, false if a segfault occurred. */
+static bool
+put_user (uint8_t *udst, uint8_t byte)
+{
+  int error_code;
+  asm ("movl $1f, \%0; movb \%b2, \%1; 1:"
+       : "=&a" (error_code), "=m" (*udst) : "q" (byte));
+  return error_code != -1;
+}
+}
+
+\p{
+  In [Pintos](https://web.stanford.edu/class/cs140/projects/pintos/pintos.html) project 2, the two auxiliary functions above are provided in the documentation.
+}
+
+\transclude{technique-0004}
+
+\p{
+  The main part of \code{get_user} is the inline assembly code: \code{asm ("movl $1f, \%0; movzbl \%1, \%0; 1:": "=&a" (result) : "m" (*uaddr));}
+
+  \ol{
+    \li{
+      \strong{Assembly template}: the string \code{"movl $1f, \%0; movzbl \%1, \%0; 1:"}.
+      \ul{
+        \li{\strong{Instruction opcode}: \code{movl} and \code{movzbl}, the former moves a long integer, the latter moves a byte and zero-extends it to a long integer.}
+        \li{\strong{Operands}: \code{$1f} is not an instant value, but a label. This operand means "find a \em{foward reference} (f) to label \code{1:} and use it as the operand". \code{\%0} and \code{\%1} will be replaced by the "input/output operands" in the next section of the inline assembly code.}
+        \li{\strong{Label}: the last two characters of the string are \code{1:}, which is a label.}
+      }
+    }
+    \li{
+      \strong{Output operands}: \code{"=&a" (result)}.
+      \ul{
+        \li{\strong{Constraint modifier}: \code{=}, which means the operand is an output operand and it's write-only. (If you want a read-write operand, replace the modifier with \code{+}.), \code{&}, which means this output operand must not overlap an input}
+        \li{\strong{Register class}: \code{a}, the actual result of this class follows [machine-specific constraints](https://gcc.gnu.org/onlinedocs/gcc/Machine-Constraints.html). Since Pintos is on x86, the actual register used is \code{eax}.}
+        \li{\strong{C variable}: \code{result}, which is the variable in the C code that will be used to store the result of the assembly code.}
+      }
+    }
+    \li{
+      \strong{Input operands}: \code{": "m" (*uaddr)}.
+      \ul{
+        \li{\strong{Constraint modifier}: \code{m}, a simple constraint(do not depend on any machine-specific information), which means the operand is a memory operand.}
+        \li{\strong{C variable}: \code{*uaddr}, which is the variable in the C code that will be used to store the address of the byte to be read.}
+      }
+    }
+  }
+}
+
+\p{
+  In a word, \code{get_user} writes label \code{1:} to \code{result} and writes the byte at the address \code{uaddr} to \code{result}. Constraint \code{"a"} makes the compiler use register \code{eax} for operand \code{\%0}.
+}
+
+\p{
+  Suppose the corresponding page of the address \code{uaddr} is not present or invalid, a page fault will occur, and the page fault handler will be called. If this is an invalid access or some other internal error happens, function \code{get_user} expects to get \code{-1} when the page fault handler returns.
+}
+
+\p{
+  To get the result from the page fault, register \code{eax} is reused to store the return value of the page fault handler. If there's no page fault or the page fault is correctly handled (e.g. a successful demand-paging), the return value will be the byte at the address \code{uaddr}, and that value will be stored in \code{result}. If there's a page fault, \code{eax} will be set to \code{-1} and \code{result} will be \code{-1}.
+}
+
+\p{
+  However, we need a way to recover from the page fault. Note that before the memory access (\code{movzbl}), a lable \code{1:} is written to \code{eax}. If a page fault occurs when executing the second instruction, the page fault handler can resume the execution by copying the value of \code{eax} to the program counter \code{eip} and then continue the execution from the label \code{1:}. The constraint \code{&} for \code{eax} ensures that 
+  the value in \code{eax} won't be overwritten, which is essential for the error recovery mechanism to work.
+}
+
+\p{
+  The principle is the same for \code{put_user}. The only difference is that the second instruction in the inline assembly code is writing a byte to the memory address \code{udst} instead of reading a byte from the memory address \code{uaddr}.
+}

@@ -1,0 +1,23 @@
+\date{2025-01-26}
+\title{Semaphore}
+\tag{technique}
+
+\p{
+  This is just a short memo about the meaning of P and V operations on a semaphore.
+}
+
+\p{
+  A \strong{semaphore} is a synchronization primitive. It is a special integer variable that can be accessed only through two standard \em{atomic} operations: \code{up} and \code{down}. The two operations are also known as \code{V} and \code{P} respectively, where "V" stands for the Dutch word "verhogen" (increase) and "P" stands for "proberen" (try) or "passeren" (pass).
+}
+
+\p{
+  The value of the semaphore #{S} can be any non-negative integer.
+}
+
+\p{
+  The \code{down} operation trys to decrease the value of the semaphore by one. If the value of the semaphore is already zero, the process executing that operation is blocked until the value becomes positive.
+}
+
+\p{
+  The \code{up} operation increases the value of the semaphore by one. If there are processes blocked on the semaphore, one of them is unblocked.
+}
