@@ -79,15 +79,15 @@
       "locked": {
         "lastModified": 1730711770,
         "narHash": "sha256-X2Y6Nt5+btqIda+YppJuSlJ6OoSWh4bZPvLsNShlFwg=",
-        "owner": "~jonsterling",
+        "owner": "AstatineAi",
         "repo": "ocaml-forester",
         "rev": "7f275290e211db2590b0d715d8fb47fc1de36550",
-        "type": "sourcehut"
+        "type": "github"
       },
       "original": {
-        "owner": "~jonsterling",
+        "owner": "AstatineAi",
         "repo": "ocaml-forester",
-        "type": "sourcehut"
+        "type": "github"
       }
     },
     "mirage-opam-overlays": {
@@ -136,11 +136,11 @@
     },
     "nixpkgs_2": {
       "locked": {
-        "lastModified": 1736166416,
-        "narHash": "sha256-U47xeACNBpkSO6IcCm0XvahsVXpJXzjPIQG7TZlOToU=",
+        "lastModified": 1737942377,
+        "narHash": "sha256-8Eo/jRAgT3CbAloyqOj6uPN1EqBvLI/Tv2g+RxHjkhU=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "b30f97d8c32d804d2d832ee837d0f1ca0695faa5",
+        "rev": "88a55dffa4d44d294c74c298daf75824dc0aafb5",
         "type": "github"
       },
       "original": {

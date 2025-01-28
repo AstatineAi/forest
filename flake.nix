@@ -3,7 +3,7 @@
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
     flake-parts.url = "github:hercules-ci/flake-parts";
     forester = {
-      url = "sourcehut:~jonsterling/ocaml-forester";
+      url = "github:AstatineAi/ocaml-forester";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
