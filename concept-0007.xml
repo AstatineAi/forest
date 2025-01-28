@@ -7,7 +7,7 @@ show-heading="true"
 show-metadata="true"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>513</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>518</fr:anchor><fr:addr
 type="user">concept-0007</fr:addr><fr:route>concept-0007.xml</fr:route><fr:title
 text="Stirling Numbers of the Second Kind">Stirling Numbers of the Second Kind</fr:title><fr:taxon>Theorem</fr:taxon><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>9</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>The <fr:strong>Stirling number of the second kind</fr:strong> is the number of ways to partition a set of <fr:tex
 display="inline"><![CDATA[n]]></fr:tex> distinct elements into <fr:tex
@@ -25,7 +25,11 @@ display="block"><![CDATA[     S(n, 0) = [n = 0]   ]]></fr:tex></fr:p><fr:p><fr:s
 display="block"><![CDATA[     S(n, m) = \frac {1}{m!} \sum _{i = 0}^{m} (-1)^{m - i} \binom {m}{i} i^n   ]]></fr:tex></fr:p><fr:p><fr:strong>Mathematica Code</fr:strong>:
 
   
-  <fr:pre><fr:code>StirlingS2[n, m]</fr:code></fr:pre></fr:p></fr:mainmatter><fr:backmatter><fr:tree
+  <fr:pre><html:code
+xmlns:html="http://www.w3.org/1999/xhtml"
+class="&quot;language-Mathematica&quot;">
+StirlingS2[n, m]
+  </html:code></fr:pre></fr:p></fr:mainmatter><fr:backmatter><fr:tree
 toc="false"
 numbered="false"
 show-heading="true"
@@ -40,7 +44,7 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>514</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>519</fr:anchor><fr:addr
 type="user">concept-0006</fr:addr><fr:route>concept-0006.xml</fr:route><fr:title
 text="Twelvefold Way">Twelvefold Way</fr:title><fr:taxon>Theorem</fr:taxon><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>9</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
 display="inline"><![CDATA[n]]></fr:tex> be the number of balls, and <fr:tex
@@ -51,7 +55,7 @@ show-heading="true"
 show-metadata="false"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>487</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>492</fr:anchor><fr:addr
 type="user">concept-0007</fr:addr><fr:route>concept-0007.xml</fr:route><fr:title
 text="Stirling Numbers of the Second Kind">Stirling Numbers of the Second Kind</fr:title><fr:taxon>Theorem</fr:taxon><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>9</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>The <fr:strong>Stirling number of the second kind</fr:strong> is the number of ways to partition a set of <fr:tex
 display="inline"><![CDATA[n]]></fr:tex> distinct elements into <fr:tex
@@ -69,14 +73,18 @@ display="block"><![CDATA[     S(n, 0) = [n = 0]   ]]></fr:tex></fr:p><fr:p><fr:s
 display="block"><![CDATA[     S(n, m) = \frac {1}{m!} \sum _{i = 0}^{m} (-1)^{m - i} \binom {m}{i} i^n   ]]></fr:tex></fr:p><fr:p><fr:strong>Mathematica Code</fr:strong>:
 
   
-  <fr:pre><fr:code>StirlingS2[n, m]</fr:code></fr:pre></fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+  <fr:pre><html:code
+xmlns:html="http://www.w3.org/1999/xhtml"
+class="&quot;language-Mathematica&quot;">
+StirlingS2[n, m]
+  </html:code></fr:pre></fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
 toc="true"
 numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>488</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>493</fr:anchor><fr:addr
 type="user">concept-0008</fr:addr><fr:route>concept-0008.xml</fr:route><fr:title
 text="Integer Partition">Integer Partition</fr:title><fr:taxon>Theorem</fr:taxon><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>9</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Denote <fr:strong>number of partition</fr:strong> of <fr:tex
 display="inline"><![CDATA[n]]></fr:tex> into <fr:tex

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="default.xsl"?>
+<fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="true"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>252</fr:anchor><fr:addr
+type="user">technique-0003</fr:addr><fr:route>technique-0003.xml</fr:route><fr:title
+text="Semaphore">Semaphore</fr:title><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>26</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>This is just a short memo about the meaning of P and V operations on a semaphore.</fr:p><fr:p>A <fr:strong>semaphore</fr:strong> is a synchronization primitive. It is a special integer variable that can be accessed only through two standard <fr:em>atomic</fr:em> operations: <fr:code>up</fr:code> and <fr:code>down</fr:code>. The two operations are also known as <fr:code>V</fr:code> and <fr:code>P</fr:code> respectively, where "V" stands for the Dutch word "verhogen" (increase) and "P" stands for "proberen" (try) or "passeren" (pass).</fr:p><fr:p>The value of the semaphore <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> can be any non-negative integer.</fr:p><fr:p>The <fr:code>down</fr:code> operation trys to decrease the value of the semaphore by one. If the value of the semaphore is already zero, the process executing that operation is blocked until the value becomes positive.</fr:p><fr:p>The <fr:code>up</fr:code> operation increases the value of the semaphore by one. If there are processes blocked on the semaphore, one of them is unblocked.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree>

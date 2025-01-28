@@ -7,7 +7,7 @@ show-heading="true"
 show-metadata="true"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>635</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>642</fr:anchor><fr:addr
 type="machine">#245</fr:addr><fr:route>unstable-245.xml</fr:route><fr:title
 text="Thought Cabinet › Techniques"><fr:link
 type="local"
@@ -20,7 +20,82 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>620</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>625</fr:anchor><fr:addr
+type="user">technique-0003</fr:addr><fr:route>technique-0003.xml</fr:route><fr:title
+text="Semaphore">Semaphore</fr:title><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>26</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>This is just a short memo about the meaning of P and V operations on a semaphore.</fr:p><fr:p>A <fr:strong>semaphore</fr:strong> is a synchronization primitive. It is a special integer variable that can be accessed only through two standard <fr:em>atomic</fr:em> operations: <fr:code>up</fr:code> and <fr:code>down</fr:code>. The two operations are also known as <fr:code>V</fr:code> and <fr:code>P</fr:code> respectively, where "V" stands for the Dutch word "verhogen" (increase) and "P" stands for "proberen" (try) or "passeren" (pass).</fr:p><fr:p>The value of the semaphore <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> can be any non-negative integer.</fr:p><fr:p>The <fr:code>down</fr:code> operation trys to decrease the value of the semaphore by one. If the value of the semaphore is already zero, the process executing that operation is blocked until the value becomes positive.</fr:p><fr:p>The <fr:code>up</fr:code> operation increases the value of the semaphore by one. If there are processes blocked on the semaphore, one of them is unblocked.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>626</fr:anchor><fr:addr
+type="user">technique-0002</fr:addr><fr:route>technique-0002.xml</fr:route><fr:title
+text="Two auxiliary functions in Pintos">Two auxiliary functions in Pintos</fr:title><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>26</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
+  <fr:pre><html:code
+xmlns:html="http://www.w3.org/1999/xhtml"
+class="&quot;language-c&quot;">/* Reads a byte at user virtual address UADDR.
+   UADDR must be below PHYS_BASE.
+   Returns the byte value if successful, -1 if a segfault
+   occurred. */
+static int
+get_user (const uint8_t *uaddr)
+{
+  int result;
+  asm ("movl $1f, %0; movzbl %1, %0; 1:"
+       : "=&amp;a" (result) : "m" (*uaddr));
+  return result;
+}
+ 
+/* Writes BYTE to user address UDST.
+   UDST must be below PHYS_BASE.
+   Returns true if successful, false if a segfault occurred. */
+static bool
+put_user (uint8_t *udst, uint8_t byte)
+{
+  int error_code;
+  asm ("movl $1f, %0; movb %b2, %1; 1:"
+       : "=&amp;a" (error_code), "=m" (*udst) : "q" (byte));
+  return error_code != -1;
+}
+</html:code></fr:pre>
+<fr:p>In <fr:link
+type="external"
+href="https://web.stanford.edu/class/cs140/projects/pintos/pintos.html">Pintos</fr:link> project 2, the two auxiliary functions above are provided in the documentation.</fr:p><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>251</fr:anchor><fr:addr
+type="user">technique-0004</fr:addr><fr:route>technique-0004.xml</fr:route><fr:title
+text="Inline assembly in GNU C">Inline assembly in GNU C</fr:title><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>28</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>In GNU C, <fr:strong>inline assembly</fr:strong> is a feature that allows you to embed assembly code in C code.</fr:p><fr:p>The syntax for inline assembly in GNU C is: <fr:code>asm ("assembly code")</fr:code>, but in ISO C, keyword <fr:code>__asm__</fr:code> is used instead. AT &amp; T syntax (opcode src, dest) is used in GNU C inline assembly. Example: <fr:code>asm ("movl %eax, %ebx")</fr:code> means moving the value in register <fr:code>%eax</fr:code> to register <fr:code>%ebx</fr:code>.</fr:p><fr:p>To interact with C code, inline assembly can use <fr:em>input operands</fr:em>, <fr:em>output operands</fr:em>, and <fr:em>clobbered registers</fr:em>. The syntax for these is: <fr:code>asm ("assembly code" : output : input : clobbered)</fr:code>.</fr:p><fr:p><fr:link
+type="external"
+href="https://stackoverflow.com/tags/inline-assembly/info">A collection of information about inline assembly - Stackoverflow tag</fr:link></fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:p>The main part of <fr:code>get_user</fr:code> is the inline assembly code: <fr:code>asm ("movl $1f, %0; movzbl %1, %0; 1:": "=&amp;a" (result) : "m" (*uaddr));</fr:code>
+
+  <fr:ol><fr:li><fr:strong>Assembly template</fr:strong>: the string <fr:code>"movl $1f, %0; movzbl %1, %0; 1:"</fr:code>.
+      <fr:ul><fr:li><fr:strong>Instruction opcode</fr:strong>: <fr:code>movl</fr:code> and <fr:code>movzbl</fr:code>, the former moves a long integer, the latter moves a byte and zero-extends it to a long integer.</fr:li>
+        <fr:li><fr:strong>Operands</fr:strong>: <fr:code>$1f</fr:code> is not an instant value, but a label. This operand means "find a <fr:em>foward reference</fr:em> (f) to label <fr:code>1:</fr:code> and use it as the operand". <fr:code>%0</fr:code> and <fr:code>%1</fr:code> will be replaced by the "input/output operands" in the next section of the inline assembly code.</fr:li>
+        <fr:li><fr:strong>Label</fr:strong>: the last two characters of the string are <fr:code>1:</fr:code>, which is a label.</fr:li></fr:ul></fr:li>
+    <fr:li><fr:strong>Output operands</fr:strong>: <fr:code>"=&amp;a" (result)</fr:code>.
+      <fr:ul><fr:li><fr:strong>Constraint modifier</fr:strong>: <fr:code>=</fr:code>, which means the operand is an output operand and it's write-only. (If you want a read-write operand, replace the modifier with <fr:code>+</fr:code>.), <fr:code>&amp;</fr:code>, which means this output operand must not overlap an input</fr:li>
+        <fr:li><fr:strong>Register class</fr:strong>: <fr:code>a</fr:code>, the actual result of this class follows <fr:link
+type="external"
+href="https://gcc.gnu.org/onlinedocs/gcc/Machine-Constraints.html">machine-specific constraints</fr:link>. Since Pintos is on x86, the actual register used is <fr:code>eax</fr:code>.</fr:li>
+        <fr:li><fr:strong>C variable</fr:strong>: <fr:code>result</fr:code>, which is the variable in the C code that will be used to store the result of the assembly code.</fr:li></fr:ul></fr:li>
+    <fr:li><fr:strong>Input operands</fr:strong>: <fr:code>": "m" (*uaddr)</fr:code>.
+      <fr:ul><fr:li><fr:strong>Constraint modifier</fr:strong>: <fr:code>m</fr:code>, a simple constraint(do not depend on any machine-specific information), which means the operand is a memory operand.</fr:li>
+        <fr:li><fr:strong>C variable</fr:strong>: <fr:code>*uaddr</fr:code>, which is the variable in the C code that will be used to store the address of the byte to be read.</fr:li></fr:ul></fr:li></fr:ol></fr:p><fr:p>In a word, <fr:code>get_user</fr:code> writes label <fr:code>1:</fr:code> to <fr:code>result</fr:code> and writes the byte at the address <fr:code>uaddr</fr:code> to <fr:code>result</fr:code>. Constraint <fr:code>"a"</fr:code> makes the compiler use register <fr:code>eax</fr:code> for operand <fr:code>%0</fr:code>.</fr:p><fr:p>Suppose the corresponding page of the address <fr:code>uaddr</fr:code> is not present or invalid, a page fault will occur, and the page fault handler will be called. If this is an invalid access or some other internal error happens, function <fr:code>get_user</fr:code> expects to get <fr:code>-1</fr:code> when the page fault handler returns.</fr:p><fr:p>To get the result from the page fault, register <fr:code>eax</fr:code> is reused to store the return value of the page fault handler. If there's no page fault or the page fault is correctly handled (e.g. a successful demand-paging), the return value will be the byte at the address <fr:code>uaddr</fr:code>, and that value will be stored in <fr:code>result</fr:code>. If there's a page fault, <fr:code>eax</fr:code> will be set to <fr:code>-1</fr:code> and <fr:code>result</fr:code> will be <fr:code>-1</fr:code>.</fr:p><fr:p>However, we need a way to recover from the page fault. Note that before the memory access (<fr:code>movzbl</fr:code>), a lable <fr:code>1:</fr:code> is written to <fr:code>eax</fr:code>. If a page fault occurs when executing the second instruction, the page fault handler can resume the execution by copying the value of <fr:code>eax</fr:code> to the program counter <fr:code>eip</fr:code> and then continue the execution from the label <fr:code>1:</fr:code>. The constraint <fr:code>&amp;</fr:code> for <fr:code>eax</fr:code> ensures that 
+  the value in <fr:code>eax</fr:code> won't be overwritten, which is essential for the error recovery mechanism to work.</fr:p><fr:p>The principle is the same for <fr:code>put_user</fr:code>. The only difference is that the second instruction in the inline assembly code is writing a byte to the memory address <fr:code>udst</fr:code> instead of reading a byte from the memory address <fr:code>uaddr</fr:code>.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>627</fr:anchor><fr:addr
 type="user">technique-0001</fr:addr><fr:route>technique-0001.xml</fr:route><fr:title
 text="Memory Overcommitment">Memory Overcommitment</fr:title><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>12</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Virtual memory provides an illusion of <fr:em>infinite memory</fr:em>. This is commonly achieved by paging and swapping. However, consider the following scenario:</fr:p><fr:p>You have an x86 machine with linux, 1 GB of RAM and sufficient swap space. You start a process that allocates 2 GB of memory. Since the virtual memory abstraction provides an illusion that this process can own the whole 3 GB user space, the OS must have a certain strategy to handle this situation.</fr:p><fr:p>The following (allocated more memory than available) is called <fr:strong>memory overcommitment</fr:strong>.</fr:p><fr:p>Operating systems have different strategies to handle memory overcommitment, you can refer to <fr:link
 type="external"
@@ -47,7 +122,7 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>636</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>643</fr:anchor><fr:addr
 type="user">index</fr:addr><fr:route>index.xml</fr:route><fr:title
 text="Thought Cabinet">Thought Cabinet</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>This is a simple collection of
   <fr:ul><fr:li>Interesting things I heard about (collect them to deal with "citation needed")</fr:li>
@@ -72,7 +147,7 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>611</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>616</fr:anchor><fr:addr
 type="user">astinita</fr:addr><fr:route>astinita.xml</fr:route><fr:title
 text="Hengyu Ai">Hengyu Ai</fr:title><fr:taxon>Person</fr:taxon><fr:authors /><fr:meta
 name="institution"><fr:link
@@ -96,7 +171,7 @@ show-heading="true"
 show-metadata="false"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>612</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>617</fr:anchor><fr:addr
 type="machine">#244</fr:addr><fr:route>unstable-244.xml</fr:route><fr:title
 text="Random Ideas">Random Ideas</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
 toc="false"
@@ -105,7 +180,7 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>613</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>618</fr:anchor><fr:addr
 type="user">random-idea-0004</fr:addr><fr:route>random-idea-0004.xml</fr:route><fr:title
 text="关于只狼中“纸人漂流”的随想">关于只狼中“纸人漂流”的随想</fr:title><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>23</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
 toc="true"
@@ -114,7 +189,7 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>250</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>255</fr:anchor><fr:addr
 type="user">random-idea-0005</fr:addr><fr:route>random-idea-0005.xml</fr:route><fr:title
 text="纸人漂流（只狼）">纸人漂流（只狼）</fr:title><fr:taxon>Reference</fr:taxon><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>23</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>游戏内道具描述如下：</fr:p><fr:blockquote><fr:p>刀刃和刀柄皆为白色的短刀
     可将 HP 转换为纸人
@@ -147,7 +222,7 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>614</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>619</fr:anchor><fr:addr
 type="user">random-idea-0003</fr:addr><fr:route>random-idea-0003.xml</fr:route><fr:title
 text="有什么可担心的？">有什么可担心的？</fr:title><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>9</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>你就想：</fr:p><fr:p>对面的那个人也是活人，</fr:p><fr:p>也会手冲。</fr:p><fr:p>差不多就行了，但是不要太详细的想他手冲。</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
 toc="false"
@@ -156,7 +231,7 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>615</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>620</fr:anchor><fr:addr
 type="user">random-idea-0002</fr:addr><fr:route>random-idea-0002.xml</fr:route><fr:title
 text="A &quot;Not Very Deep&quot; Insight">A "Not Very Deep" Insight</fr:title><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>8</fr:day></fr:date><fr:authors><fr:author><fr:link
 type="local"
@@ -184,7 +259,7 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>617</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>622</fr:anchor><fr:addr
 type="user">random-idea-0001</fr:addr><fr:route>random-idea-0001.xml</fr:route><fr:title
 text="Essence, Reductionism and Abstraction Leak">Essence, Reductionism and Abstraction Leak</fr:title><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>8</fr:day></fr:date><fr:authors><fr:author><fr:link
 type="local"
@@ -199,7 +274,7 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>477</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>482</fr:anchor><fr:addr
 type="user">concept-0001</fr:addr><fr:route>concept-0001.xml</fr:route><fr:title
 text="Equivalence Relation">Equivalence Relation</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>8</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>An <fr:strong>equivalence relation（等价关系）</fr:strong> is a binary relation <fr:tex
 display="inline"><![CDATA[\equiv ]]></fr:tex> on a set <fr:tex
@@ -228,7 +303,7 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>478</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>483</fr:anchor><fr:addr
 type="user">concept-0004</fr:addr><fr:route>concept-0004.xml</fr:route><fr:title
 text="Abstraction Leak">Abstraction Leak</fr:title><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>9</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p><fr:strong>Abstraction</fr:strong> is crucial for understanding complex systems. It is another layer above the concrete details. Ideally, we can order knowledge in a top-down approach, starting from the most abstract concepts and then diving into the details.</fr:p><fr:p>The not-so-ideal reality is that <fr:strong>asbtractions do not always have "proper generality"</fr:strong>. This means that in some cases we must deal with the details which the abstraction was supposed to hide. This is what we call an <fr:strong>abstraction leak</fr:strong>.</fr:p><fr:p>Abstraction leaks are not necessarily related to the implementation or hardware details. If an abstraction exagerates the generality of a concept, other things based on it may not work as expected.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
 toc="true"
@@ -237,7 +312,7 @@ show-heading="true"
 show-metadata="false"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>619</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>624</fr:anchor><fr:addr
 type="machine">#245</fr:addr><fr:route>unstable-245.xml</fr:route><fr:title
 text="Techniques">Techniques</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
 toc="false"
@@ -246,7 +321,82 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>620</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>625</fr:anchor><fr:addr
+type="user">technique-0003</fr:addr><fr:route>technique-0003.xml</fr:route><fr:title
+text="Semaphore">Semaphore</fr:title><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>26</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>This is just a short memo about the meaning of P and V operations on a semaphore.</fr:p><fr:p>A <fr:strong>semaphore</fr:strong> is a synchronization primitive. It is a special integer variable that can be accessed only through two standard <fr:em>atomic</fr:em> operations: <fr:code>up</fr:code> and <fr:code>down</fr:code>. The two operations are also known as <fr:code>V</fr:code> and <fr:code>P</fr:code> respectively, where "V" stands for the Dutch word "verhogen" (increase) and "P" stands for "proberen" (try) or "passeren" (pass).</fr:p><fr:p>The value of the semaphore <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> can be any non-negative integer.</fr:p><fr:p>The <fr:code>down</fr:code> operation trys to decrease the value of the semaphore by one. If the value of the semaphore is already zero, the process executing that operation is blocked until the value becomes positive.</fr:p><fr:p>The <fr:code>up</fr:code> operation increases the value of the semaphore by one. If there are processes blocked on the semaphore, one of them is unblocked.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>626</fr:anchor><fr:addr
+type="user">technique-0002</fr:addr><fr:route>technique-0002.xml</fr:route><fr:title
+text="Two auxiliary functions in Pintos">Two auxiliary functions in Pintos</fr:title><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>26</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
+  <fr:pre><html:code
+xmlns:html="http://www.w3.org/1999/xhtml"
+class="&quot;language-c&quot;">/* Reads a byte at user virtual address UADDR.
+   UADDR must be below PHYS_BASE.
+   Returns the byte value if successful, -1 if a segfault
+   occurred. */
+static int
+get_user (const uint8_t *uaddr)
+{
+  int result;
+  asm ("movl $1f, %0; movzbl %1, %0; 1:"
+       : "=&amp;a" (result) : "m" (*uaddr));
+  return result;
+}
+ 
+/* Writes BYTE to user address UDST.
+   UDST must be below PHYS_BASE.
+   Returns true if successful, false if a segfault occurred. */
+static bool
+put_user (uint8_t *udst, uint8_t byte)
+{
+  int error_code;
+  asm ("movl $1f, %0; movb %b2, %1; 1:"
+       : "=&amp;a" (error_code), "=m" (*udst) : "q" (byte));
+  return error_code != -1;
+}
+</html:code></fr:pre>
+<fr:p>In <fr:link
+type="external"
+href="https://web.stanford.edu/class/cs140/projects/pintos/pintos.html">Pintos</fr:link> project 2, the two auxiliary functions above are provided in the documentation.</fr:p><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>251</fr:anchor><fr:addr
+type="user">technique-0004</fr:addr><fr:route>technique-0004.xml</fr:route><fr:title
+text="Inline assembly in GNU C">Inline assembly in GNU C</fr:title><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>28</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>In GNU C, <fr:strong>inline assembly</fr:strong> is a feature that allows you to embed assembly code in C code.</fr:p><fr:p>The syntax for inline assembly in GNU C is: <fr:code>asm ("assembly code")</fr:code>, but in ISO C, keyword <fr:code>__asm__</fr:code> is used instead. AT &amp; T syntax (opcode src, dest) is used in GNU C inline assembly. Example: <fr:code>asm ("movl %eax, %ebx")</fr:code> means moving the value in register <fr:code>%eax</fr:code> to register <fr:code>%ebx</fr:code>.</fr:p><fr:p>To interact with C code, inline assembly can use <fr:em>input operands</fr:em>, <fr:em>output operands</fr:em>, and <fr:em>clobbered registers</fr:em>. The syntax for these is: <fr:code>asm ("assembly code" : output : input : clobbered)</fr:code>.</fr:p><fr:p><fr:link
+type="external"
+href="https://stackoverflow.com/tags/inline-assembly/info">A collection of information about inline assembly - Stackoverflow tag</fr:link></fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:p>The main part of <fr:code>get_user</fr:code> is the inline assembly code: <fr:code>asm ("movl $1f, %0; movzbl %1, %0; 1:": "=&amp;a" (result) : "m" (*uaddr));</fr:code>
+
+  <fr:ol><fr:li><fr:strong>Assembly template</fr:strong>: the string <fr:code>"movl $1f, %0; movzbl %1, %0; 1:"</fr:code>.
+      <fr:ul><fr:li><fr:strong>Instruction opcode</fr:strong>: <fr:code>movl</fr:code> and <fr:code>movzbl</fr:code>, the former moves a long integer, the latter moves a byte and zero-extends it to a long integer.</fr:li>
+        <fr:li><fr:strong>Operands</fr:strong>: <fr:code>$1f</fr:code> is not an instant value, but a label. This operand means "find a <fr:em>foward reference</fr:em> (f) to label <fr:code>1:</fr:code> and use it as the operand". <fr:code>%0</fr:code> and <fr:code>%1</fr:code> will be replaced by the "input/output operands" in the next section of the inline assembly code.</fr:li>
+        <fr:li><fr:strong>Label</fr:strong>: the last two characters of the string are <fr:code>1:</fr:code>, which is a label.</fr:li></fr:ul></fr:li>
+    <fr:li><fr:strong>Output operands</fr:strong>: <fr:code>"=&amp;a" (result)</fr:code>.
+      <fr:ul><fr:li><fr:strong>Constraint modifier</fr:strong>: <fr:code>=</fr:code>, which means the operand is an output operand and it's write-only. (If you want a read-write operand, replace the modifier with <fr:code>+</fr:code>.), <fr:code>&amp;</fr:code>, which means this output operand must not overlap an input</fr:li>
+        <fr:li><fr:strong>Register class</fr:strong>: <fr:code>a</fr:code>, the actual result of this class follows <fr:link
+type="external"
+href="https://gcc.gnu.org/onlinedocs/gcc/Machine-Constraints.html">machine-specific constraints</fr:link>. Since Pintos is on x86, the actual register used is <fr:code>eax</fr:code>.</fr:li>
+        <fr:li><fr:strong>C variable</fr:strong>: <fr:code>result</fr:code>, which is the variable in the C code that will be used to store the result of the assembly code.</fr:li></fr:ul></fr:li>
+    <fr:li><fr:strong>Input operands</fr:strong>: <fr:code>": "m" (*uaddr)</fr:code>.
+      <fr:ul><fr:li><fr:strong>Constraint modifier</fr:strong>: <fr:code>m</fr:code>, a simple constraint(do not depend on any machine-specific information), which means the operand is a memory operand.</fr:li>
+        <fr:li><fr:strong>C variable</fr:strong>: <fr:code>*uaddr</fr:code>, which is the variable in the C code that will be used to store the address of the byte to be read.</fr:li></fr:ul></fr:li></fr:ol></fr:p><fr:p>In a word, <fr:code>get_user</fr:code> writes label <fr:code>1:</fr:code> to <fr:code>result</fr:code> and writes the byte at the address <fr:code>uaddr</fr:code> to <fr:code>result</fr:code>. Constraint <fr:code>"a"</fr:code> makes the compiler use register <fr:code>eax</fr:code> for operand <fr:code>%0</fr:code>.</fr:p><fr:p>Suppose the corresponding page of the address <fr:code>uaddr</fr:code> is not present or invalid, a page fault will occur, and the page fault handler will be called. If this is an invalid access or some other internal error happens, function <fr:code>get_user</fr:code> expects to get <fr:code>-1</fr:code> when the page fault handler returns.</fr:p><fr:p>To get the result from the page fault, register <fr:code>eax</fr:code> is reused to store the return value of the page fault handler. If there's no page fault or the page fault is correctly handled (e.g. a successful demand-paging), the return value will be the byte at the address <fr:code>uaddr</fr:code>, and that value will be stored in <fr:code>result</fr:code>. If there's a page fault, <fr:code>eax</fr:code> will be set to <fr:code>-1</fr:code> and <fr:code>result</fr:code> will be <fr:code>-1</fr:code>.</fr:p><fr:p>However, we need a way to recover from the page fault. Note that before the memory access (<fr:code>movzbl</fr:code>), a lable <fr:code>1:</fr:code> is written to <fr:code>eax</fr:code>. If a page fault occurs when executing the second instruction, the page fault handler can resume the execution by copying the value of <fr:code>eax</fr:code> to the program counter <fr:code>eip</fr:code> and then continue the execution from the label <fr:code>1:</fr:code>. The constraint <fr:code>&amp;</fr:code> for <fr:code>eax</fr:code> ensures that 
+  the value in <fr:code>eax</fr:code> won't be overwritten, which is essential for the error recovery mechanism to work.</fr:p><fr:p>The principle is the same for <fr:code>put_user</fr:code>. The only difference is that the second instruction in the inline assembly code is writing a byte to the memory address <fr:code>udst</fr:code> instead of reading a byte from the memory address <fr:code>uaddr</fr:code>.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>627</fr:anchor><fr:addr
 type="user">technique-0001</fr:addr><fr:route>technique-0001.xml</fr:route><fr:title
 text="Memory Overcommitment">Memory Overcommitment</fr:title><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>12</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Virtual memory provides an illusion of <fr:em>infinite memory</fr:em>. This is commonly achieved by paging and swapping. However, consider the following scenario:</fr:p><fr:p>You have an x86 machine with linux, 1 GB of RAM and sufficient swap space. You start a process that allocates 2 GB of memory. Since the virtual memory abstraction provides an illusion that this process can own the whole 3 GB user space, the OS must have a certain strategy to handle this situation.</fr:p><fr:p>The following (allocated more memory than available) is called <fr:strong>memory overcommitment</fr:strong>.</fr:p><fr:p>Operating systems have different strategies to handle memory overcommitment, you can refer to <fr:link
 type="external"
@@ -267,7 +417,7 @@ show-heading="true"
 show-metadata="false"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>621</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>628</fr:anchor><fr:addr
 type="user">ShanghaiTech-Courses</fr:addr><fr:route>ShanghaiTech-Courses.xml</fr:route><fr:title
 text="Courses">Courses</fr:title><fr:authors><fr:author><fr:link
 type="local"

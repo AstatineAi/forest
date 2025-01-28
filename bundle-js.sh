@@ -1,4 +1,4 @@
-#!/nix/store/5mh7kaj2fyv8mk4sfq1brwxgc02884wi-bash-5.2p37/bin/bash
+#!/nix/store/4fvc5fm8bszmkydng1ivrvr5cbvr1g60-bash-5.2p37/bin/bash
 
 npm install
 

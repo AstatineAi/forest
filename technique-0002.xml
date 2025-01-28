@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="default.xsl"?>
+<fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="true"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>253</fr:anchor><fr:addr
+type="user">technique-0002</fr:addr><fr:route>technique-0002.xml</fr:route><fr:title
+text="Two auxiliary functions in Pintos">Two auxiliary functions in Pintos</fr:title><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>26</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
+  <fr:pre><html:code
+xmlns:html="http://www.w3.org/1999/xhtml"
+class="&quot;language-c&quot;">/* Reads a byte at user virtual address UADDR.
+   UADDR must be below PHYS_BASE.
+   Returns the byte value if successful, -1 if a segfault
+   occurred. */
+static int
+get_user (const uint8_t *uaddr)
+{
+  int result;
+  asm ("movl $1f, %0; movzbl %1, %0; 1:"
+       : "=&amp;a" (result) : "m" (*uaddr));
+  return result;
+}
+ 
+/* Writes BYTE to user address UDST.
+   UDST must be below PHYS_BASE.
+   Returns true if successful, false if a segfault occurred. */
+static bool
+put_user (uint8_t *udst, uint8_t byte)
+{
+  int error_code;
+  asm ("movl $1f, %0; movb %b2, %1; 1:"
+       : "=&amp;a" (error_code), "=m" (*udst) : "q" (byte));
+  return error_code != -1;
+}
+</html:code></fr:pre>
+<fr:p>In <fr:link
+type="external"
+href="https://web.stanford.edu/class/cs140/projects/pintos/pintos.html">Pintos</fr:link> project 2, the two auxiliary functions above are provided in the documentation.</fr:p><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>251</fr:anchor><fr:addr
+type="user">technique-0004</fr:addr><fr:route>technique-0004.xml</fr:route><fr:title
+text="Inline assembly in GNU C">Inline assembly in GNU C</fr:title><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>28</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>In GNU C, <fr:strong>inline assembly</fr:strong> is a feature that allows you to embed assembly code in C code.</fr:p><fr:p>The syntax for inline assembly in GNU C is: <fr:code>asm ("assembly code")</fr:code>, but in ISO C, keyword <fr:code>__asm__</fr:code> is used instead. AT &amp; T syntax (opcode src, dest) is used in GNU C inline assembly. Example: <fr:code>asm ("movl %eax, %ebx")</fr:code> means moving the value in register <fr:code>%eax</fr:code> to register <fr:code>%ebx</fr:code>.</fr:p><fr:p>To interact with C code, inline assembly can use <fr:em>input operands</fr:em>, <fr:em>output operands</fr:em>, and <fr:em>clobbered registers</fr:em>. The syntax for these is: <fr:code>asm ("assembly code" : output : input : clobbered)</fr:code>.</fr:p><fr:p><fr:link
+type="external"
+href="https://stackoverflow.com/tags/inline-assembly/info">A collection of information about inline assembly - Stackoverflow tag</fr:link></fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:p>The main part of <fr:code>get_user</fr:code> is the inline assembly code: <fr:code>asm ("movl $1f, %0; movzbl %1, %0; 1:": "=&amp;a" (result) : "m" (*uaddr));</fr:code>
+
+  <fr:ol><fr:li><fr:strong>Assembly template</fr:strong>: the string <fr:code>"movl $1f, %0; movzbl %1, %0; 1:"</fr:code>.
+      <fr:ul><fr:li><fr:strong>Instruction opcode</fr:strong>: <fr:code>movl</fr:code> and <fr:code>movzbl</fr:code>, the former moves a long integer, the latter moves a byte and zero-extends it to a long integer.</fr:li>
+        <fr:li><fr:strong>Operands</fr:strong>: <fr:code>$1f</fr:code> is not an instant value, but a label. This operand means "find a <fr:em>foward reference</fr:em> (f) to label <fr:code>1:</fr:code> and use it as the operand". <fr:code>%0</fr:code> and <fr:code>%1</fr:code> will be replaced by the "input/output operands" in the next section of the inline assembly code.</fr:li>
+        <fr:li><fr:strong>Label</fr:strong>: the last two characters of the string are <fr:code>1:</fr:code>, which is a label.</fr:li></fr:ul></fr:li>
+    <fr:li><fr:strong>Output operands</fr:strong>: <fr:code>"=&amp;a" (result)</fr:code>.
+      <fr:ul><fr:li><fr:strong>Constraint modifier</fr:strong>: <fr:code>=</fr:code>, which means the operand is an output operand and it's write-only. (If you want a read-write operand, replace the modifier with <fr:code>+</fr:code>.), <fr:code>&amp;</fr:code>, which means this output operand must not overlap an input</fr:li>
+        <fr:li><fr:strong>Register class</fr:strong>: <fr:code>a</fr:code>, the actual result of this class follows <fr:link
+type="external"
+href="https://gcc.gnu.org/onlinedocs/gcc/Machine-Constraints.html">machine-specific constraints</fr:link>. Since Pintos is on x86, the actual register used is <fr:code>eax</fr:code>.</fr:li>
+        <fr:li><fr:strong>C variable</fr:strong>: <fr:code>result</fr:code>, which is the variable in the C code that will be used to store the result of the assembly code.</fr:li></fr:ul></fr:li>
+    <fr:li><fr:strong>Input operands</fr:strong>: <fr:code>": "m" (*uaddr)</fr:code>.
+      <fr:ul><fr:li><fr:strong>Constraint modifier</fr:strong>: <fr:code>m</fr:code>, a simple constraint(do not depend on any machine-specific information), which means the operand is a memory operand.</fr:li>
+        <fr:li><fr:strong>C variable</fr:strong>: <fr:code>*uaddr</fr:code>, which is the variable in the C code that will be used to store the address of the byte to be read.</fr:li></fr:ul></fr:li></fr:ol></fr:p><fr:p>In a word, <fr:code>get_user</fr:code> writes label <fr:code>1:</fr:code> to <fr:code>result</fr:code> and writes the byte at the address <fr:code>uaddr</fr:code> to <fr:code>result</fr:code>. Constraint <fr:code>"a"</fr:code> makes the compiler use register <fr:code>eax</fr:code> for operand <fr:code>%0</fr:code>.</fr:p><fr:p>Suppose the corresponding page of the address <fr:code>uaddr</fr:code> is not present or invalid, a page fault will occur, and the page fault handler will be called. If this is an invalid access or some other internal error happens, function <fr:code>get_user</fr:code> expects to get <fr:code>-1</fr:code> when the page fault handler returns.</fr:p><fr:p>To get the result from the page fault, register <fr:code>eax</fr:code> is reused to store the return value of the page fault handler. If there's no page fault or the page fault is correctly handled (e.g. a successful demand-paging), the return value will be the byte at the address <fr:code>uaddr</fr:code>, and that value will be stored in <fr:code>result</fr:code>. If there's a page fault, <fr:code>eax</fr:code> will be set to <fr:code>-1</fr:code> and <fr:code>result</fr:code> will be <fr:code>-1</fr:code>.</fr:p><fr:p>However, we need a way to recover from the page fault. Note that before the memory access (<fr:code>movzbl</fr:code>), a lable <fr:code>1:</fr:code> is written to <fr:code>eax</fr:code>. If a page fault occurs when executing the second instruction, the page fault handler can resume the execution by copying the value of <fr:code>eax</fr:code> to the program counter <fr:code>eip</fr:code> and then continue the execution from the label <fr:code>1:</fr:code>. The constraint <fr:code>&amp;</fr:code> for <fr:code>eax</fr:code> ensures that 
+  the value in <fr:code>eax</fr:code> won't be overwritten, which is essential for the error recovery mechanism to work.</fr:p><fr:p>The principle is the same for <fr:code>put_user</fr:code>. The only difference is that the second instruction in the inline assembly code is writing a byte to the memory address <fr:code>udst</fr:code> instead of reading a byte from the memory address <fr:code>uaddr</fr:code>.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree>
