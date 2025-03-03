@@ -7,18 +7,50 @@ show-heading="true"
 show-metadata="true"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>259</fr:anchor><fr:addr
-type="machine">#245</fr:addr><fr:route>unstable-245.xml</fr:route><fr:taxon>Hydro OJ Testing Features</fr:taxon><fr:date><fr:year>2025</fr:year><fr:month>3</fr:month><fr:day>3</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>基础的 Special Judge 功能都是在一次评测结束后进行的，所以无法实现“在评测之前”改变运行时环境。</fr:p><fr:p>为了实现“在评测之前/在评测时”的需求，我们需要手动提供 <fr:code>compile.sh</fr:code> 和 <fr:code>execute.sh</fr:code> 脚本，用于修改运行前（编译）流程，和执行流程。</fr:p><fr:p>为了在评测 Python 时给出较为完整的 Traceback 信息，我们需要将执行时的返回结果改为总是返回 <fr:code>0</fr:code>，并将 Traceback 信息输出到 <fr:code>stdout</fr:code>，在 checker 中统一处理。由 <fr:link
-type="external"
-href="https://hydro.ac/d/system_test/p/11">Hydro OJ 测试题库: Python With Error Trace</fr:link> ，可以提供如下 <fr:code>execute.sh</fr:code> 脚本：
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>261</fr:anchor><fr:addr
+type="machine">#246</fr:addr><fr:route>unstable-246.xml</fr:route><fr:taxon>Banning Built-in Functions</fr:taxon><fr:date><fr:year>2025</fr:year><fr:month>3</fr:month><fr:day>3</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p><html:strike
+xmlns:html="http://www.w3.org/1999/xhtml">换成 LISP 早做完了</html:strike></fr:p><fr:p>对于一些简单的 top-level 函数，如 <fr:code>sorted</fr:code>，可以通过在文件最前面加入新定义的函数来覆盖原有的函数。如：
       
   <fr:pre><html:code
 xmlns:html="http://www.w3.org/1999/xhtml"
-class="&quot;language-bash&quot;"># 无论如何都返回 0，防止被系统判为 RE 跳过 checker 阶段，所以在外层使用一个 echo 函数
-# 因为只有 stdout 会被 checker 读取，我们需要将 stderr 也重定向至 stdout。
-echo `/usr/bin/python3 foo &gt;stdout 2&gt;stdout` &gt;/dev/null</html:code></fr:pre>
+class="&quot;language-python&quot;">class BannedError(Exception):
+    def __init__(self, message):
+        self.message = message
 
-      同时由此文档可知，编译阶段应该生成一个 <fr:code>foo</fr:code> 文件，用于执行。</fr:p><fr:p>在 <fr:code>compile.sh</fr:code> 中通过 <fr:code>ls</fr:code> 指令得到，源代码位于 <fr:code>foo.py</fr:code> 中，推测对 Python 的默认 <fr:code>compile.sh</fr:code> 作用即是将 <fr:code>foo.py</fr:code> 内容复制到 <fr:code>foo</fr:code> 文件中。</fr:p></fr:mainmatter><fr:backmatter><fr:tree
+def sorted(self, *args, **kwargs):
+    raise BannedError("sorted() is banned")</html:code></fr:pre>
+
+    但是对于如 <fr:code>list</fr:code> 的内建方法，无法通过这种方式覆盖。即使声明新的 <fr:code>class list</fr:code> 也无法改变内建列表的行为。</fr:p><fr:p>尝试直接在 Python 代码中修改 <fr:code>list</fr:code> identifier，发现无法修改，在 <fr:code>globals()</fr:code> 中可以找到 builtin list，但该对象是不可变的，同样无法覆盖某个方法或 <fr:code>delattr</fr:code>。</fr:p><fr:p>尝 hack python，Python 提供了 ctypes 库，包含获取对象的裸指针等功能，<fr:link
+type="external"
+href="https://clarete.li/forbiddenfruit/">forbiddenfruit 库</fr:link> 就使用了这一点 hack CPython，将 forbiddenfruit 库的必要部分和我们需要修改的部分，如：
+      
+  <fr:pre><html:code
+xmlns:html="http://www.w3.org/1999/xhtml"
+class="&quot;language-python&quot;">import builtins
+class BannedError(Exception):
+    def __init__(self, message):
+        self.message = message
+
+def sort(self, *args, **kwargs):
+    raise BannedError("sort() / sorted() is banned")
+    
+curse(builtins.list, "sort", sort)</html:code></fr:pre>
+
+      放入一个文件 <fr:code>header.py</fr:code> ，在 <fr:code>compile.sh</fr:code> 中合并我们添加的 <fr:code>header.py</fr:code> 和原有的 <fr:code>foo.py</fr:code> 文件，生成 <fr:code>foo</fr:code>.</fr:p><fr:p>此时评测可以令调用被禁用函数/方法的代码发生异常，但无法将 Traceback 完整打印出来，因此采取上文提到的将 Traceback 信息输出到 <fr:code>stdout</fr:code> 的方法，编写 checker，检查输出是否有 <fr:code>Trackback</fr:code>，若有则在 <fr:code>stderr</fr:code> 输出 <fr:code>status(6)</fr:code> 与后续错误信息，否则进入和答案比较并且评分的阶段。</fr:p><fr:p>此外，为了让编译/运行期沙箱内有我们需要的文件，需要修改 <fr:code>config.yaml</fr:code> 加入以下内容：
+      
+  <fr:pre><html:code
+xmlns:html="http://www.w3.org/1999/xhtml"
+class="&quot;language-yaml&quot;">user_extra_files:
+- compile.sh
+- execute.sh
+- header.py</html:code></fr:pre>
+
+      checker 也需要额外配置，如：
+      
+  <fr:pre><html:code
+xmlns:html="http://www.w3.org/1999/xhtml"
+class="&quot;language-yaml&quot;">checker_type: testlib
+checker: checker.cpp</html:code></fr:pre></fr:p></fr:mainmatter><fr:backmatter><fr:tree
 toc="false"
 numbered="false"
 show-heading="true"
@@ -33,7 +65,7 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>260</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>262</fr:anchor><fr:addr
 type="user">technique-0005</fr:addr><fr:route>technique-0005.xml</fr:route><fr:title
 text="Banning the Use of Some Python Built-in Stuff in Hydro OJ">Banning the Use of Some Python Built-in Stuff in Hydro OJ</fr:title><fr:date><fr:year>2025</fr:year><fr:month>3</fr:month><fr:day>3</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
   

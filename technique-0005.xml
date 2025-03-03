@@ -7,33 +7,7 @@ show-heading="true"
 show-metadata="true"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>259</fr:anchor><fr:addr
-type="machine">#245</fr:addr><fr:route>unstable-245.xml</fr:route><fr:taxon>Hydro OJ Testing Features</fr:taxon><fr:date><fr:year>2025</fr:year><fr:month>3</fr:month><fr:day>3</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>基础的 Special Judge 功能都是在一次评测结束后进行的，所以无法实现“在评测之前”改变运行时环境。</fr:p><fr:p>为了实现“在评测之前/在评测时”的需求，我们需要手动提供 <fr:code>compile.sh</fr:code> 和 <fr:code>execute.sh</fr:code> 脚本，用于修改运行前（编译）流程，和执行流程。</fr:p><fr:p>为了在评测 Python 时给出较为完整的 Traceback 信息，我们需要将执行时的返回结果改为总是返回 <fr:code>0</fr:code>，并将 Traceback 信息输出到 <fr:code>stdout</fr:code>，在 checker 中统一处理。由 <fr:link
-type="external"
-href="https://hydro.ac/d/system_test/p/11">Hydro OJ 测试题库: Python With Error Trace</fr:link> ，可以提供如下 <fr:code>execute.sh</fr:code> 脚本：
-      
-  <fr:pre><html:code
-xmlns:html="http://www.w3.org/1999/xhtml"
-class="&quot;language-bash&quot;"># 无论如何都返回 0，防止被系统判为 RE 跳过 checker 阶段，所以在外层使用一个 echo 函数
-# 因为只有 stdout 会被 checker 读取，我们需要将 stderr 也重定向至 stdout。
-echo `/usr/bin/python3 foo &gt;stdout 2&gt;stdout` &gt;/dev/null</html:code></fr:pre>
-
-      同时由此文档可知，编译阶段应该生成一个 <fr:code>foo</fr:code> 文件，用于执行。</fr:p><fr:p>在 <fr:code>compile.sh</fr:code> 中通过 <fr:code>ls</fr:code> 指令得到，源代码位于 <fr:code>foo.py</fr:code> 中，推测对 Python 的默认 <fr:code>compile.sh</fr:code> 作用即是将 <fr:code>foo.py</fr:code> 内容复制到 <fr:code>foo</fr:code> 文件中。</fr:p></fr:mainmatter><fr:backmatter><fr:tree
-toc="false"
-numbered="false"
-show-heading="true"
-show-metadata="false"
-expanded="true"
-root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:title
-text="Context">Context</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
-toc="true"
-numbered="false"
-show-heading="true"
-show-metadata="true"
-expanded="false"
-root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>260</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>265</fr:anchor><fr:addr
 type="user">technique-0005</fr:addr><fr:route>technique-0005.xml</fr:route><fr:title
 text="Banning the Use of Some Python Built-in Stuff in Hydro OJ">Banning the Use of Some Python Built-in Stuff in Hydro OJ</fr:title><fr:date><fr:year>2025</fr:year><fr:month>3</fr:month><fr:day>3</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
   
@@ -163,4 +137,4 @@ target_path = file_path.with_suffix('')
 target_path.write_text(content)</html:code></fr:pre>
 
       这样在编译期就可以检查出是否有循环语句（包含 list comprehension），若有则触发 Compile Error。</fr:p></fr:mainmatter><fr:backmatter /></fr:tree>
-<fr:p>In conclusion, 课程语言换成 LISP 能轻易的满足这类需求，所以 SI100B 什么时候改成 Scheme SICP.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>
+<fr:p>In conclusion, 课程语言换成 LISP 能轻易的满足这类需求，所以 SI100B 什么时候改成 Scheme SICP.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree>

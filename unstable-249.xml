@@ -7,20 +7,244 @@ show-heading="true"
 show-metadata="true"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>650</fr:anchor><fr:addr
-type="user">astinita</fr:addr><fr:route>astinita.xml</fr:route><fr:title
-text="Hengyu Ai">Hengyu Ai</fr:title><fr:taxon>Person</fr:taxon><fr:authors /><fr:meta
-name="institution"><fr:link
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>660</fr:anchor><fr:addr
+type="machine">#249</fr:addr><fr:route>unstable-249.xml</fr:route><fr:title
+text="Thought Cabinet › Techniques"><fr:link
+type="local"
+href="index.xml"
+addr="index"
+title="Thought Cabinet">Thought Cabinet</fr:link> › Techniques</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>642</fr:anchor><fr:addr
+type="user">technique-0005</fr:addr><fr:route>technique-0005.xml</fr:route><fr:title
+text="Banning the Use of Some Python Built-in Stuff in Hydro OJ">Banning the Use of Some Python Built-in Stuff in Hydro OJ</fr:title><fr:date><fr:year>2025</fr:year><fr:month>3</fr:month><fr:day>3</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
+  
+  <fr:tree
+toc="false"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>255</fr:anchor><fr:addr
+type="machine">#244</fr:addr><fr:route>unstable-244.xml</fr:route><fr:taxon>Requirements</fr:taxon><fr:date><fr:year>2025</fr:year><fr:month>3</fr:month><fr:day>3</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>由于作业需要，部分题目的评测中需要禁用一些 Python 内建函数，或禁用一些语言功能。Hydro OJ 关于评测的文档较为<fr:em>简陋</fr:em>，看似无法实现，实际上可以通过更改编译和运行脚本来实现这一目的。</fr:p></fr:mainmatter><fr:backmatter /></fr:tree>
+
+  
+  <fr:tree
+toc="false"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>256</fr:anchor><fr:addr
+type="machine">#245</fr:addr><fr:route>unstable-245.xml</fr:route><fr:taxon>Hydro OJ Testing Features</fr:taxon><fr:date><fr:year>2025</fr:year><fr:month>3</fr:month><fr:day>3</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>基础的 Special Judge 功能都是在一次评测结束后进行的，所以无法实现“在评测之前”改变运行时环境。</fr:p><fr:p>为了实现“在评测之前/在评测时”的需求，我们需要手动提供 <fr:code>compile.sh</fr:code> 和 <fr:code>execute.sh</fr:code> 脚本，用于修改运行前（编译）流程，和执行流程。</fr:p><fr:p>为了在评测 Python 时给出较为完整的 Traceback 信息，我们需要将执行时的返回结果改为总是返回 <fr:code>0</fr:code>，并将 Traceback 信息输出到 <fr:code>stdout</fr:code>，在 checker 中统一处理。由 <fr:link
 type="external"
-href="https://www.shanghaitech.edu.cn/eng/">ShanghaiTech University</fr:link></fr:meta></fr:frontmatter><fr:mainmatter><fr:p>Undergraduate @ ShanghaiTech University</fr:p><fr:p>如果这行中文 &amp; 下方的公式显示正常 &amp; 代码有高亮，说明网页加载正常。</fr:p><fr:tex
-display="block"><![CDATA[   Y = \lambda  f. (\lambda  x. f (x x)) (\lambda  x. f (x x)) ]]></fr:tex>
+href="https://hydro.ac/d/system_test/p/11">Hydro OJ 测试题库: Python With Error Trace</fr:link> ，可以提供如下 <fr:code>execute.sh</fr:code> 脚本：
+      
   <fr:pre><html:code
 xmlns:html="http://www.w3.org/1999/xhtml"
-class="&quot;language-haskell&quot;">primes = filterPrime [2..] where
-  filterPrime (p:xs) =
-    p : filterPrime [x | x &lt;- xs, x `mod` p /= 0]
+class="&quot;language-bash&quot;"># 无论如何都返回 0，防止被系统判为 RE 跳过 checker 阶段，所以在外层使用一个 echo 函数
+# 因为只有 stdout 会被 checker 读取，我们需要将 stderr 也重定向至 stdout。
+echo `/usr/bin/python3 foo &gt;stdout 2&gt;stdout` &gt;/dev/null</html:code></fr:pre>
+
+      同时由此文档可知，编译阶段应该生成一个 <fr:code>foo</fr:code> 文件，用于执行。</fr:p><fr:p>在 <fr:code>compile.sh</fr:code> 中通过 <fr:code>ls</fr:code> 指令得到，源代码位于 <fr:code>foo.py</fr:code> 中，推测对 Python 的默认 <fr:code>compile.sh</fr:code> 作用即是将 <fr:code>foo.py</fr:code> 内容复制到 <fr:code>foo</fr:code> 文件中。</fr:p></fr:mainmatter><fr:backmatter /></fr:tree>
+
+  
+  <fr:tree
+toc="false"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>257</fr:anchor><fr:addr
+type="machine">#246</fr:addr><fr:route>unstable-246.xml</fr:route><fr:taxon>Banning Built-in Functions</fr:taxon><fr:date><fr:year>2025</fr:year><fr:month>3</fr:month><fr:day>3</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p><html:strike
+xmlns:html="http://www.w3.org/1999/xhtml">换成 LISP 早做完了</html:strike></fr:p><fr:p>对于一些简单的 top-level 函数，如 <fr:code>sorted</fr:code>，可以通过在文件最前面加入新定义的函数来覆盖原有的函数。如：
+      
+  <fr:pre><html:code
+xmlns:html="http://www.w3.org/1999/xhtml"
+class="&quot;language-python&quot;">class BannedError(Exception):
+    def __init__(self, message):
+        self.message = message
+
+def sorted(self, *args, **kwargs):
+    raise BannedError("sorted() is banned")</html:code></fr:pre>
+
+    但是对于如 <fr:code>list</fr:code> 的内建方法，无法通过这种方式覆盖。即使声明新的 <fr:code>class list</fr:code> 也无法改变内建列表的行为。</fr:p><fr:p>尝试直接在 Python 代码中修改 <fr:code>list</fr:code> identifier，发现无法修改，在 <fr:code>globals()</fr:code> 中可以找到 builtin list，但该对象是不可变的，同样无法覆盖某个方法或 <fr:code>delattr</fr:code>。</fr:p><fr:p>尝 hack python，Python 提供了 ctypes 库，包含获取对象的裸指针等功能，<fr:link
+type="external"
+href="https://clarete.li/forbiddenfruit/">forbiddenfruit 库</fr:link> 就使用了这一点 hack CPython，将 forbiddenfruit 库的必要部分和我们需要修改的部分，如：
+      
+  <fr:pre><html:code
+xmlns:html="http://www.w3.org/1999/xhtml"
+class="&quot;language-python&quot;">import builtins
+class BannedError(Exception):
+    def __init__(self, message):
+        self.message = message
+
+def sort(self, *args, **kwargs):
+    raise BannedError("sort() / sorted() is banned")
+    
+curse(builtins.list, "sort", sort)</html:code></fr:pre>
+
+      放入一个文件 <fr:code>header.py</fr:code> ，在 <fr:code>compile.sh</fr:code> 中合并我们添加的 <fr:code>header.py</fr:code> 和原有的 <fr:code>foo.py</fr:code> 文件，生成 <fr:code>foo</fr:code>.</fr:p><fr:p>此时评测可以令调用被禁用函数/方法的代码发生异常，但无法将 Traceback 完整打印出来，因此采取上文提到的将 Traceback 信息输出到 <fr:code>stdout</fr:code> 的方法，编写 checker，检查输出是否有 <fr:code>Trackback</fr:code>，若有则在 <fr:code>stderr</fr:code> 输出 <fr:code>status(6)</fr:code> 与后续错误信息，否则进入和答案比较并且评分的阶段。</fr:p><fr:p>此外，为了让编译/运行期沙箱内有我们需要的文件，需要修改 <fr:code>config.yaml</fr:code> 加入以下内容：
+      
+  <fr:pre><html:code
+xmlns:html="http://www.w3.org/1999/xhtml"
+class="&quot;language-yaml&quot;">user_extra_files:
+- compile.sh
+- execute.sh
+- header.py</html:code></fr:pre>
+
+      checker 也需要额外配置，如：
+      
+  <fr:pre><html:code
+xmlns:html="http://www.w3.org/1999/xhtml"
+class="&quot;language-yaml&quot;">checker_type: testlib
+checker: checker.cpp</html:code></fr:pre></fr:p></fr:mainmatter><fr:backmatter /></fr:tree>
+
+  
+  <fr:tree
+toc="false"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>258</fr:anchor><fr:addr
+type="machine">#247</fr:addr><fr:route>unstable-247.xml</fr:route><fr:taxon>Banning Language Features</fr:taxon><fr:date><fr:year>2025</fr:year><fr:month>3</fr:month><fr:day>3</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p><html:strike
+xmlns:html="http://www.w3.org/1999/xhtml">换成 LISP 也早做完了</html:strike></fr:p><fr:p>这类需求可以在编译期解决。Python 标准库包含 <fr:code>ast</fr:code> 模块，用于将 Python 源代码解析到抽象语法树，在编译期使用脚本检查 <fr:code>foo.py</fr:code> 语法树中的节点，<fr:code>exit(1)</fr:code> 手动触发 Compile Error。例如，将 <fr:code>compile.sh</fr:code> 内容改为：
+      
+  <fr:pre><html:code
+xmlns:html="http://www.w3.org/1999/xhtml"
+class="&quot;language-bash&quot;">/usr/bin/python3 compile.py</html:code></fr:pre>
+
+      加入文件 <fr:code>compile.py</fr:code>，内容如下：
+      
+  <fr:pre><html:code
+xmlns:html="http://www.w3.org/1999/xhtml"
+class="&quot;language-python&quot;">import ast
+import pathlib
+
+file_name = "foo.py"
+file_path = pathlib.Path(file_name)
+
+try:
+    ast.parse(file_path.read_text())
+    tree = ast.parse(file_path.read_text())
+    for node in ast.walk(tree):
+        if isinstance(node, (ast.For, ast.While, ast.ListComp, ast.DictComp, ast.SetComp)):
+            print(f"Found loop at line {node.lineno}")
+            exit(1)
+except SyntaxError as e:
+    print(f"Syntax error in {file_name}: {e}")
+    exit(1)
+
+content = file_path.read_text()
+target_path = file_path.with_suffix('')
+target_path.write_text(content)</html:code></fr:pre>
+
+      这样在编译期就可以检查出是否有循环语句（包含 list comprehension），若有则触发 Compile Error。</fr:p></fr:mainmatter><fr:backmatter /></fr:tree>
+<fr:p>In conclusion, 课程语言换成 LISP 能轻易的满足这类需求，所以 SI100B 什么时候改成 Scheme SICP.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>643</fr:anchor><fr:addr
+type="user">technique-0003</fr:addr><fr:route>technique-0003.xml</fr:route><fr:title
+text="Semaphore">Semaphore</fr:title><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>26</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>This is just a short memo about the meaning of P and V operations on a semaphore.</fr:p><fr:p>A <fr:strong>semaphore</fr:strong> is a synchronization primitive. It is a special integer variable that can be accessed only through two standard <fr:em>atomic</fr:em> operations: <fr:code>up</fr:code> and <fr:code>down</fr:code>. The two operations are also known as <fr:code>V</fr:code> and <fr:code>P</fr:code> respectively, where "V" stands for the Dutch word "verhogen" (increase) and "P" stands for "proberen" (try) or "passeren" (pass).</fr:p><fr:p>The value of the semaphore <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> can be any non-negative integer.</fr:p><fr:p>The <fr:code>down</fr:code> operation trys to decrease the value of the semaphore by one. If the value of the semaphore is already zero, the process executing that operation is blocked until the value becomes positive.</fr:p><fr:p>The <fr:code>up</fr:code> operation increases the value of the semaphore by one. If there are processes blocked on the semaphore, one of them is unblocked.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>644</fr:anchor><fr:addr
+type="user">technique-0002</fr:addr><fr:route>technique-0002.xml</fr:route><fr:title
+text="Two auxiliary functions in Pintos">Two auxiliary functions in Pintos</fr:title><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>26</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
+  <fr:pre><html:code
+xmlns:html="http://www.w3.org/1999/xhtml"
+class="&quot;language-c&quot;">/* Reads a byte at user virtual address UADDR.
+   UADDR must be below PHYS_BASE.
+   Returns the byte value if successful, -1 if a segfault
+   occurred. */
+static int
+get_user (const uint8_t *uaddr)
+{
+  int result;
+  asm ("movl $1f, %0; movzbl %1, %0; 1:"
+       : "=&amp;a" (result) : "m" (*uaddr));
+  return result;
+}
+ 
+/* Writes BYTE to user address UDST.
+   UDST must be below PHYS_BASE.
+   Returns true if successful, false if a segfault occurred. */
+static bool
+put_user (uint8_t *udst, uint8_t byte)
+{
+  int error_code;
+  asm ("movl $1f, %0; movb %b2, %1; 1:"
+       : "=&amp;a" (error_code), "=m" (*udst) : "q" (byte));
+  return error_code != -1;
+}
 </html:code></fr:pre>
-</fr:mainmatter><fr:backmatter><fr:tree
+<fr:p>In <fr:link
+type="external"
+href="https://web.stanford.edu/class/cs140/projects/pintos/pintos.html">Pintos</fr:link> project 2, the two auxiliary functions above are provided in the documentation.</fr:p><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>268</fr:anchor><fr:addr
+type="user">technique-0004</fr:addr><fr:route>technique-0004.xml</fr:route><fr:title
+text="Inline assembly in GNU C">Inline assembly in GNU C</fr:title><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>28</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>In GNU C, <fr:strong>inline assembly</fr:strong> is a feature that allows you to embed assembly code in C code.</fr:p><fr:p>The syntax for inline assembly in GNU C is: <fr:code>asm ("assembly code")</fr:code>, but in ISO C, keyword <fr:code>__asm__</fr:code> is used instead. AT &amp; T syntax (opcode src, dest) is used in GNU C inline assembly. Example: <fr:code>asm ("movl %eax, %ebx")</fr:code> means moving the value in register <fr:code>%eax</fr:code> to register <fr:code>%ebx</fr:code>.</fr:p><fr:p>To interact with C code, inline assembly can use <fr:em>input operands</fr:em>, <fr:em>output operands</fr:em>, and <fr:em>clobbered registers</fr:em>. The syntax for these is: <fr:code>asm ("assembly code" : output : input : clobbered)</fr:code>.</fr:p><fr:p><fr:link
+type="external"
+href="https://stackoverflow.com/tags/inline-assembly/info">A collection of information about inline assembly - Stackoverflow tag</fr:link></fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:p>The main part of <fr:code>get_user</fr:code> is the inline assembly code: <fr:code>asm ("movl $1f, %0; movzbl %1, %0; 1:": "=&amp;a" (result) : "m" (*uaddr));</fr:code>
+
+  <fr:ol><fr:li><fr:strong>Assembly template</fr:strong>: the string <fr:code>"movl $1f, %0; movzbl %1, %0; 1:"</fr:code>.
+      <fr:ul><fr:li><fr:strong>Instruction opcode</fr:strong>: <fr:code>movl</fr:code> and <fr:code>movzbl</fr:code>, the former moves a long integer, the latter moves a byte and zero-extends it to a long integer.</fr:li>
+        <fr:li><fr:strong>Operands</fr:strong>: <fr:code>$1f</fr:code> is not an instant value, but a label. This operand means "find a <fr:em>foward reference</fr:em> (f) to label <fr:code>1:</fr:code> and use it as the operand". <fr:code>%0</fr:code> and <fr:code>%1</fr:code> will be replaced by the "input/output operands" in the next section of the inline assembly code.</fr:li>
+        <fr:li><fr:strong>Label</fr:strong>: the last two characters of the string are <fr:code>1:</fr:code>, which is a label.</fr:li></fr:ul></fr:li>
+    <fr:li><fr:strong>Output operands</fr:strong>: <fr:code>"=&amp;a" (result)</fr:code>.
+      <fr:ul><fr:li><fr:strong>Constraint modifier</fr:strong>: <fr:code>=</fr:code>, which means the operand is an output operand and it's write-only. (If you want a read-write operand, replace the modifier with <fr:code>+</fr:code>.), <fr:code>&amp;</fr:code>, which means this output operand must not overlap an input</fr:li>
+        <fr:li><fr:strong>Register class</fr:strong>: <fr:code>a</fr:code>, the actual result of this class follows <fr:link
+type="external"
+href="https://gcc.gnu.org/onlinedocs/gcc/Machine-Constraints.html">machine-specific constraints</fr:link>. Since Pintos is on x86, the actual register used is <fr:code>eax</fr:code>.</fr:li>
+        <fr:li><fr:strong>C variable</fr:strong>: <fr:code>result</fr:code>, which is the variable in the C code that will be used to store the result of the assembly code.</fr:li></fr:ul></fr:li>
+    <fr:li><fr:strong>Input operands</fr:strong>: <fr:code>": "m" (*uaddr)</fr:code>.
+      <fr:ul><fr:li><fr:strong>Constraint modifier</fr:strong>: <fr:code>m</fr:code>, a simple constraint(do not depend on any machine-specific information), which means the operand is a memory operand.</fr:li>
+        <fr:li><fr:strong>C variable</fr:strong>: <fr:code>*uaddr</fr:code>, which is the variable in the C code that will be used to store the address of the byte to be read.</fr:li></fr:ul></fr:li></fr:ol></fr:p><fr:p>In a word, <fr:code>get_user</fr:code> writes label <fr:code>1:</fr:code> to <fr:code>result</fr:code> and writes the byte at the address <fr:code>uaddr</fr:code> to <fr:code>result</fr:code>. Constraint <fr:code>"a"</fr:code> makes the compiler use register <fr:code>eax</fr:code> for operand <fr:code>%0</fr:code>.</fr:p><fr:p>Suppose the corresponding page of the address <fr:code>uaddr</fr:code> is not present or invalid, a page fault will occur, and the page fault handler will be called. If this is an invalid access or some other internal error happens, function <fr:code>get_user</fr:code> expects to get <fr:code>-1</fr:code> when the page fault handler returns.</fr:p><fr:p>To get the result from the page fault, register <fr:code>eax</fr:code> is reused to store the return value of the page fault handler. If there's no page fault or the page fault is correctly handled (e.g. a successful demand-paging), the return value will be the byte at the address <fr:code>uaddr</fr:code>, and that value will be stored in <fr:code>result</fr:code>. If there's a page fault, <fr:code>eax</fr:code> will be set to <fr:code>-1</fr:code> and <fr:code>result</fr:code> will be <fr:code>-1</fr:code>.</fr:p><fr:p>However, we need a way to recover from the page fault. Note that before the memory access (<fr:code>movzbl</fr:code>), a lable <fr:code>1:</fr:code> is written to <fr:code>eax</fr:code>. If a page fault occurs when executing the second instruction, the page fault handler can resume the execution by copying the value of <fr:code>eax</fr:code> to the program counter <fr:code>eip</fr:code> and then continue the execution from the label <fr:code>1:</fr:code>. The constraint <fr:code>&amp;</fr:code> for <fr:code>eax</fr:code> ensures that 
+  the value in <fr:code>eax</fr:code> won't be overwritten, which is essential for the error recovery mechanism to work.</fr:p><fr:p>The principle is the same for <fr:code>put_user</fr:code>. The only difference is that the second instruction in the inline assembly code is writing a byte to the memory address <fr:code>udst</fr:code> instead of reading a byte from the memory address <fr:code>uaddr</fr:code>.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>645</fr:anchor><fr:addr
+type="user">technique-0001</fr:addr><fr:route>technique-0001.xml</fr:route><fr:title
+text="Memory Overcommitment">Memory Overcommitment</fr:title><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>12</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Virtual memory provides an illusion of <fr:em>infinite memory</fr:em>. This is commonly achieved by paging and swapping. However, consider the following scenario:</fr:p><fr:p>You have an x86 machine with linux, 1 GB of RAM and sufficient swap space. You start a process that allocates 2 GB of memory. Since the virtual memory abstraction provides an illusion that this process can own the whole 3 GB user space, the OS must have a certain strategy to handle this situation.</fr:p><fr:p>The following (allocated more memory than available) is called <fr:strong>memory overcommitment</fr:strong>.</fr:p><fr:p>Operating systems have different strategies to handle memory overcommitment, you can refer to <fr:link
+type="external"
+href="https://docs.kernel.org/6.12/mm/overcommit-accounting.html">linux kernel documentation</fr:link> for the overcommitment policy in linux.
+
+  <fr:ul><fr:li><fr:strong>Mode 0</fr:strong>: Heuristic overcommit handling. Obvious overcommits of address space are refused. Used for a typical system.</fr:li>
+    <fr:li><fr:strong>Mode 1</fr:strong>: Always overcommit. Appropriate for some scientific applications.</fr:li>
+    <fr:li><fr:strong>Mode 2</fr:strong>: Don't overcommit.</fr:li></fr:ul>
+
+  See also <fr:link
+type="external"
+href="https://unix.stackexchange.com/questions/441364/what-is-the-purpose-of-memory-overcommitment-on-linux">this post on stackexchange</fr:link>.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter><fr:tree
 toc="false"
 numbered="false"
 show-heading="true"
@@ -35,7 +259,7 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>651</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>661</fr:anchor><fr:addr
 type="user">index</fr:addr><fr:route>index.xml</fr:route><fr:title
 text="Thought Cabinet">Thought Cabinet</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>This is a simple collection of
   <fr:ul><fr:li>Interesting things I heard about (collect them to deal with "citation needed")</fr:li>
@@ -484,116 +708,4 @@ type="local"
 href="ShanghaiTech-SI140A-index.xml"
 addr="ShanghaiTech-SI140A-index"
 title="Courses › Probability &amp; Statistics for EECS Fall 2024">Probability &amp; Statistics for EECS Fall 2024</fr:link></fr:li></fr:ul></fr:mainmatter><fr:backmatter /></fr:tree>
-</fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
-toc="false"
-numbered="false"
-show-heading="true"
-show-metadata="false"
-expanded="true"
-root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:title
-text="Contributions">Contributions</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
-toc="true"
-numbered="false"
-show-heading="true"
-show-metadata="true"
-expanded="false"
-root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>652</fr:anchor><fr:addr
-type="user">random-idea-0002</fr:addr><fr:route>random-idea-0002.xml</fr:route><fr:title
-text="A &quot;Not Very Deep&quot; Insight">A "Not Very Deep" Insight</fr:title><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>8</fr:day></fr:date><fr:authors><fr:author><fr:link
-type="local"
-href="astinita.xml"
-addr="astinita"
-title="Hengyu Ai">Hengyu Ai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>在线性代数里面我们已经理解了为什么 Gauss 消元/ Gauss-Jordan 消元就是：
-  <fr:ul><fr:li>LU 分解</fr:li>
-    <fr:li>解线性方程组</fr:li>
-    <fr:li>求逆矩阵</fr:li>
-    <fr:li>求行列式</fr:li></fr:ul></fr:p><fr:p>在算法课上我们了解了 Floyd-Warshall 算法就是传递闭包（的一个实现），而邻接矩阵的 <fr:tex
-display="inline"><![CDATA[k]]></fr:tex> 次幂代表了节点之间长度恰好为 <fr:tex
-display="inline"><![CDATA[k]]></fr:tex> 的路径的数量。</fr:p><fr:p>如果定义一些新的 "product"，Folyd-Warshall 也是一种矩阵乘法。</fr:p><fr:p>如果考虑其他“输入”和结果的集合，是否可以使用同一种描述来表示：
-  <fr:ul><fr:li>LU 分解</fr:li>
-    <fr:li>解线性方程组</fr:li>
-    <fr:li>求逆矩阵</fr:li>
-    <fr:li>求行列式</fr:li>
-    <fr:li>Floyd-Warshall 算法</fr:li>
-    <fr:li>传递闭包</fr:li>
-    <fr:li>DFA &amp; NFA</fr:li>
-    <fr:li>Markov 链</fr:li>
-    <fr:li>齐次线性递推</fr:li></fr:ul></fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
-toc="true"
-numbered="false"
-show-heading="true"
-show-metadata="true"
-expanded="false"
-root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>654</fr:anchor><fr:addr
-type="user">random-idea-0001</fr:addr><fr:route>random-idea-0001.xml</fr:route><fr:title
-text="Essence, Reductionism and Abstraction Leak">Essence, Reductionism and Abstraction Leak</fr:title><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>8</fr:day></fr:date><fr:authors><fr:author><fr:link
-type="local"
-href="astinita.xml"
-addr="astinita"
-title="Hengyu Ai">Hengyu Ai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>Consider this question: To what extent can we say that the essence of one thing <fr:tex
-display="inline"><![CDATA[x]]></fr:tex> is almost another thing <fr:tex
-display="inline"><![CDATA[y]]></fr:tex>?</fr:p><fr:p>In algebra, we have:</fr:p><fr:tree
-toc="true"
-numbered="true"
-show-heading="true"
-show-metadata="false"
-expanded="true"
-root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>499</fr:anchor><fr:addr
-type="user">concept-0001</fr:addr><fr:route>concept-0001.xml</fr:route><fr:title
-text="Equivalence Relation">Equivalence Relation</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>8</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>An <fr:strong>equivalence relation（等价关系）</fr:strong> is a binary relation <fr:tex
-display="inline"><![CDATA[\equiv ]]></fr:tex> on a set <fr:tex
-display="inline"><![CDATA[S]]></fr:tex>, such that:
-
-  <fr:ul><fr:li>reflexive: for all <fr:tex
-display="inline"><![CDATA[x : S]]></fr:tex>, <fr:tex
-display="inline"><![CDATA[x \equiv  x]]></fr:tex></fr:li>
-    <fr:li>symmetric: for all <fr:tex
-display="inline"><![CDATA[x, y : S]]></fr:tex>, if <fr:tex
-display="inline"><![CDATA[x \equiv  y]]></fr:tex> then <fr:tex
-display="inline"><![CDATA[y \equiv  x]]></fr:tex></fr:li>
-    <fr:li>transitive: for all <fr:tex
-display="inline"><![CDATA[x, y, z : S]]></fr:tex>, if <fr:tex
-display="inline"><![CDATA[x \equiv  y]]></fr:tex> and <fr:tex
-display="inline"><![CDATA[y \equiv  z]]></fr:tex> then <fr:tex
-display="inline"><![CDATA[x \equiv  z]]></fr:tex></fr:li></fr:ul></fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:p>Maybe we can say that <fr:tex
-display="inline"><![CDATA[x]]></fr:tex> and <fr:tex
-display="inline"><![CDATA[y]]></fr:tex> share the same essence if and only if there exists an equivalence relation <fr:tex
-display="inline"><![CDATA[\operatorname {R}]]></fr:tex>, such that <fr:tex
-display="inline"><![CDATA[x \operatorname {R} y]]></fr:tex>.</fr:p><fr:p>Under this definition, we can find some interesting examples. For instance, Dijkstra's algorithm and Prim's algorithm both find a <fr:em>minimum</fr:em> among the un-visited stuff, and Dijkstra's algorithm is an A* graph search with heuristic function <fr:tex
-display="inline"><![CDATA[h(v) = 0]]></fr:tex>.</fr:p><fr:p>However, it's not always to break concepts down to <fr:em>essence</fr:em>, especially we can't definitely say that everything has an essence.</fr:p><fr:p>From the perspective of computability, Dijkstra's algorithm is a turing machine that always halts, or some extremely complex lambda calculus terms that always reduces to a normal form. From the perspective of implementation and hardware, it's a collection of instructions that can be executed.</fr:p><fr:p>这种“回归本质”，或者说，还原主义的思维方式在理工科同学中并不少见，但是人心不足蛇吞象，尝试用本质描述一切就像是把大一统理论放在目标列表的第一项，总想着一口吃下整个思维过程。</fr:p><fr:p>It's unreasonable to conclude everything by assigning an essence to it. The context matters.</fr:p><fr:tree
-toc="true"
-numbered="true"
-show-heading="true"
-show-metadata="false"
-expanded="true"
-root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>500</fr:anchor><fr:addr
-type="user">concept-0004</fr:addr><fr:route>concept-0004.xml</fr:route><fr:title
-text="Abstraction Leak">Abstraction Leak</fr:title><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>9</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p><fr:strong>Abstraction</fr:strong> is crucial for understanding complex systems. It is another layer above the concrete details. Ideally, we can order knowledge in a top-down approach, starting from the most abstract concepts and then diving into the details.</fr:p><fr:p>The not-so-ideal reality is that <fr:strong>asbtractions do not always have "proper generality"</fr:strong>. This means that in some cases we must deal with the details which the abstraction was supposed to hide. This is what we call an <fr:strong>abstraction leak</fr:strong>.</fr:p><fr:p>Abstraction leaks are not necessarily related to the implementation or hardware details. If an abstraction exagerates the generality of a concept, other things based on it may not work as expected.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
-toc="true"
-numbered="false"
-show-heading="true"
-show-metadata="true"
-expanded="false"
-root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>656</fr:anchor><fr:addr
-type="user">ShanghaiTech-Courses</fr:addr><fr:route>ShanghaiTech-Courses.xml</fr:route><fr:title
-text="Courses">Courses</fr:title><fr:authors><fr:author><fr:link
-type="local"
-href="astinita.xml"
-addr="astinita"
-title="Hengyu Ai">Hengyu Ai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:ul><fr:li><fr:link
-type="local"
-href="ShanghaiTech-CS101-index.xml"
-addr="ShanghaiTech-CS101-index"
-title="Courses › Algorithm &amp; DS Fall 2024">Algorithm &amp; Data Structures Fall 2024</fr:link></fr:li>
-
-<fr:li><fr:link
-type="local"
-href="ShanghaiTech-SI140A-index.xml"
-addr="ShanghaiTech-SI140A-index"
-title="Courses › Probability &amp; Statistics for EECS Fall 2024">Probability &amp; Statistics for EECS Fall 2024</fr:link></fr:li></fr:ul></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>
+</fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>

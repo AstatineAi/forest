@@ -7,7 +7,7 @@ show-heading="true"
 show-metadata="true"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>644</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>662</fr:anchor><fr:addr
 type="user">index</fr:addr><fr:route>index.xml</fr:route><fr:title
 text="Thought Cabinet">Thought Cabinet</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>This is a simple collection of
   <fr:ul><fr:li>Interesting things I heard about (collect them to deal with "citation needed")</fr:li>
@@ -32,7 +32,7 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>616</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>633</fr:anchor><fr:addr
 type="user">astinita</fr:addr><fr:route>astinita.xml</fr:route><fr:title
 text="Hengyu Ai">Hengyu Ai</fr:title><fr:taxon>Person</fr:taxon><fr:authors /><fr:meta
 name="institution"><fr:link
@@ -56,8 +56,8 @@ show-heading="true"
 show-metadata="false"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>617</fr:anchor><fr:addr
-type="machine">#244</fr:addr><fr:route>unstable-244.xml</fr:route><fr:title
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>634</fr:anchor><fr:addr
+type="machine">#248</fr:addr><fr:route>unstable-248.xml</fr:route><fr:title
 text="Random Ideas">Random Ideas</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
 toc="false"
 numbered="false"
@@ -65,7 +65,7 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>618</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>635</fr:anchor><fr:addr
 type="user">random-idea-0004</fr:addr><fr:route>random-idea-0004.xml</fr:route><fr:title
 text="关于只狼中“纸人漂流”的随想">关于只狼中“纸人漂流”的随想</fr:title><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>23</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
 toc="true"
@@ -74,7 +74,7 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>255</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>272</fr:anchor><fr:addr
 type="user">random-idea-0005</fr:addr><fr:route>random-idea-0005.xml</fr:route><fr:title
 text="纸人漂流（只狼）">纸人漂流（只狼）</fr:title><fr:taxon>Reference</fr:taxon><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>23</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>游戏内道具描述如下：</fr:p><fr:blockquote><fr:p>刀刃和刀柄皆为白色的短刀
     可将 HP 转换为纸人
@@ -107,7 +107,7 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>619</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>636</fr:anchor><fr:addr
 type="user">random-idea-0003</fr:addr><fr:route>random-idea-0003.xml</fr:route><fr:title
 text="有什么可担心的？">有什么可担心的？</fr:title><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>9</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>你就想：</fr:p><fr:p>对面的那个人也是活人，</fr:p><fr:p>也会手冲。</fr:p><fr:p>差不多就行了，但是不要太详细的想他手冲。</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
 toc="false"
@@ -116,7 +116,7 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>620</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>637</fr:anchor><fr:addr
 type="user">random-idea-0002</fr:addr><fr:route>random-idea-0002.xml</fr:route><fr:title
 text="A &quot;Not Very Deep&quot; Insight">A "Not Very Deep" Insight</fr:title><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>8</fr:day></fr:date><fr:authors><fr:author><fr:link
 type="local"
@@ -144,7 +144,7 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>622</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>639</fr:anchor><fr:addr
 type="user">random-idea-0001</fr:addr><fr:route>random-idea-0001.xml</fr:route><fr:title
 text="Essence, Reductionism and Abstraction Leak">Essence, Reductionism and Abstraction Leak</fr:title><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>8</fr:day></fr:date><fr:authors><fr:author><fr:link
 type="local"
@@ -159,7 +159,7 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>482</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>499</fr:anchor><fr:addr
 type="user">concept-0001</fr:addr><fr:route>concept-0001.xml</fr:route><fr:title
 text="Equivalence Relation">Equivalence Relation</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>8</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>An <fr:strong>equivalence relation（等价关系）</fr:strong> is a binary relation <fr:tex
 display="inline"><![CDATA[\equiv ]]></fr:tex> on a set <fr:tex
@@ -188,7 +188,7 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>483</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>500</fr:anchor><fr:addr
 type="user">concept-0004</fr:addr><fr:route>concept-0004.xml</fr:route><fr:title
 text="Abstraction Leak">Abstraction Leak</fr:title><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>9</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p><fr:strong>Abstraction</fr:strong> is crucial for understanding complex systems. It is another layer above the concrete details. Ideally, we can order knowledge in a top-down approach, starting from the most abstract concepts and then diving into the details.</fr:p><fr:p>The not-so-ideal reality is that <fr:strong>asbtractions do not always have "proper generality"</fr:strong>. This means that in some cases we must deal with the details which the abstraction was supposed to hide. This is what we call an <fr:strong>abstraction leak</fr:strong>.</fr:p><fr:p>Abstraction leaks are not necessarily related to the implementation or hardware details. If an abstraction exagerates the generality of a concept, other things based on it may not work as expected.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
 toc="true"
@@ -197,8 +197,8 @@ show-heading="true"
 show-metadata="false"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>624</fr:anchor><fr:addr
-type="machine">#245</fr:addr><fr:route>unstable-245.xml</fr:route><fr:title
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>641</fr:anchor><fr:addr
+type="machine">#249</fr:addr><fr:route>unstable-249.xml</fr:route><fr:title
 text="Techniques">Techniques</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
 toc="false"
 numbered="false"
@@ -206,7 +206,144 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>625</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>642</fr:anchor><fr:addr
+type="user">technique-0005</fr:addr><fr:route>technique-0005.xml</fr:route><fr:title
+text="Banning the Use of Some Python Built-in Stuff in Hydro OJ">Banning the Use of Some Python Built-in Stuff in Hydro OJ</fr:title><fr:date><fr:year>2025</fr:year><fr:month>3</fr:month><fr:day>3</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
+  
+  <fr:tree
+toc="false"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>255</fr:anchor><fr:addr
+type="machine">#244</fr:addr><fr:route>unstable-244.xml</fr:route><fr:taxon>Requirements</fr:taxon><fr:date><fr:year>2025</fr:year><fr:month>3</fr:month><fr:day>3</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>由于作业需要，部分题目的评测中需要禁用一些 Python 内建函数，或禁用一些语言功能。Hydro OJ 关于评测的文档较为<fr:em>简陋</fr:em>，看似无法实现，实际上可以通过更改编译和运行脚本来实现这一目的。</fr:p></fr:mainmatter><fr:backmatter /></fr:tree>
+
+  
+  <fr:tree
+toc="false"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>256</fr:anchor><fr:addr
+type="machine">#245</fr:addr><fr:route>unstable-245.xml</fr:route><fr:taxon>Hydro OJ Testing Features</fr:taxon><fr:date><fr:year>2025</fr:year><fr:month>3</fr:month><fr:day>3</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>基础的 Special Judge 功能都是在一次评测结束后进行的，所以无法实现“在评测之前”改变运行时环境。</fr:p><fr:p>为了实现“在评测之前/在评测时”的需求，我们需要手动提供 <fr:code>compile.sh</fr:code> 和 <fr:code>execute.sh</fr:code> 脚本，用于修改运行前（编译）流程，和执行流程。</fr:p><fr:p>为了在评测 Python 时给出较为完整的 Traceback 信息，我们需要将执行时的返回结果改为总是返回 <fr:code>0</fr:code>，并将 Traceback 信息输出到 <fr:code>stdout</fr:code>，在 checker 中统一处理。由 <fr:link
+type="external"
+href="https://hydro.ac/d/system_test/p/11">Hydro OJ 测试题库: Python With Error Trace</fr:link> ，可以提供如下 <fr:code>execute.sh</fr:code> 脚本：
+      
+  <fr:pre><html:code
+xmlns:html="http://www.w3.org/1999/xhtml"
+class="&quot;language-bash&quot;"># 无论如何都返回 0，防止被系统判为 RE 跳过 checker 阶段，所以在外层使用一个 echo 函数
+# 因为只有 stdout 会被 checker 读取，我们需要将 stderr 也重定向至 stdout。
+echo `/usr/bin/python3 foo &gt;stdout 2&gt;stdout` &gt;/dev/null</html:code></fr:pre>
+
+      同时由此文档可知，编译阶段应该生成一个 <fr:code>foo</fr:code> 文件，用于执行。</fr:p><fr:p>在 <fr:code>compile.sh</fr:code> 中通过 <fr:code>ls</fr:code> 指令得到，源代码位于 <fr:code>foo.py</fr:code> 中，推测对 Python 的默认 <fr:code>compile.sh</fr:code> 作用即是将 <fr:code>foo.py</fr:code> 内容复制到 <fr:code>foo</fr:code> 文件中。</fr:p></fr:mainmatter><fr:backmatter /></fr:tree>
+
+  
+  <fr:tree
+toc="false"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>257</fr:anchor><fr:addr
+type="machine">#246</fr:addr><fr:route>unstable-246.xml</fr:route><fr:taxon>Banning Built-in Functions</fr:taxon><fr:date><fr:year>2025</fr:year><fr:month>3</fr:month><fr:day>3</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p><html:strike
+xmlns:html="http://www.w3.org/1999/xhtml">换成 LISP 早做完了</html:strike></fr:p><fr:p>对于一些简单的 top-level 函数，如 <fr:code>sorted</fr:code>，可以通过在文件最前面加入新定义的函数来覆盖原有的函数。如：
+      
+  <fr:pre><html:code
+xmlns:html="http://www.w3.org/1999/xhtml"
+class="&quot;language-python&quot;">class BannedError(Exception):
+    def __init__(self, message):
+        self.message = message
+
+def sorted(self, *args, **kwargs):
+    raise BannedError("sorted() is banned")</html:code></fr:pre>
+
+    但是对于如 <fr:code>list</fr:code> 的内建方法，无法通过这种方式覆盖。即使声明新的 <fr:code>class list</fr:code> 也无法改变内建列表的行为。</fr:p><fr:p>尝试直接在 Python 代码中修改 <fr:code>list</fr:code> identifier，发现无法修改，在 <fr:code>globals()</fr:code> 中可以找到 builtin list，但该对象是不可变的，同样无法覆盖某个方法或 <fr:code>delattr</fr:code>。</fr:p><fr:p>尝 hack python，Python 提供了 ctypes 库，包含获取对象的裸指针等功能，<fr:link
+type="external"
+href="https://clarete.li/forbiddenfruit/">forbiddenfruit 库</fr:link> 就使用了这一点 hack CPython，将 forbiddenfruit 库的必要部分和我们需要修改的部分，如：
+      
+  <fr:pre><html:code
+xmlns:html="http://www.w3.org/1999/xhtml"
+class="&quot;language-python&quot;">import builtins
+class BannedError(Exception):
+    def __init__(self, message):
+        self.message = message
+
+def sort(self, *args, **kwargs):
+    raise BannedError("sort() / sorted() is banned")
+    
+curse(builtins.list, "sort", sort)</html:code></fr:pre>
+
+      放入一个文件 <fr:code>header.py</fr:code> ，在 <fr:code>compile.sh</fr:code> 中合并我们添加的 <fr:code>header.py</fr:code> 和原有的 <fr:code>foo.py</fr:code> 文件，生成 <fr:code>foo</fr:code>.</fr:p><fr:p>此时评测可以令调用被禁用函数/方法的代码发生异常，但无法将 Traceback 完整打印出来，因此采取上文提到的将 Traceback 信息输出到 <fr:code>stdout</fr:code> 的方法，编写 checker，检查输出是否有 <fr:code>Trackback</fr:code>，若有则在 <fr:code>stderr</fr:code> 输出 <fr:code>status(6)</fr:code> 与后续错误信息，否则进入和答案比较并且评分的阶段。</fr:p><fr:p>此外，为了让编译/运行期沙箱内有我们需要的文件，需要修改 <fr:code>config.yaml</fr:code> 加入以下内容：
+      
+  <fr:pre><html:code
+xmlns:html="http://www.w3.org/1999/xhtml"
+class="&quot;language-yaml&quot;">user_extra_files:
+- compile.sh
+- execute.sh
+- header.py</html:code></fr:pre>
+
+      checker 也需要额外配置，如：
+      
+  <fr:pre><html:code
+xmlns:html="http://www.w3.org/1999/xhtml"
+class="&quot;language-yaml&quot;">checker_type: testlib
+checker: checker.cpp</html:code></fr:pre></fr:p></fr:mainmatter><fr:backmatter /></fr:tree>
+
+  
+  <fr:tree
+toc="false"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>258</fr:anchor><fr:addr
+type="machine">#247</fr:addr><fr:route>unstable-247.xml</fr:route><fr:taxon>Banning Language Features</fr:taxon><fr:date><fr:year>2025</fr:year><fr:month>3</fr:month><fr:day>3</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p><html:strike
+xmlns:html="http://www.w3.org/1999/xhtml">换成 LISP 也早做完了</html:strike></fr:p><fr:p>这类需求可以在编译期解决。Python 标准库包含 <fr:code>ast</fr:code> 模块，用于将 Python 源代码解析到抽象语法树，在编译期使用脚本检查 <fr:code>foo.py</fr:code> 语法树中的节点，<fr:code>exit(1)</fr:code> 手动触发 Compile Error。例如，将 <fr:code>compile.sh</fr:code> 内容改为：
+      
+  <fr:pre><html:code
+xmlns:html="http://www.w3.org/1999/xhtml"
+class="&quot;language-bash&quot;">/usr/bin/python3 compile.py</html:code></fr:pre>
+
+      加入文件 <fr:code>compile.py</fr:code>，内容如下：
+      
+  <fr:pre><html:code
+xmlns:html="http://www.w3.org/1999/xhtml"
+class="&quot;language-python&quot;">import ast
+import pathlib
+
+file_name = "foo.py"
+file_path = pathlib.Path(file_name)
+
+try:
+    ast.parse(file_path.read_text())
+    tree = ast.parse(file_path.read_text())
+    for node in ast.walk(tree):
+        if isinstance(node, (ast.For, ast.While, ast.ListComp, ast.DictComp, ast.SetComp)):
+            print(f"Found loop at line {node.lineno}")
+            exit(1)
+except SyntaxError as e:
+    print(f"Syntax error in {file_name}: {e}")
+    exit(1)
+
+content = file_path.read_text()
+target_path = file_path.with_suffix('')
+target_path.write_text(content)</html:code></fr:pre>
+
+      这样在编译期就可以检查出是否有循环语句（包含 list comprehension），若有则触发 Compile Error。</fr:p></fr:mainmatter><fr:backmatter /></fr:tree>
+<fr:p>In conclusion, 课程语言换成 LISP 能轻易的满足这类需求，所以 SI100B 什么时候改成 Scheme SICP.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>643</fr:anchor><fr:addr
 type="user">technique-0003</fr:addr><fr:route>technique-0003.xml</fr:route><fr:title
 text="Semaphore">Semaphore</fr:title><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>26</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>This is just a short memo about the meaning of P and V operations on a semaphore.</fr:p><fr:p>A <fr:strong>semaphore</fr:strong> is a synchronization primitive. It is a special integer variable that can be accessed only through two standard <fr:em>atomic</fr:em> operations: <fr:code>up</fr:code> and <fr:code>down</fr:code>. The two operations are also known as <fr:code>V</fr:code> and <fr:code>P</fr:code> respectively, where "V" stands for the Dutch word "verhogen" (increase) and "P" stands for "proberen" (try) or "passeren" (pass).</fr:p><fr:p>The value of the semaphore <fr:tex
 display="inline"><![CDATA[S]]></fr:tex> can be any non-negative integer.</fr:p><fr:p>The <fr:code>down</fr:code> operation trys to decrease the value of the semaphore by one. If the value of the semaphore is already zero, the process executing that operation is blocked until the value becomes positive.</fr:p><fr:p>The <fr:code>up</fr:code> operation increases the value of the semaphore by one. If there are processes blocked on the semaphore, one of them is unblocked.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
@@ -216,7 +353,7 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>626</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>644</fr:anchor><fr:addr
 type="user">technique-0002</fr:addr><fr:route>technique-0002.xml</fr:route><fr:title
 text="Two auxiliary functions in Pintos">Two auxiliary functions in Pintos</fr:title><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>26</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
   <fr:pre><html:code
@@ -255,7 +392,7 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>251</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>268</fr:anchor><fr:addr
 type="user">technique-0004</fr:addr><fr:route>technique-0004.xml</fr:route><fr:title
 text="Inline assembly in GNU C">Inline assembly in GNU C</fr:title><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>28</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>In GNU C, <fr:strong>inline assembly</fr:strong> is a feature that allows you to embed assembly code in C code.</fr:p><fr:p>The syntax for inline assembly in GNU C is: <fr:code>asm ("assembly code")</fr:code>, but in ISO C, keyword <fr:code>__asm__</fr:code> is used instead. AT &amp; T syntax (opcode src, dest) is used in GNU C inline assembly. Example: <fr:code>asm ("movl %eax, %ebx")</fr:code> means moving the value in register <fr:code>%eax</fr:code> to register <fr:code>%ebx</fr:code>.</fr:p><fr:p>To interact with C code, inline assembly can use <fr:em>input operands</fr:em>, <fr:em>output operands</fr:em>, and <fr:em>clobbered registers</fr:em>. The syntax for these is: <fr:code>asm ("assembly code" : output : input : clobbered)</fr:code>.</fr:p><fr:p><fr:link
 type="external"
@@ -281,7 +418,7 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>627</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>645</fr:anchor><fr:addr
 type="user">technique-0001</fr:addr><fr:route>technique-0001.xml</fr:route><fr:title
 text="Memory Overcommitment">Memory Overcommitment</fr:title><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>12</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Virtual memory provides an illusion of <fr:em>infinite memory</fr:em>. This is commonly achieved by paging and swapping. However, consider the following scenario:</fr:p><fr:p>You have an x86 machine with linux, 1 GB of RAM and sufficient swap space. You start a process that allocates 2 GB of memory. Since the virtual memory abstraction provides an illusion that this process can own the whole 3 GB user space, the OS must have a certain strategy to handle this situation.</fr:p><fr:p>The following (allocated more memory than available) is called <fr:strong>memory overcommitment</fr:strong>.</fr:p><fr:p>Operating systems have different strategies to handle memory overcommitment, you can refer to <fr:link
 type="external"
@@ -302,7 +439,7 @@ show-heading="true"
 show-metadata="false"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>628</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>646</fr:anchor><fr:addr
 type="user">ShanghaiTech-Courses</fr:addr><fr:route>ShanghaiTech-Courses.xml</fr:route><fr:title
 text="Courses">Courses</fr:title><fr:authors><fr:author><fr:link
 type="local"
