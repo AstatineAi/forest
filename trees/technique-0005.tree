@@ -1,0 +1,128 @@
+\date{2025-03-03}
+\title{Banning the Use of Some Python Built-in Stuff in Hydro OJ}
+\tag{technique}
+
+\import{base-macros}
+
+\scope{
+  \put\transclude/toc{false}
+  \subtree{
+    \taxon{Requirements}
+    \p{
+      由于作业需要，部分题目的评测中需要禁用一些 Python 内建函数，或禁用一些语言功能。Hydro OJ 关于评测的文档较为\em{简陋}，看似无法实现，实际上可以通过更改编译和运行脚本来实现这一目的。
+    }
+  }
+}
+
+\scope{
+  \put\transclude/toc{false}
+  \subtree{
+    \taxon{Hydro OJ Testing Features}
+    \p{
+      基础的 Special Judge 功能都是在一次评测结束后进行的，所以无法实现“在评测之前”改变运行时环境。
+    }
+    \p{
+      为了实现“在评测之前/在评测时”的需求，我们需要手动提供 \code{compile.sh} 和 \code{execute.sh} 脚本，用于修改运行前（编译）流程，和执行流程。
+    }
+    \p{
+      为了在评测 Python 时给出较为完整的 Traceback 信息，我们需要将执行时的返回结果改为总是返回 \code{0}，并将 Traceback 信息输出到 \code{stdout}，在 checker 中统一处理。由 [Hydro OJ 测试题库: Python With Error Trace](https://hydro.ac/d/system_test/p/11) ，可以提供如下 \code{execute.sh} 脚本：
+      \codeblk{bash}{# 无论如何都返回 0，防止被系统判为 RE 跳过 checker 阶段，所以在外层使用一个 echo 函数
+# 因为只有 stdout 会被 checker 读取，我们需要将 stderr 也重定向至 stdout。
+echo `/usr/bin/python3 foo >stdout 2>stdout` >/dev/null}
+      同时由此文档可知，编译阶段应该生成一个 \code{foo} 文件，用于执行。
+    }
+    \p{
+      在 \code{compile.sh} 中通过 \code{ls} 指令得到，源代码位于 \code{foo.py} 中，推测对 Python 的默认 \code{compile.sh} 作用即是将 \code{foo.py} 内容复制到 \code{foo} 文件中。
+    }
+  }
+}
+
+\scope{
+  \put\transclude/toc{false}
+  \subtree{
+    \taxon{Banning Built-in Functions}
+    \p{
+      \strike{换成 LISP 早做完了}
+    }
+
+    \p{
+      对于一些简单的 top-level 函数，如 \code{sorted}，可以通过在文件最前面加入新定义的函数来覆盖原有的函数。如：
+      \codeblk{python}{class BannedError(Exception):
+    def __init__(self, message):
+        self.message = message
+
+def sorted(self, *args, **kwargs):
+    raise BannedError("sorted() is banned")}
+    但是对于如 \code{list} 的内建方法，无法通过这种方式覆盖。即使声明新的 \code{class list} 也无法改变内建列表的行为。
+    }
+    \p{
+      尝试直接在 Python 代码中修改 \code{list} identifier，发现无法修改，在 \code{globals()} 中可以找到 builtin list，但该对象是不可变的，同样无法覆盖某个方法或 \code{delattr}。 
+    }
+    \p{
+      尝 hack python，Python 提供了 ctypes 库，包含获取对象的裸指针等功能，[forbiddenfruit 库](https://clarete.li/forbiddenfruit/) 就使用了这一点 hack CPython，将 forbiddenfruit 库的必要部分和我们需要修改的部分，如：
+      \codeblk{python}{import builtins
+class BannedError(Exception):
+    def __init__(self, message):
+        self.message = message
+
+def sort(self, *args, **kwargs):
+    raise BannedError("sort() / sorted() is banned")
+    
+curse(builtins.list, "sort", sort)}
+      放入一个文件 \code{header.py} ，在 \code{compile.sh} 中合并我们添加的 \code{header.py} 和原有的 \code{foo.py} 文件，生成 \code{foo}.
+    }
+    \p{
+      此时评测可以令调用被禁用函数/方法的代码发生异常，但无法将 Traceback 完整打印出来，因此采取上文提到的将 Traceback 信息输出到 \code{stdout} 的方法，编写 checker，检查输出是否有 \code{Trackback}，若有则在 \code{stderr} 输出 \code{status(6)} 与后续错误信息，否则进入和答案比较并且评分的阶段。
+    }
+    \p{
+      此外，为了让编译/运行期沙箱内有我们需要的文件，需要修改 \code{config.yaml} 加入以下内容：
+      \codeblk{yaml}{user_extra_files:
+- compile.sh
+- execute.sh
+- header.py}
+      checker 也需要额外配置，如：
+      \codeblk{yaml}{checker_type: testlib
+checker: checker.cpp}
+    }
+  }
+}
+
+\scope{
+  \put\transclude/toc{false}
+  \subtree{
+    \taxon{Banning Language Features}
+    \p{
+      \strike{换成 LISP 也早做完了}
+    }
+    \p{
+      这类需求可以在编译期解决。Python 标准库包含 \code{ast} 模块，用于将 Python 源代码解析到抽象语法树，在编译期使用脚本检查 \code{foo.py} 语法树中的节点，\code{exit(1)} 手动触发 Compile Error。例如，将 \code{compile.sh} 内容改为：
+      \codeblk{bash}{/usr/bin/python3 compile.py}
+      加入文件 \code{compile.py}，内容如下：
+      \codeblk{python}{import ast
+import pathlib
+
+file_name = "foo.py"
+file_path = pathlib.Path(file_name)
+
+try:
+    ast.parse(file_path.read_text())
+    tree = ast.parse(file_path.read_text())
+    for node in ast.walk(tree):
+        if isinstance(node, (ast.For, ast.While, ast.ListComp, ast.DictComp, ast.SetComp)):
+            print(f"Found loop at line {node.lineno}")
+            exit(1)
+except SyntaxError as e:
+    print(f"Syntax error in {file_name}: {e}")
+    exit(1)
+
+content = file_path.read_text()
+target_path = file_path.with_suffix('')
+target_path.write_text(content)}
+      这样在编译期就可以检查出是否有循环语句（包含 list comprehension），若有则触发 Compile Error。
+    }
+  }
+}
+
+\p{
+  In conclusion, 课程语言换成 LISP 能轻易的满足这类需求，所以 SI100B 什么时候改成 Scheme SICP.
+}
